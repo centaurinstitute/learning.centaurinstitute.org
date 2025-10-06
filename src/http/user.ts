@@ -31,11 +31,14 @@ instance.interceptors.request.use(async (request) => {
 instance.getUserDetails = async () => {
   const refreshToken = await storage.get(config.name, "refreshToken");
   const { project } = config;
-  const { github, google } = project;
+  const { github, google, linkedin } = project;
 
   let userUrl;
   let provider;
-  if (google) {
+  if (linkedin) {
+    userUrl = linkedin.userUrl;
+    provider = "linkedin";
+  } else if (google) {
     userUrl = google.userUrl;
     provider = "google";
   } else if (github) {
@@ -50,7 +53,13 @@ instance.getUserDetails = async () => {
           Authorization: `Bearer ${refreshToken}`,
         },
       });
-      if (provider === "github") {
+      if (provider === "linkedin") {
+        return {
+          name: response.data.name,
+          avatarUrl: response.data.picture,
+          id: response.data.sub,
+        };
+      } else if (provider === "github") {
         return {
           name: response.data.login,
           avatarUrl: response.data.avatar_url,
