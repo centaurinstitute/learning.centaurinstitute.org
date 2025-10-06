@@ -11,9 +11,17 @@ const config = {
     github: {
       authUrl: "https://github.com/login/oauth/authorize",
       clientId: "Ov23li479T0eT4ubQXsV",
-      redirectUri: "http://localhost:5173/callback",
+      redirectUri: "http://localhost:5173/callback/github",
       userUrl: "https://api.github.com/user",
       scope: "user",
+      response_type: "code",
+    },
+    linkedin: {
+      authUrl: "https://www.linkedin.com/oauth/v2/authorization",
+      clientId: "77um8dvw6y93ts",
+      redirectUri: "http://localhost:5173/callback/linkedin",
+      userUrl: "https://api.linkedin.com/v2/userinfo",
+      scope: "openid profile email",
       response_type: "code",
     },
   },
