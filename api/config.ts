@@ -5,9 +5,32 @@ const config = {
       jwt: {
         identifier: "id",
       },
-      tokenUrl: "https://github.com/login/oauth/access_token",
-      userUrl: "https://api.github.com/user",
-      clientId: "Ov23li479T0eT4ubQXsV",
+      providers: {
+        github: {
+          tokenUrl: "https://github.com/login/oauth/access_token",
+          userUrl: "https://api.github.com/user",
+          clientId: "Ov23li479T0eT4ubQXsV",
+          userIdentifier: "id",
+          userFields: {
+            name: "login",
+            displayName: "name",
+            avatarUrl: "avatar_url",
+            email: "email",
+          },
+        },
+        linkedin: {
+          tokenUrl: "https://www.linkedin.com/oauth/v2/accessToken",
+          userUrl: "https://api.linkedin.com/v2/userinfo",
+          clientId: "77um8dvw6y93ts",
+          userIdentifier: "sub",
+          userFields: {
+            name: "name",
+            displayName: "name",
+            avatarUrl: "picture",
+            email: "email",
+          },
+        },
+      },
     },
   },
   postgres: {
