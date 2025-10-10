@@ -18,7 +18,7 @@ const config = {
     },
     linkedin: {
       authUrl: "https://www.linkedin.com/oauth/v2/authorization",
-      clientId: "77um8dvw6y93ts",
+      clientId: "77squyqj8fw5zu",
       redirectUri: "https://learning.centaurinstitute.org/callback",
       userUrl: "https://api.linkedin.com/v2/userinfo",
       scope: "openid profile email",
