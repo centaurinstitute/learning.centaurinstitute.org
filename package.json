@@ -12,7 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@canmingir/link": "^1.2.2",
+    "@canmingir/link": "^1.2.3",
     "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
     "@nucleoidai/platform": "^1.0.52",
