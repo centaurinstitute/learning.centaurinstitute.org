@@ -1,4 +1,4 @@
-FROM docker.io/library/node:20
+FROM node:25
 
 WORKDIR /app
 
