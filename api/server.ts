@@ -1,6 +1,5 @@
 import * as platform from "@canmingir/link-express";
 
-import { Server } from "socket.io";
 import config from "./config";
 import dotenv from "dotenv";
 import http from "http";
@@ -20,7 +19,7 @@ platform.init(config).then(() => {
   const app = require("./src/app").default;
   const server = http.createServer(app);
 
-  server.listen(process.env.PORT || 4000, () => {
-    console.log(`Server is running on port ${process.env.PORT || 4000}`);
+  server.listen(process.env.PORT || 3000, () => {
+    console.log(`Server is running on port ${process.env.PORT || 3000}`);
   });
 });
