@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "lint:api": "cd api && npm run lint",
     "lint:all": "npm run lint && npm run lint:api",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "npx @nucleoidai/http-server start --port 5173"
   },
   "dependencies": {
     "@canmingir/link": "^1.2.3",
