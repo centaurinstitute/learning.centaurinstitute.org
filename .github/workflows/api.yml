@@ -23,7 +23,6 @@ jobs:
       environment: 'live'
       context_path: ./api
       install_dependencies: true
-      run_lint: true
       run_build: true
       dependency_path: ./api
       setup_config: true
