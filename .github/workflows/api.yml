@@ -26,3 +26,5 @@ jobs:
       run_build: true
       dependency_path: ./api
       setup_config: true
+    secrets:
+      DOCKER_ACCESS_TOKEN: ${{ secrets.DOCKER_ACCESS_TOKEN }}
