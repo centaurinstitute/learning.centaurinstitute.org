@@ -2,9 +2,9 @@ const config = {
   appId: "10b7bc8c-a49c-4002-b0ec-63599e4b5210",
   name: "Centaur Learning",
   base: "/",
-  api: "https://api.centaurinstitute.org:5050",
+  api: "https://api.centaurinstitute.org",
   socket: {
-    host: "https://api.centaurinstitute.org:5050",
+    host: "https://api.centaurinstitute.org",
     path: "/socket.io",
   },
   project: {
