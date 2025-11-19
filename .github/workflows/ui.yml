@@ -6,19 +6,19 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment to deploy'
+        description: "Environment to deploy"
         required: true
         type: choice
         options:
           - land
           - live
-        default: 'land'
+        default: "land"
 jobs:
   ui:
     uses: centaurinstitute/actions/.github/workflows/deploy.yml@main
     with:
-      service_name: learning.ui
-      environment: 'live'
+      service_name: learning.centaurinstitute.org
+      environment: "live"
       install_dependencies: true
       run_lint: true
       run_build: true

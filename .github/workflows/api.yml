@@ -3,28 +3,27 @@ on:
   push:
     branches: [main]
     paths:
-      - 'api/**'
-      - '.github/workflows/api.yml'
+      - "api/**"
+      - ".github/workflows/api.yml"
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment to deploy'
+        description: "Environment to deploy"
         required: true
         type: choice
         options:
           - land
           - live
-        default: 'land'
+        default: "land"
 jobs:
   communication:
     uses: centaurinstitute/actions/.github/workflows/deploy.yml@main
     with:
-      service_name: learning.api
-      environment: 'live'
+      service_name: api.centaurinstitute.org
+      environment: "live"
       context_path: ./api
       install_dependencies: true
-      run_build: true
-      dependency_path: ./api
       setup_config: true
+      config_paths: ./api
     secrets:
       DOCKER_ACCESS_TOKEN: ${{ secrets.DOCKER_ACCESS_TOKEN }}
