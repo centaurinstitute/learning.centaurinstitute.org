@@ -1,7 +1,6 @@
 import FollowUs from "../components/FollowUs";
-import React from "react";
 import VideoCard from "../components/VideoCard/VideoCard";
-import { useNavigate } from "react-router-dom";
+import VideoSearch from "../components/Search/VideoSearch";
 import useVideos from "../hooks/useVideos";
 
 import {
@@ -12,11 +11,40 @@ import {
   Skeleton,
   Typography,
 } from "@mui/material";
+import React, { useMemo } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const LearningWidget = () => {
   const { getVideos } = useVideos();
   const { videos, loading } = getVideos();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const searchQuery = useMemo(() => {
+    const sp = new URLSearchParams(location.search);
+    return (sp.get("q") || "").toLowerCase().trim();
+  }, [location.search]);
+
+  const filteredVideos = useMemo(() => {
+    if (!searchQuery) return videos;
+    const q = searchQuery;
+    return (videos || []).filter((v) => {
+      const inTitle = String(v.title || "")
+        .toLowerCase()
+        .includes(q);
+      const inDesc = String(v.description || "")
+        .toLowerCase()
+        .includes(q);
+      const inTags = Array.isArray(v.tags)
+        ? v.tags.some((t: string) =>
+            String(t || "")
+              .toLowerCase()
+              .includes(q)
+          )
+        : false;
+      return inTitle || inDesc || inTags;
+    });
+  }, [videos, searchQuery]);
 
   const handleVideoClick = (videoId: string) => {
     navigate(`/learning/video/${videoId}`);
@@ -26,6 +54,7 @@ const LearningWidget = () => {
     <>
       <FollowUs />
       <Box sx={{ width: "100%", padding: { xs: 2, md: 3 } }}>
+        <VideoSearch videos={videos || []} />
         <Box sx={{ mb: 4 }}>
           <Typography variant="h3" fontWeight="800">
             Learning Hub
@@ -59,7 +88,7 @@ const LearningWidget = () => {
                   </Card>
                 </Grid>
               ))
-            : videos?.map(
+            : filteredVideos?.map(
                 (video: {
                   id: string;
                   title: string;
