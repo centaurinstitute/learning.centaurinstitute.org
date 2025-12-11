@@ -160,8 +160,8 @@ const VideoSearch = ({
                                   mt: 0.5,
                                 }}
                               >
-                                {relatedTags.map((tag) => (
-                                  <Chip key={tag} size="small" label={tag} />
+                                {relatedTags.map((tag, index) => (
+                                  <Chip key={index} size="small" label={tag} />
                                 ))}
                               </Box>
                             )}
