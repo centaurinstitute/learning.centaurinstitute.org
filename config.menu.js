@@ -10,7 +10,7 @@ const menuConfig = {
           path: "/",
         },
         {
-          title: "Learning",
+          title: "Summer School 2025",
           icon: "ic:outline-dashboard",
           path: "/learning",
         },
