@@ -14,6 +14,11 @@ const menuConfig = {
           icon: "ic:outline-dashboard",
           path: "/learning",
         },
+        {
+          title: "Summer School 2024",
+          icon: "ic:outline-dashboard",
+          path: "/learning/2024",
+        },
       ],
     },
   ],
