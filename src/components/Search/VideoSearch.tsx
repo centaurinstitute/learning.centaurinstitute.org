@@ -103,6 +103,7 @@ const VideoSearch = ({
                 return (
                   <ListItem key={video.id} disableGutters>
                     <ListItemButton
+                      sx={{ "&:hover": { cursor: "pointer" } }}
                       onClick={() => {
                         setQuery("");
                         navigate(`/learning/video/${video.id}`);
