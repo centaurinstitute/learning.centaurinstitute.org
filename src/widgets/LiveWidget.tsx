@@ -31,6 +31,12 @@ const LiveWidget = () => {
 
   console.log("videos", liveVideos);
 
+  const focusAreas = [
+    { n: 1, text: "Human interpretability/controllability" },
+    { n: 2, text: "Learning with less data/computation (e.g. via knowledge)" },
+    { n: 3, text: "Out-of-distribution generalization (e.g. via reasoning)" },
+  ];
+
   return (
     <>
       <FollowUs />
@@ -239,13 +245,9 @@ const LiveWidget = () => {
               </Typography>
 
               <Box sx={{ pl: { xs: 0.5, sm: 2 } }}>
-                {[
-                  "1) Human interpretability/controllability",
-                  "2) Learning with less data/computation (e.g. via knowledge)",
-                  "3) Out-of-distribution generalization (e.g. via reasoning)",
-                ].map((t) => (
+                {focusAreas.map(({ n, text }) => (
                   <Typography
-                    key={t}
+                    key={n}
                     variant="body1"
                     sx={{
                       mb: 1,
@@ -265,7 +267,7 @@ const LiveWidget = () => {
                       }}
                     />
                     <span>
-                      <strong>{t.split(") ")[0]})</strong> {t.split(") ")[1]}
+                      <strong>{n})</strong> {text}
                     </span>
                   </Typography>
                 ))}
