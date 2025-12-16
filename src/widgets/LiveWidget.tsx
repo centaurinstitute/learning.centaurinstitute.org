@@ -27,7 +27,6 @@ const mockLive = {
 
 const LiveWidget = () => {
   const { getLiveVideos } = useLive();
-
   const { liveVideos } = getLiveVideos();
 
   console.log("videos", liveVideos);
@@ -35,15 +34,32 @@ const LiveWidget = () => {
   return (
     <>
       <FollowUs />
-      <Box sx={{ mx: "auto", p: 3, width: "1000px" }} key={mockLive.id}>
-        <Card sx={{ borderRadius: 3, overflow: "hidden", mb: 3 }}>
+      <Box
+        key={mockLive.id}
+        sx={{
+          mx: "auto",
+          width: "100%",
+          px: { xs: 1.5, sm: 2.5, md: 3 },
+          py: { xs: 1.5, sm: 2.5, md: 3 },
+        }}
+      >
+        <Card
+          sx={{
+            borderRadius: { xs: 2, sm: 3 },
+            overflow: "hidden",
+            mb: { xs: 2, sm: 3 },
+          }}
+        >
           <Box
             sx={{
               position: "relative",
-              paddingBottom: "60%",
-              height: 0,
+              width: "100%",
+              aspectRatio: "16 / 9",
+              "@supports not (aspect-ratio: 16 / 9)": {
+                height: 0,
+                paddingBottom: "56.25%",
+              },
               backgroundColor: "#000",
-              minHeight: 400,
             }}
           >
             <iframe
@@ -54,17 +70,29 @@ const LiveWidget = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               style={{
                 position: "absolute",
-                top: 0,
-                left: 0,
+                inset: 0,
                 width: "100%",
                 height: "100%",
               }}
             />
           </Box>
         </Card>
-
-        <Card sx={{ borderRadius: 3, p: 3, mb: 3 }}>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 3 }}>
+        <Card
+          sx={{
+            borderRadius: { xs: 2, sm: 3 },
+            p: { xs: 2, sm: 3 },
+            mb: { xs: 2, sm: 3 },
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 2,
+              mb: { xs: 2, sm: 3 },
+              justifyContent: { xs: "center", sm: "flex-start" },
+            }}
+          >
             <Box
               sx={{
                 width: 12,
@@ -79,42 +107,39 @@ const LiveWidget = () => {
                 },
               }}
             />
-            <Typography variant="h6" fontWeight="600" color="error.main">
+            <Typography variant="h6" fontWeight={700} color="error.main">
               LIVE
             </Typography>
           </Box>
-
           <Typography
             variant="h4"
             fontWeight="bold"
             sx={{
-              mb: 3,
-              lineHeight: 1.2,
+              mb: { xs: 2, sm: 3 },
+              lineHeight: 1.15,
+              textAlign: "center",
+              fontSize: { xs: "1.55rem", sm: "2rem", md: "2.125rem" },
               background:
                 "linear-gradient(45deg, #1e3c72 0%, #2a5298 25%, #4facfe 50%, #00d4ff 75%, #667eea 100%)",
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              textAlign: "center",
             }}
           >
             {mockLive.streamTitle}
           </Typography>
 
-          <Divider sx={{ mb: 4, opacity: 0.3 }} />
+          <Divider sx={{ mb: { xs: 2.5, sm: 4 }, opacity: 0.3 }} />
 
-          <Stack spacing={3}>
+          <Stack spacing={{ xs: 2, sm: 3 }}>
             <Paper
               elevation={0}
-              sx={{
-                p: 2,
-                backgroundColor: "background.paper",
-              }}
+              sx={{ p: { xs: 1.5, sm: 2 }, bgcolor: "background.paper" }}
             >
               <Typography
                 variant="h6"
-                fontWeight="600"
-                sx={{ mb: 2, color: "text.primary" }}
+                fontWeight={600}
+                sx={{ mb: 1.5, color: "text.primary" }}
               >
                 🤔 Are you looking for something different?
               </Typography>
@@ -128,27 +153,27 @@ const LiveWidget = () => {
                 ability to reason, plan, or do math?
               </Typography>
             </Paper>
+
             <Paper
               elevation={0}
-              sx={{
-                p: 2,
-                backgroundColor: "background.paper",
-              }}
+              sx={{ p: { xs: 1.5, sm: 2 }, bgcolor: "background.paper" }}
             >
               <Box
-                sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}
+                sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}
               >
                 <School sx={{ color: "text.primary", fontSize: 24 }} />
-                <Typography variant="h6" fontWeight="600" color="text.primary">
+                <Typography variant="h6" fontWeight={600} color="text.primary">
                   Join the 4th Neuro-Symbolic AI Summer School
                 </Typography>
               </Box>
+
               <Typography variant="body1" sx={{ lineHeight: 1.8, mb: 2 }}>
                 📢 Please join us for the 4th Neuro-Symbolic AI Summer School
                 (NSSS), a <strong>free, fully-remote meeting</strong> to be held
                 Aug 14-15, 2025 - where you can learn how to be part of this
                 exciting area at the most forward-looking cutting edge of AI.
               </Typography>
+
               <Box
                 sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}
               >
@@ -156,15 +181,16 @@ const LiveWidget = () => {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  fontWeight="500"
+                  fontWeight={600}
                 >
                   August 14-15, 2025
                 </Typography>
               </Box>
+
               <Typography
-                variant="h6"
-                fontWeight="600"
-                sx={{ mt: 2, color: "primary.dark" }}
+                variant="subtitle1"
+                fontWeight={700}
+                sx={{ mt: 1.5, color: "primary.dark" }}
               >
                 Theme: &quot;AI for Precise Computation: Mathematics, Reasoning,
                 and Planning&quot;
@@ -173,16 +199,13 @@ const LiveWidget = () => {
 
             <Paper
               elevation={0}
-              sx={{
-                p: 2,
-                backgroundColor: "background.paper",
-              }}
+              sx={{ p: { xs: 1.5, sm: 2 }, bgcolor: "background.paper" }}
             >
               <Box
-                sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}
+                sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}
               >
                 <Public sx={{ color: "text.primary", fontSize: 24 }} />
-                <Typography variant="h6" fontWeight="600" color="text.primary">
+                <Typography variant="h6" fontWeight={600} color="text.primary">
                   About NSSS &apos;25
                 </Typography>
               </Box>
@@ -198,74 +221,67 @@ const LiveWidget = () => {
 
             <Paper
               elevation={0}
-              sx={{
-                p: 2,
-                backgroundColor: "background.paper",
-              }}
+              sx={{ p: { xs: 1.5, sm: 2 }, bgcolor: "background.paper" }}
             >
               <Box
-                sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}
+                sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}
               >
                 <TrackChanges sx={{ color: "text.primary", fontSize: 24 }} />
-                <Typography variant="h6" fontWeight="600" color="text.primary">
+                <Typography variant="h6" fontWeight={600} color="text.primary">
                   Focus Areas
                 </Typography>
               </Box>
+
               <Typography variant="body1" sx={{ lineHeight: 1.8, mb: 2 }}>
                 🎯 The focus of the event is on techniques, in particular those
                 which augment neural network/ML ideas with symbolic AI ideas, to
                 address at least three main open problems of AI:
               </Typography>
-              <Box sx={{ pl: 2 }}>
-                <Typography
-                  variant="body1"
-                  sx={{ mb: 1, display: "flex", alignItems: "center", gap: 1 }}
-                >
-                  <Box
+
+              <Box sx={{ pl: { xs: 0.5, sm: 2 } }}>
+                {[
+                  "1) Human interpretability/controllability",
+                  "2) Learning with less data/computation (e.g. via knowledge)",
+                  "3) Out-of-distribution generalization (e.g. via reasoning)",
+                ].map((t) => (
+                  <Typography
+                    key={t}
+                    variant="body1"
                     sx={{
-                      width: 8,
-                      height: 8,
-                      borderRadius: "50%",
-                      backgroundColor: "primary.main",
+                      mb: 1,
+                      display: "flex",
+                      alignItems: "flex-start",
+                      gap: 1,
                     }}
-                  />
-                  1) <strong>Human interpretability/controllability</strong>
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ mb: 1, display: "flex", alignItems: "center", gap: 1 }}
-                >
-                  <Box
-                    sx={{
-                      width: 8,
-                      height: 8,
-                      borderRadius: "50%",
-                      backgroundColor: "primary.main",
-                    }}
-                  />
-                  2) <strong>Learning with less data/computation</strong> (e.g.
-                  via knowledge)
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ display: "flex", alignItems: "center", gap: 1 }}
-                >
-                  <Box
-                    sx={{
-                      width: 8,
-                      height: 8,
-                      borderRadius: "50%",
-                      backgroundColor: "primary.main",
-                    }}
-                  />
-                  3) <strong>Out-of-distribution generalization</strong> (e.g.
-                  via reasoning)
-                </Typography>
+                  >
+                    <Box
+                      sx={{
+                        mt: "0.55rem",
+                        width: 8,
+                        height: 8,
+                        borderRadius: "50%",
+                        backgroundColor: "primary.main",
+                        flex: "0 0 auto",
+                      }}
+                    />
+                    <span>
+                      <strong>{t.split(") ")[0]})</strong> {t.split(") ")[1]}
+                    </span>
+                  </Typography>
+                ))}
               </Box>
             </Paper>
           </Stack>
 
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: 3 }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 1,
+              mt: { xs: 2, sm: 3 },
+              justifyContent: { xs: "center", sm: "flex-start" },
+            }}
+          >
             {["ai", "live", "realtime", "neurosymbolic", "summer-school"].map(
               (tag) => (
                 <Chip
@@ -275,7 +291,7 @@ const LiveWidget = () => {
                   sx={{
                     backgroundColor: "primary.main",
                     color: "white",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     "&:hover": { backgroundColor: "primary.dark" },
                   }}
                 />
@@ -287,4 +303,5 @@ const LiveWidget = () => {
     </>
   );
 };
+
 export default LiveWidget;
