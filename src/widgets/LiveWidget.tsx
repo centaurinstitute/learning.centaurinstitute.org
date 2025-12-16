@@ -57,7 +57,7 @@ const LiveWidget = () => {
               aspectRatio: "16 / 9",
               "@supports not (aspect-ratio: 16 / 9)": {
                 height: 0,
-                paddingBottom: "56.25%",
+                paddingBottom: "60%",
               },
               backgroundColor: "#000",
             }}
