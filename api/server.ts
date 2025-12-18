@@ -1,8 +1,7 @@
-import * as platform from "@canmingir/link-express";
-
 import config from "./config";
 import dotenv from "dotenv";
 import http from "http";
+import platform from "@canmingir/link-express";
 
 dotenv.config();
 

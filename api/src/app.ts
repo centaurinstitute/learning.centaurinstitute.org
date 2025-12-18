@@ -1,8 +1,7 @@
 import "express";
 
-import * as platform from "@canmingir/link-express";
-
 import learning from "./routes/learning";
+import platform from "@canmingir/link-express";
 
 declare module "express-serve-static-core" {
   interface Request {
@@ -15,9 +14,7 @@ declare module "express-serve-static-core" {
   }
 }
 
-const { authorization } = platform;
-
-const app = platform.express();
+const { express: app, authorization } = platform;
 
 app.use(authorization.verify);
 app.use(authorization.authorize("ADMIN"));

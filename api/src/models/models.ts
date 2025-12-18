@@ -1,9 +1,12 @@
+import platform from "@canmingir/link-express";
+
 async function init() {
-  const { Project } = require("@canmingir/link-express/models");
+  const {
+    Postgres: { sequelize },
+  } = await platform.getModules();
+  const models = sequelize.models;
 
-  const Video = require("./Video");
-
-  Video.belongsTo(Project, {
+  models.Video.belongsTo(models.Project, {
     foreignKey: "teamId",
   });
 }
