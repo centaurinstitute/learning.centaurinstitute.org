@@ -1,12 +1,12 @@
 import axios from "axios";
-import config from "../../config";
 import { storage } from "@nucleoidjs/webstorage";
+
 const instance = axios.create({
   headers: {
     common: {
       "Content-Type": "application/json",
     },
-    Authorization: `Bearer ${storage.get(config.name, "accessToken")}`,
+    Authorization: `Bearer ${storage.get("link", "accessToken")}`,
   },
 });
 

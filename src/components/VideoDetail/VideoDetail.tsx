@@ -237,72 +237,64 @@ const VideoDetail = () => {
               {videos
                 ?.filter((v) => v.id !== videoId)
                 ?.slice(0, 6)
-                ?.map(
-                  (relatedVideo) => (
-                    console.log("relatedVideo", relatedVideo),
-                    (
-                      <Card
-                        key={relatedVideo.id}
+                ?.map((relatedVideo) => (
+                  <Card
+                    key={relatedVideo.id}
+                    sx={{
+                      borderRadius: 2,
+                      cursor: "pointer",
+                      transition: "all 0.2s ease",
+                      "&:hover": {
+                        transform: "translateY(-2px)",
+                        boxShadow: 2,
+                      },
+                    }}
+                    onClick={() =>
+                      navigate(`/learning/video/${relatedVideo.id}`)
+                    }
+                  >
+                    <Box sx={{ display: "flex", p: 1 }}>
+                      <Box
+                        component="img"
+                        src={relatedVideo.thumbnail}
+                        alt={relatedVideo.title}
                         sx={{
-                          borderRadius: 2,
-                          cursor: "pointer",
-                          transition: "all 0.2s ease",
-                          "&:hover": {
-                            transform: "translateY(-2px)",
-                            boxShadow: 2,
-                          },
+                          width: 120,
+                          height: 68,
+                          objectFit: "cover",
+                          borderRadius: 1,
+                          mr: 2,
                         }}
-                        onClick={() =>
-                          navigate(`/learning/video/${relatedVideo.id}`)
-                        }
-                      >
-                        <Box sx={{ display: "flex", p: 1 }}>
-                          <Box
-                            component="img"
-                            src={relatedVideo.thumbnail}
-                            alt={relatedVideo.title}
-                            sx={{
-                              width: 120,
-                              height: 68,
-                              objectFit: "cover",
-                              borderRadius: 1,
-                              mr: 2,
-                            }}
-                          />
-                          <Box sx={{ flex: 1, minWidth: 0 }}>
-                            <Typography
-                              variant="body2"
-                              fontWeight="600"
-                              sx={{
-                                display: "-webkit-box",
-                                WebkitLineClamp: 2,
-                                WebkitBoxOrient: "vertical",
-                                overflow: "hidden",
-                                mb: 0.5,
-                              }}
-                            >
-                              {relatedVideo.title}
-                            </Typography>
-                            <Typography
-                              variant="caption"
-                              color="text.secondary"
-                              sx={{ display: "block" }}
-                            >
-                              {relatedVideo.channelName}
-                            </Typography>
-                            <Typography
-                              variant="caption"
-                              color="text.secondary"
-                            >
-                              {formatViews(relatedVideo.views)} views •{" "}
-                              {formatDate(relatedVideo.uploadDate)}
-                            </Typography>
-                          </Box>
-                        </Box>
-                      </Card>
-                    )
-                  )
-                )}
+                      />
+                      <Box sx={{ flex: 1, minWidth: 0 }}>
+                        <Typography
+                          variant="body2"
+                          fontWeight="600"
+                          sx={{
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                            mb: 0.5,
+                          }}
+                        >
+                          {relatedVideo.title}
+                        </Typography>
+                        <Typography
+                          variant="caption"
+                          color="text.secondary"
+                          sx={{ display: "block" }}
+                        >
+                          {relatedVideo.channelName}
+                        </Typography>
+                        <Typography variant="caption" color="text.secondary">
+                          {formatViews(relatedVideo.views)} views •{" "}
+                          {formatDate(relatedVideo.uploadDate)}
+                        </Typography>
+                      </Box>
+                    </Box>
+                  </Card>
+                ))}
             </Stack>
           </Box>
         </Box>

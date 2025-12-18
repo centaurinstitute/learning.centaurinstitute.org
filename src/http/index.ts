@@ -16,7 +16,7 @@ const instance = axios.create({
 axiosRetry(instance, { retries: 3 });
 
 instance.interceptors.request.use((request) => {
-  const accessToken = storage.get(config.name, "accessToken");
+  const accessToken = storage.get("link", "accessToken");
   if (!accessToken) {
     window.location.href =
       config.base === "/" ? "/login" : `${config.base}/login`;
@@ -27,7 +27,7 @@ instance.interceptors.request.use((request) => {
 
 instance.interceptors.response.use(
   (response) => {
-    const accessToken = storage.get(config.name, "accessToken");
+    const accessToken = storage.get("link", "accessToken");
     if (!accessToken) {
       window.location.href = "/login";
     }

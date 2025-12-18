@@ -1,5 +1,7 @@
 const config = {
   project: {
+    name: "learning",
+    version: "1.0.0",
     label: "Team",
     oauth: {
       jwt: {
