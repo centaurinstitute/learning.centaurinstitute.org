@@ -13,7 +13,7 @@
     "serve": "npx @nucleoidai/http-server start --port 5173"
   },
   "dependencies": {
-    "@canmingir/link": "^1.2.3",
+    "@canmingir/link": "^1.2.6",
     "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
     "@nucleoidai/platform": "^1.0.52",
