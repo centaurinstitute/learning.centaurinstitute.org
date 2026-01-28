@@ -114,7 +114,7 @@ const VideoSearch = ({
                           variant="rounded"
                           src={video.thumbnail}
                           alt={video.title}
-                          sx={{ width: 72, height: 40 }}
+                          sx={{ width: 72, height: 72 }}
                         />
                       </ListItemAvatar>
                       <ListItemText

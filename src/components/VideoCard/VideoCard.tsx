@@ -48,7 +48,7 @@ const VideoCard = ({
       <Box sx={{ position: "relative" }}>
         <CardMedia
           component="img"
-          height="200"
+          height="360"
           image={
             video.thumbnail || "https://via.placeholder.com/320x180?text=Video"
           }

@@ -259,8 +259,8 @@ const VideoDetail = () => {
                         src={relatedVideo.thumbnail}
                         alt={relatedVideo.title}
                         sx={{
-                          width: 120,
-                          height: 68,
+                          width: 100,
+                          height: 100,
                           objectFit: "cover",
                           borderRadius: 1,
                           mr: 2,
