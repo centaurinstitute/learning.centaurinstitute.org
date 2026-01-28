@@ -39,21 +39,35 @@ const VideoCard = ({
           boxShadow: "0 12px 24px rgba(0,0,0,0.15)",
         },
         height: "100%",
+        width: "100%",
         display: "flex",
         flexDirection: "column",
         overflow: "hidden",
       }}
       onClick={() => videoClick(video.id)}
     >
-      <Box sx={{ position: "relative" }}>
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          paddingTop: "100%",
+          overflow: "hidden",
+        }}
+      >
         <CardMedia
           component="img"
-          height="360"
           image={
-            video.thumbnail || "https://via.placeholder.com/320x180?text=Video"
+            video.thumbnail || "https://via.placeholder.com/320?text=Video"
           }
           alt={video.title}
-          sx={{ objectFit: "cover" }}
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
         />
         <Box
           sx={{
@@ -62,7 +76,8 @@ const VideoCard = ({
             right: 8,
             backgroundColor: "rgba(0,0,0,0.8)",
             color: "white",
-            padding: "2px 6px",
+            px: 0.75,
+            py: 0.25,
             borderRadius: 1,
             fontSize: "0.75rem",
             fontWeight: "bold",
@@ -73,16 +88,11 @@ const VideoCard = ({
         <Box
           sx={{
             position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            backgroundColor: "rgba(0,0,0,0.6)",
-            borderRadius: "50%",
-            width: 60,
-            height: 60,
+            inset: 0,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            backgroundColor: "rgba(0,0,0,0.35)",
             opacity: 0,
             transition: "opacity 0.3s ease",
             ".MuiCard-root:hover &": {
@@ -90,7 +100,7 @@ const VideoCard = ({
             },
           }}
         >
-          <PlayArrow sx={{ color: "white", fontSize: 32 }} />
+          <PlayArrow sx={{ color: "white", fontSize: 40 }} />
         </Box>
       </Box>
       <CardContent sx={{ flexGrow: 1, p: 2 }}>
