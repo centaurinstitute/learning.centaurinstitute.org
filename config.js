@@ -7,6 +7,13 @@ const config = {
     host: "http://localhost:3003",
     path: "/socket.io",
   },
+  credentials: {
+    provider: "COGNITO",
+    userPoolId: "us-east-1_Cnnv7uQXd",
+    clientId: "9nl9cadm4ckogs4bag8kdtnvi",
+    region: "us-east-1",
+    requestUrl: "http://localhost:3000/oauth",
+  },
   project: {
     github: {
       authUrl: "https://github.com/login/oauth/authorize",
