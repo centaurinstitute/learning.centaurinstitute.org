@@ -7,6 +7,13 @@ const config = {
     host: "https://api.centaurinstitute.org",
     path: "/socket.io",
   },
+  credentials: {
+    provider: "COGNITO",
+    userPoolId: "us-east-1_Cnnv7uQXd",
+    clientId: "9nl9cadm4ckogs4bag8kdtnvi",
+    region: "us-east-1",
+    requestUrl: "https://api.centaurinstitute.org/oauth",
+  },
   project: {
     github: {
       authUrl: "https://github.com/login/oauth/authorize",

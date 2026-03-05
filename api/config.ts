@@ -32,6 +32,16 @@ const config = {
             email: "email",
           },
         },
+        cognito: {
+          type: "jwt",
+          userIdentifier: "sub",
+          userFields: {
+            name: "username",
+            displayName: "email",
+            avatarUrl: null,
+            email: "email",
+          },
+        },
       },
     },
   },
