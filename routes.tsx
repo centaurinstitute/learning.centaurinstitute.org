@@ -1,7 +1,7 @@
 import Container from "./src/Container";
 import { DashboardLayout } from "@canmingir/link/layouts";
+import Home from "./src/pages/home";
 import Index from "./src/pages/Index";
-import Live from "./src/pages/live";
 import React from "react";
 import SS2022 from "./src/pages/ss2022";
 import SS2023 from "./src/pages/ss2023";
@@ -51,7 +51,7 @@ const routes = [
           },
           {
             path: "/",
-            element: <Live />,
+            element: <Home />,
           },
         ],
       },
