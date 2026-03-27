@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-
 import {
   Avatar,
   Box,
@@ -14,6 +12,7 @@ import {
 } from "@mui/material";
 import Fuse, { IFuseOptions } from "fuse.js";
 import React, { useMemo, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 type Video = {
   id: string;
@@ -52,6 +51,7 @@ const VideoSearch = ({
 }) => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
   const fuse = useMemo(() => {
     const options: IFuseOptions<Video> = {
@@ -106,7 +106,11 @@ const VideoSearch = ({
                       sx={{ "&:hover": { cursor: "pointer" } }}
                       onClick={() => {
                         setQuery("");
-                        navigate(`/learning/video/${video.id}`);
+                        navigate(`/learning/video/${video.id}`, {
+                          state: {
+                            from: `${location.pathname}${location.search}`,
+                          },
+                        });
                       }}
                     >
                       <ListItemAvatar>
