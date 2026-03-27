@@ -1,3 +1,5 @@
+import ActionButtons from "./src/components/ActionButton/ActionButtons";
+
 const menuConfig = {
   topMenu: [],
   sideMenu: [
@@ -62,6 +64,7 @@ const menuConfig = {
     },
   ],
 
+  actionButtons: [ActionButtons],
   fullScreenLayout: "left",
 };
 
