@@ -3,14 +3,21 @@ import { publish } from "@nucleoidai/react-event";
 import useApi from "./useApi";
 
 type DependencyArray = object[];
+type GetVideosOptions = {
+  event?: string;
+  fetchState?: DependencyArray;
+};
 
 function useVideos() {
   const { Api } = useApi();
 
-  const getVideos = (fetchState: DependencyArray = []) => {
+  const getVideos = ({ event, fetchState = [] }: GetVideosOptions = {}) => {
+    const url = event
+      ? `/videos?event=${encodeURIComponent(event)}`
+      : "/videos";
     const { data, loading, error, fetch } = Api(
-      () => http.get("/videos"),
-      [...fetchState]
+      () => http.get(url),
+      [event, ...fetchState],
     );
 
     if (data) {
@@ -25,8 +32,34 @@ function useVideos() {
     };
   };
 
+  const getRelatedVideos = ({
+    event,
+    fetchState = [],
+  }: GetVideosOptions = {}) => {
+    const url = event
+      ? `/videos?event=${encodeURIComponent(event)}&limit=5`
+      : "/videos";
+    const { data, loading, error, fetch } = Api(
+      () => http.get(url),
+      [event, ...fetchState],
+    );
+
+    if (data) {
+      publish("VIDEOS_LOADED", { relatedVideos: data });
+    }
+
+    return {
+      videos: data,
+      relatedVideos: data,
+      loading,
+      error,
+      fetch,
+    };
+  };
+
   return {
     getVideos,
+    getRelatedVideos,
   };
 }
 

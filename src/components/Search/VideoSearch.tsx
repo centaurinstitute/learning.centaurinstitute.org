@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-
 import {
   Avatar,
   Box,
@@ -14,6 +12,10 @@ import {
 } from "@mui/material";
 import Fuse, { IFuseOptions } from "fuse.js";
 import React, { useMemo, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+
+const fallbackThumbnail =
+  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
 
 type Video = {
   id: string;
@@ -43,6 +45,32 @@ const getRelatedTags = (video: Video, query: string): string[] => {
   return base.slice(0, 3);
 };
 
+const SearchResultThumbnail = ({
+  thumbnail,
+  title,
+}: {
+  thumbnail: string;
+  title: string;
+}) => {
+  const [imageSrc, setImageSrc] = useState(thumbnail || fallbackThumbnail);
+
+  return (
+    <Avatar
+      variant="rounded"
+      src={imageSrc}
+      alt={title}
+      imgProps={{
+        onError: () => {
+          if (imageSrc !== fallbackThumbnail) {
+            setImageSrc(fallbackThumbnail);
+          }
+        },
+      }}
+      sx={{ width: 72, height: 72 }}
+    />
+  );
+};
+
 const VideoSearch = ({
   videos,
   placeholder = "Search videos...",
@@ -52,6 +80,7 @@ const VideoSearch = ({
 }) => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
   const fuse = useMemo(() => {
     const options: IFuseOptions<Video> = {
@@ -106,15 +135,17 @@ const VideoSearch = ({
                       sx={{ "&:hover": { cursor: "pointer" } }}
                       onClick={() => {
                         setQuery("");
-                        navigate(`/learning/video/${video.id}`);
+                        navigate(`/learning/video/${video.id}`, {
+                          state: {
+                            from: `${location.pathname}${location.search}`,
+                          },
+                        });
                       }}
                     >
                       <ListItemAvatar>
-                        <Avatar
-                          variant="rounded"
-                          src={video.thumbnail}
-                          alt={video.title}
-                          sx={{ width: 72, height: 72 }}
+                        <SearchResultThumbnail
+                          thumbnail={video.thumbnail}
+                          title={video.title}
                         />
                       </ListItemAvatar>
                       <ListItemText

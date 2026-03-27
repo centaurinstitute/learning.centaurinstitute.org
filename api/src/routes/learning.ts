@@ -5,7 +5,12 @@ import platform from "@canmingir/link-express";
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const videos = await Video.findAll();
+  const { event, limit } = req.query;
+
+  const videos = await Video.findAll({
+    ...(event ? { where: { event } } : {}),
+    ...(limit ? { limit: parseInt(limit as string) } : {}),
+  });
 
   res.status(200).json(videos);
 });

@@ -14,9 +14,13 @@ import {
 import React, { useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const LearningWidget = () => {
+type LearningWidgetProps = {
+  event?: string;
+};
+
+const LearningWidget = ({ event }: LearningWidgetProps) => {
   const { getVideos } = useVideos();
-  const { videos, loading } = getVideos();
+  const { videos, loading } = getVideos({ event });
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -26,9 +30,12 @@ const LearningWidget = () => {
   }, [location.search]);
 
   const filteredVideos = useMemo(() => {
-    if (!searchQuery) return videos;
+    const eventVideos = event
+      ? (videos || []).filter((v) => v.event === event)
+      : videos || [];
+    if (!searchQuery) return eventVideos;
     const q = searchQuery;
-    return (videos || []).filter((v) => {
+    return eventVideos.filter((v) => {
       const inTitle = String(v.title || "")
         .toLowerCase()
         .includes(q);
@@ -39,15 +46,17 @@ const LearningWidget = () => {
         ? v.tags.some((t: string) =>
             String(t || "")
               .toLowerCase()
-              .includes(q)
+              .includes(q),
           )
         : false;
       return inTitle || inDesc || inTags;
     });
-  }, [videos, searchQuery]);
+  }, [event, videos, searchQuery]);
 
   const handleVideoClick = (videoId: string) => {
-    navigate(`/learning/video/${videoId}`);
+    navigate(`/learning/video/${videoId}`, {
+      state: { from: `${location.pathname}${location.search}` },
+    });
   };
 
   return (
@@ -57,7 +66,7 @@ const LearningWidget = () => {
         <VideoSearch videos={videos || []} />
         <Box sx={{ mb: 4 }}>
           <Typography variant="h3" fontWeight="800">
-            Learning Hub
+            {event ? `${event} Learning Hub` : "Learning Hub"}
           </Typography>
           <Typography variant="h6" color="text.secondary" fontWeight="300">
             Discover amazing educational content
@@ -105,7 +114,7 @@ const LearningWidget = () => {
                       videoClick={() => handleVideoClick(video.id)}
                     />
                   </Grid>
-                )
+                ),
               )}
         </Grid>
       </Box>

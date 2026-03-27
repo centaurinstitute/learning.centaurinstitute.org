@@ -66,6 +66,10 @@ class Video extends Model {
   @AllowNull(false)
   @Column(DataType.JSONB)
   declare tags: string[];
+
+  @AllowNull(true)
+  @Column(DataType.STRING)
+  declare event: string | null;
 }
 
 export default Video;
