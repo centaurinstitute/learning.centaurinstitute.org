@@ -22,16 +22,53 @@ import {
   Typography,
 } from "@mui/material";
 import { formatDate, formatViews } from "../../utils/format";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+
+type VideoDetailLocationState = {
+  from?: string;
+};
+
+type Video = {
+  id: string;
+  title: string;
+  videoUrl: string;
+  thumbnail: string;
+  channelName: string;
+  channelAvatar: string;
+  views: number;
+  uploadDate: string;
+  likes: number;
+  dislikes: number;
+  description: string;
+  tags?: string[];
+  event?: string;
+};
 
 const VideoDetail = () => {
+  const location = useLocation();
+  const from = (location.state as { from?: string } | null)?.from;
+  const eventByRoute: Record<string, string> = {
+    "/learning": "SS2025",
+    "/learning/2024": "SS2024",
+    "/learning/2023": "SS2023",
+    "/learning/2022": "SS2022",
+    "/learning/ww2024": "WW2024",
+    "/learning/ww2023": "WW2023",
+    "/learning/ww2022": "WW2022",
+  };
+
+  const event = from ? eventByRoute[from] : undefined;
+
   const { videoId } = useParams<{ videoId: string }>();
   const navigate = useNavigate();
-  const { getVideos } = useVideos();
-  const { videos, loading } = getVideos();
+  const { getRelatedVideos } = useVideos();
+  const { relatedVideos, loading } = getRelatedVideos({ event });
+
+  const backTarget =
+    (location.state as VideoDetailLocationState | null)?.from || "/learning";
 
   const handleBack = () => {
-    navigate("/learning");
+    navigate(backTarget);
   };
 
   if (loading) {
@@ -42,22 +79,7 @@ const VideoDetail = () => {
     );
   }
 
-  const video = videos?.find(
-    (v: {
-      id: string;
-      title: string;
-      videoUrl: string;
-      thumbnail: string;
-      channelName: string;
-      channelAvatar: string;
-      views: number;
-      uploadDate: string;
-      likes: number;
-      dislikes: number;
-      description: string;
-      tags?: string[];
-    }) => v.id === videoId
-  );
+  const video = relatedVideos?.find((v: Video) => v.id === videoId);
 
   if (!video) {
     return (
@@ -234,67 +256,66 @@ const VideoDetail = () => {
               More Videos
             </Typography>
             <Stack spacing={2}>
-              {videos
-                ?.filter((v) => v.id !== videoId)
-                ?.slice(0, 6)
-                ?.map((relatedVideo) => (
-                  <Card
-                    key={relatedVideo.id}
-                    sx={{
-                      borderRadius: 2,
-                      cursor: "pointer",
-                      transition: "all 0.2s ease",
-                      "&:hover": {
-                        transform: "translateY(-2px)",
-                        boxShadow: 2,
-                      },
-                    }}
-                    onClick={() =>
-                      navigate(`/learning/video/${relatedVideo.id}`)
-                    }
-                  >
-                    <Box sx={{ display: "flex", p: 1 }}>
-                      <Box
-                        component="img"
-                        src={relatedVideo.thumbnail}
-                        alt={relatedVideo.title}
+              {relatedVideos?.map((relatedVideo) => (
+                <Card
+                  key={relatedVideo.id}
+                  sx={{
+                    borderRadius: 2,
+                    cursor: "pointer",
+                    transition: "all 0.2s ease",
+                    "&:hover": {
+                      transform: "translateY(-2px)",
+                      boxShadow: 2,
+                    },
+                  }}
+                  onClick={() =>
+                    navigate(`/learning/video/${relatedVideo.id}`, {
+                      state: { from: backTarget },
+                    })
+                  }
+                >
+                  <Box sx={{ display: "flex", p: 1 }}>
+                    <Box
+                      component="img"
+                      src={relatedVideo.thumbnail}
+                      alt={relatedVideo.title}
+                      sx={{
+                        width: 100,
+                        height: 100,
+                        objectFit: "cover",
+                        borderRadius: 1,
+                        mr: 2,
+                      }}
+                    />
+                    <Box sx={{ flex: 1, minWidth: 0 }}>
+                      <Typography
+                        variant="body2"
+                        fontWeight="600"
                         sx={{
-                          width: 100,
-                          height: 100,
-                          objectFit: "cover",
-                          borderRadius: 1,
-                          mr: 2,
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                          mb: 0.5,
                         }}
-                      />
-                      <Box sx={{ flex: 1, minWidth: 0 }}>
-                        <Typography
-                          variant="body2"
-                          fontWeight="600"
-                          sx={{
-                            display: "-webkit-box",
-                            WebkitLineClamp: 2,
-                            WebkitBoxOrient: "vertical",
-                            overflow: "hidden",
-                            mb: 0.5,
-                          }}
-                        >
-                          {relatedVideo.title}
-                        </Typography>
-                        <Typography
-                          variant="caption"
-                          color="text.secondary"
-                          sx={{ display: "block" }}
-                        >
-                          {relatedVideo.channelName}
-                        </Typography>
-                        <Typography variant="caption" color="text.secondary">
-                          {formatViews(relatedVideo.views)} views •{" "}
-                          {formatDate(relatedVideo.uploadDate)}
-                        </Typography>
-                      </Box>
+                      >
+                        {relatedVideo.title}
+                      </Typography>
+                      <Typography
+                        variant="caption"
+                        color="text.secondary"
+                        sx={{ display: "block" }}
+                      >
+                        {relatedVideo.channelName}
+                      </Typography>
+                      <Typography variant="caption" color="text.secondary">
+                        {formatViews(relatedVideo.views)} views •{" "}
+                        {formatDate(relatedVideo.uploadDate)}
+                      </Typography>
                     </Box>
-                  </Card>
-                ))}
+                  </Box>
+                </Card>
+              ))}
             </Stack>
           </Box>
         </Box>
