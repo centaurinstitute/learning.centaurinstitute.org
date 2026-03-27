@@ -1,5 +1,6 @@
 import { PlayArrow } from "@mui/icons-material";
 import React from "react";
+import { useState } from "react";
 
 import {
   Avatar,
@@ -10,6 +11,9 @@ import {
   Typography,
 } from "@mui/material";
 import { formatDate, formatViews } from "../../utils/format";
+
+const fallbackThumbnail =
+  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
 
 const VideoCard = ({
   video,
@@ -27,6 +31,10 @@ const VideoCard = ({
   };
   videoClick: (videoId: string) => void;
 }) => {
+  const [imageSrc, setImageSrc] = useState(
+    video.thumbnail || fallbackThumbnail,
+  );
+
   return (
     <Card
       sx={{
@@ -56,10 +64,13 @@ const VideoCard = ({
       >
         <CardMedia
           component="img"
-          image={
-            video.thumbnail || "https://via.placeholder.com/320?text=Video"
-          }
+          image={imageSrc}
           alt={video.title}
+          onError={() => {
+            if (imageSrc !== fallbackThumbnail) {
+              setImageSrc(fallbackThumbnail);
+            }
+          }}
           sx={{
             position: "absolute",
             top: 0,
