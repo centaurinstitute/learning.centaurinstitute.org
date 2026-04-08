@@ -59,6 +59,9 @@ const VideoDetail = () => {
 
   const event = from ? eventByRoute[from] : undefined;
 
+  const fallbackThumbnail =
+    "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
+
   const { videoId } = useParams<{ videoId: string }>();
   const navigate = useNavigate();
   const { getRelatedVideos } = useVideos();
@@ -277,7 +280,7 @@ const VideoDetail = () => {
                   <Box sx={{ display: "flex", p: 1 }}>
                     <Box
                       component="img"
-                      src={relatedVideo.thumbnail}
+                      src={fallbackThumbnail}
                       alt={relatedVideo.title}
                       sx={{
                         width: 100,
