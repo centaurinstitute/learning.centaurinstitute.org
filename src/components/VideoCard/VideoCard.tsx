@@ -2,15 +2,7 @@ import { PlayArrow } from "@mui/icons-material";
 import React from "react";
 import { useState } from "react";
 
-import {
-  Avatar,
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material";
-import { formatDate, formatViews } from "../../utils/format";
+import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 const fallbackThumbnail =
   "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
@@ -121,39 +113,14 @@ const VideoCard = ({
           fontWeight="600"
           sx={{
             display: "-webkit-box",
-            WebkitLineClamp: 2,
+            WebkitLineClamp: 3,
             WebkitBoxOrient: "vertical",
             overflow: "hidden",
             lineHeight: 1.3,
-            mb: 1,
           }}
         >
           {video.title}
         </Typography>
-        <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-          <Avatar
-            src={video.channelAvatar}
-            sx={{ width: 24, height: 24, mr: 1 }}
-          />
-          <Typography
-            variant="body2"
-            color="text.secondary"
-            sx={{ fontWeight: 500 }}
-          >
-            {video.channelName}
-          </Typography>
-        </Box>
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-          <Typography variant="caption" color="text.secondary">
-            {formatViews(video.views)} views
-          </Typography>
-          <Typography variant="caption" color="text.secondary">
-            •
-          </Typography>
-          <Typography variant="caption" color="text.secondary">
-            {formatDate(video.uploadDate)}
-          </Typography>
-        </Box>
       </CardContent>
     </Card>
   );
