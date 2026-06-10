@@ -1,4 +1,3 @@
-import FollowUs from "../components/FollowUs";
 import VideoCard from "../components/VideoCard/VideoCard";
 import VideoSearch from "../components/Search/VideoSearch";
 import useVideos from "../hooks/useVideos";
@@ -61,7 +60,6 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
 
   return (
     <>
-      <FollowUs />
       <Box sx={{ width: "100%", padding: { xs: 2, md: 3 } }}>
         <VideoSearch videos={videos || []} />
         <Box sx={{ mb: 4 }}>
@@ -76,7 +74,7 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
         <Grid container spacing={3}>
           {loading
             ? Array.from({ length: 6 }).map((_, idx) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={idx}>
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={idx}>
                   <Card sx={{ borderRadius: 3 }}>
                     <Skeleton variant="rectangular" height={200} />
                     <CardContent>
@@ -108,7 +106,7 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
                   views: number;
                   uploadDate: string;
                 }) => (
-                  <Grid item xs={12} sm={6} md={4} lg={3} key={video.id}>
+                  <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={video.id}>
                     <VideoCard
                       video={video}
                       videoClick={() => handleVideoClick(video.id)}

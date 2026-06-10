@@ -1,4 +1,3 @@
-import FollowUs from "../FollowUs";
 import React from "react";
 import useVideos from "../../hooks/useVideos";
 
@@ -99,7 +98,6 @@ const VideoDetail = () => {
 
   return (
     <>
-      <FollowUs />
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Button
           startIcon={<ArrowBack />}
