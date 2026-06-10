@@ -4,7 +4,7 @@ const menuConfig = {
   topMenu: [],
   sideMenu: [
     {
-      subheader: "Centaur Learning",
+      subheader: "Events",
       items: [
         {
           title: "Home",
