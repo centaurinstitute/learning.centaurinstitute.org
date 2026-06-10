@@ -1,26 +1,16 @@
+import { ArrowBack } from "@mui/icons-material";
 import React from "react";
 import useVideos from "../../hooks/useVideos";
 
 import {
-  AccessTime,
-  ArrowBack,
-  Share,
-  ThumbDown,
-  ThumbUp,
-  Visibility,
-} from "@mui/icons-material";
-import {
-  Avatar,
   Box,
   Button,
   Card,
   Chip,
   Container,
-  Divider,
   Stack,
   Typography,
 } from "@mui/material";
-import { formatDate, formatViews } from "../../utils/format";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 type VideoDetailLocationState = {
@@ -140,96 +130,14 @@ const VideoDetail = () => {
               </Box>
             </Card>
 
-            <Box sx={{ mb: 3 }}>
-              <Typography
-                variant="h4"
-                fontWeight="bold"
-                sx={{ mb: 2, lineHeight: 1.2 }}
-              >
-                {video.title}
-              </Typography>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: { xs: "column", sm: "row" },
-                  justifyContent: "space-between",
-                  alignItems: { xs: "flex-start", sm: "center" },
-                  gap: 2,
-                }}
-              >
-                <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                    <Visibility
-                      sx={{ fontSize: 16, color: "text.secondary" }}
-                    />
-                    <Typography variant="body2" color="text.secondary">
-                      {formatViews(video.views)} views
-                    </Typography>
-                  </Box>
-                  <Typography variant="body2" color="text.secondary">
-                    •
-                  </Typography>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                    <AccessTime
-                      sx={{ fontSize: 16, color: "text.secondary" }}
-                    />
-                    <Typography variant="body2" color="text.secondary">
-                      {formatDate(video.uploadDate)}
-                    </Typography>
-                  </Box>
-                </Box>
-
-                <Stack direction="row" spacing={1}>
-                  <Button
-                    variant="outlined"
-                    startIcon={<ThumbUp />}
-                    size="small"
-                    sx={{ borderRadius: 2 }}
-                  >
-                    {formatViews(video.likes)}
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    startIcon={<ThumbDown />}
-                    size="small"
-                    sx={{ borderRadius: 2 }}
-                  >
-                    {formatViews(video.dislikes)}
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    startIcon={<Share />}
-                    size="small"
-                    sx={{ borderRadius: 2 }}
-                  >
-                    Share
-                  </Button>
-                </Stack>
-              </Box>
-            </Box>
-
             <Card sx={{ borderRadius: 3, p: 3 }}>
               <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
-                <Avatar
-                  src={video.channelAvatar}
-                  sx={{ width: 48, height: 48, mr: 2 }}
-                />
                 <Box>
                   <Typography variant="h6" fontWeight="600">
-                    {video.channelName}
+                    {video.title}
                   </Typography>
                 </Box>
               </Box>
-
-              <Divider sx={{ my: 2 }} />
-
-              <Typography
-                variant="body1"
-                sx={{ mb: 3, lineHeight: 1.8, whiteSpace: "pre-line" }}
-              >
-                {video.description}
-              </Typography>
 
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                 {video.tags?.map((tag) => (
@@ -278,11 +186,11 @@ const VideoDetail = () => {
                       src={relatedVideo.thumbnail}
                       alt={relatedVideo.title}
                       sx={{
-                        width: 100,
-                        height: 100,
+                        width: 50,
+                        height: 50,
                         objectFit: "cover",
                         borderRadius: 1,
-                        mr: 2,
+                        mr: 1,
                       }}
                     />
                     <Box sx={{ flex: 1, minWidth: 0 }}>
@@ -291,24 +199,12 @@ const VideoDetail = () => {
                         fontWeight="600"
                         sx={{
                           display: "-webkit-box",
-                          WebkitLineClamp: 2,
+                          WebkitLineClamp: 3,
                           WebkitBoxOrient: "vertical",
                           overflow: "hidden",
-                          mb: 0.5,
                         }}
                       >
                         {relatedVideo.title}
-                      </Typography>
-                      <Typography
-                        variant="caption"
-                        color="text.secondary"
-                        sx={{ display: "block" }}
-                      >
-                        {relatedVideo.channelName}
-                      </Typography>
-                      <Typography variant="caption" color="text.secondary">
-                        {formatViews(relatedVideo.views)} views •{" "}
-                        {formatDate(relatedVideo.uploadDate)}
                       </Typography>
                     </Box>
                   </Box>
