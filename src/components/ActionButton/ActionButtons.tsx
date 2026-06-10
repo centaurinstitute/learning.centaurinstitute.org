@@ -18,7 +18,7 @@ const ActionButtons = () => {
       {tags.map((tag) => (
         <Chip
           key={tag}
-          label={`#${tag}`}
+          label={`${tag}`}
           size="small"
           sx={{
             backgroundColor: "primary.main",
