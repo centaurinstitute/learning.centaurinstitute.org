@@ -1,3 +1,5 @@
+import useVideos from "../../hooks/useVideos";
+
 import {
   Avatar,
   Box,
@@ -7,11 +9,13 @@ import {
   ListItemAvatar,
   ListItemButton,
   ListItemText,
+  Paper,
+  Portal,
   TextField,
   Typography,
 } from "@mui/material";
 import Fuse, { IFuseOptions } from "fuse.js";
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const fallbackThumbnail =
@@ -72,15 +76,33 @@ const SearchResultThumbnail = ({
 };
 
 const VideoSearch = ({
-  videos,
   placeholder = "Search videos...",
 }: {
-  videos: Video[];
   placeholder?: string;
-}) => {
+} = {}) => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
+  const { getVideos } = useVideos();
+  const { videos, loading } = getVideos();
+  const [anchorEl, setAnchorEl] = useState<HTMLDivElement | null>(null);
+  const anchorRef = useCallback((node: HTMLDivElement | null) => {
+    setAnchorEl(node);
+  }, []);
+
+  const [rect, setRect] = useState<DOMRect | undefined>();
+
+  useEffect(() => {
+    if (!anchorEl) return;
+    const update = () => setRect(anchorEl.getBoundingClientRect());
+    update();
+    window.addEventListener("scroll", update, true);
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update, true);
+      window.removeEventListener("resize", update);
+    };
+  }, [anchorEl]);
 
   const fuse = useMemo(() => {
     const options: IFuseOptions<Video> = {
@@ -97,115 +119,124 @@ const VideoSearch = ({
   }, [fuse, query]);
 
   return (
-    <Box sx={{ mb: 3 }}>
+    <Box ref={anchorRef} sx={{ width: "100%" }}>
       <TextField
         fullWidth
         value={query}
-        placeholder={placeholder}
+        placeholder={loading ? "Loading..." : placeholder}
         onChange={(e) => setQuery(e.target.value)}
         size="medium"
+        disabled={loading}
       />
 
-      {query && (
-        <Box
-          sx={{
-            mt: 2,
-            borderRadius: 2,
-            border: "1px solid",
-            borderColor: "divider",
-            maxHeight: 480,
-            overflowY: "auto",
-            bgcolor: "background.paper",
-          }}
-        >
-          {results.length === 0 ? (
-            <Box sx={{ p: 2 }}>
-              <Typography variant="body2" color="text.secondary">
-                No results for {query}
-              </Typography>
-            </Box>
-          ) : (
-            <List dense>
-              {results.map((video) => {
-                const relatedTags = getRelatedTags(video, query);
+      {!!query && rect && (
+        <Portal>
+          <Paper
+            elevation={8}
+            sx={{
+              position: "fixed",
+              top: rect.bottom + 8,
+              left: rect.left,
+              width: rect.width,
+              zIndex: 1400,
+              borderRadius: 2,
+              maxHeight: 480,
+              overflowY: "auto",
+            }}
+          >
+            {results.length === 0 ? (
+              <Box sx={{ p: 2 }}>
+                <Typography variant="body2" color="text.secondary">
+                  No results for {query}
+                </Typography>
+              </Box>
+            ) : (
+              <List dense>
+                {results.map((video) => {
+                  const relatedTags = getRelatedTags(video, query);
 
-                return (
-                  <ListItem key={video.id} disableGutters>
-                    <ListItemButton
-                      sx={{ "&:hover": { cursor: "pointer" } }}
-                      onClick={() => {
-                        setQuery("");
-                        navigate(`/learning/video/${video.id}`, {
-                          state: {
-                            from: `${location.pathname}${location.search}`,
-                          },
-                        });
-                      }}
-                    >
-                      <ListItemAvatar>
-                        <SearchResultThumbnail
-                          thumbnail={video.thumbnail}
-                          title={video.title}
-                        />
-                      </ListItemAvatar>
-                      <ListItemText
-                        primary={
-                          <Typography variant="subtitle2" fontWeight={600}>
-                            {video.title}
-                          </Typography>
-                        }
-                        secondary={
-                          <Box
-                            sx={{
-                              display: "flex",
-                              flexDirection: "column",
-                              gap: 0.5,
-                            }}
-                          >
-                            <Typography
-                              variant="caption"
-                              color="text.secondary"
-                              display="block"
-                            >
-                              {video.channelName} • {video.duration}
+                  return (
+                    <ListItem key={video.id} disableGutters>
+                      <ListItemButton
+                        sx={{ "&:hover": { cursor: "pointer" } }}
+                        onClick={() => {
+                          setQuery("");
+                          navigate(`/learning/video/${video.id}`, {
+                            state: {
+                              from: `${location.pathname}${location.search}`,
+                            },
+                          });
+                        }}
+                      >
+                        <ListItemAvatar>
+                          <SearchResultThumbnail
+                            thumbnail={video.thumbnail}
+                            title={video.title}
+                          />
+                        </ListItemAvatar>
+                        <ListItemText
+                          primary={
+                            <Typography variant="subtitle2" fontWeight={600}>
+                              {video.title}
                             </Typography>
-                            <Typography
-                              variant="caption"
-                              color="text.secondary"
+                          }
+                          secondary={
+                            <Box
                               sx={{
-                                display: "-webkit-box",
-                                WebkitLineClamp: 2,
-                                WebkitBoxOrient: "vertical",
-                                overflow: "hidden",
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 0.5,
                               }}
                             >
-                              {video.description}
-                            </Typography>
-
-                            {relatedTags.length > 0 && (
-                              <Box
+                              <Typography
+                                variant="caption"
+                                color="text.secondary"
+                                display="block"
+                              >
+                                {video.channelName} • {video.duration}
+                              </Typography>
+                              <Typography
+                                variant="caption"
+                                color="text.secondary"
                                 sx={{
-                                  display: "flex",
-                                  flexWrap: "wrap",
-                                  gap: 0.5,
-                                  mt: 0.5,
+                                  display: "-webkit-box",
+                                  WebkitLineClamp: 2,
+                                  WebkitBoxOrient: "vertical",
+                                  overflow: "hidden",
                                 }}
                               >
-                                {relatedTags.map((tag, index) => (
-                                  <Chip key={index} size="small" label={tag} />
-                                ))}
-                              </Box>
-                            )}
-                          </Box>
-                        }
-                      />
-                    </ListItemButton>
-                  </ListItem>
-                );
-              })}
-            </List>
-          )}
-        </Box>
+                                {video.description}
+                              </Typography>
+
+                              {relatedTags.length > 0 && (
+                                <Box
+                                  sx={{
+                                    display: "flex",
+                                    flexWrap: "wrap",
+                                    gap: 0.5,
+                                    mt: 0.5,
+                                  }}
+                                >
+                                  {relatedTags.map((tag, index) => (
+                                    <Chip
+                                      key={index}
+                                      size="small"
+                                      label={tag}
+                                    />
+                                  ))}
+                                </Box>
+                              )}
+                            </Box>
+                          }
+                        />
+                      </ListItemButton>
+                    </ListItem>
+                  );
+                })}
+              </List>
+            )}
+          </Paper>
+        </Portal>
       )}
     </Box>
   );
