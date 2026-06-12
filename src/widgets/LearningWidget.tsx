@@ -1,5 +1,4 @@
 import VideoCard from "../components/VideoCard/VideoCard";
-import VideoSearch from "../components/Search/VideoSearch";
 import useVideos from "../hooks/useVideos";
 
 import {
@@ -19,38 +18,51 @@ type LearningWidgetProps = {
 
 const LearningWidget = ({ event }: LearningWidgetProps) => {
   const { getVideos } = useVideos();
-  const { videos, loading } = getVideos({ event });
   const navigate = useNavigate();
   const location = useLocation();
+
+  const tagQuery = useMemo(() => {
+    const sp = new URLSearchParams(location.search);
+    return sp.get("tag") || undefined;
+  }, [location.search]);
+
+  const { videos, loading } = getVideos(
+    tagQuery ? { tags: tagQuery } : { event },
+  );
 
   const searchQuery = useMemo(() => {
     const sp = new URLSearchParams(location.search);
     return (sp.get("q") || "").toLowerCase().trim();
   }, [location.search]);
 
-  const filteredVideos = useMemo(() => {
-    const eventVideos = event
-      ? (videos || []).filter((v) => v.event === event)
-      : videos || [];
-    if (!searchQuery) return eventVideos;
-    const q = searchQuery;
-    return eventVideos.filter((v) => {
-      const inTitle = String(v.title || "")
-        .toLowerCase()
-        .includes(q);
-      const inDesc = String(v.description || "")
-        .toLowerCase()
-        .includes(q);
-      const inTags = Array.isArray(v.tags)
-        ? v.tags.some((t: string) =>
-            String(t || "")
-              .toLowerCase()
-              .includes(q),
-          )
-        : false;
-      return inTitle || inDesc || inTags;
-    });
-  }, [event, videos, searchQuery]);
+  const filteredVideos = useMemo(
+    () => {
+      const eventVideos =
+        !tagQuery && event
+          ? (videos || []).filter((v) => v.event === event)
+          : videos || [];
+      if (!searchQuery) return eventVideos;
+      const q = searchQuery;
+      return eventVideos.filter((v) => {
+        const inTitle = String(v.title || "")
+          .toLowerCase()
+          .includes(q);
+        const inDesc = String(v.description || "")
+          .toLowerCase()
+          .includes(q);
+        const inTags = Array.isArray(v.tags)
+          ? v.tags.some((t: string) =>
+              String(t || "")
+                .toLowerCase()
+                .includes(q),
+            )
+          : false;
+        return inTitle || inDesc || inTags;
+      });
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [event, videos, searchQuery],
+  );
 
   const handleVideoClick = (videoId: string) => {
     navigate(`/learning/video/${videoId}`, {
@@ -61,13 +73,13 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
   return (
     <>
       <Box sx={{ width: "100%", padding: { xs: 2, md: 3 } }}>
-        <VideoSearch videos={videos || []} />
         <Box sx={{ mb: 4 }}>
           <Typography variant="h3" fontWeight="800">
-            {event ? `${event} Learning Hub` : "Learning Hub"}
-          </Typography>
-          <Typography variant="h6" color="text.secondary" fontWeight="300">
-            Discover amazing educational content
+            {tagQuery
+              ? `${tagQuery.charAt(0).toUpperCase() + tagQuery.slice(1)} related videos`
+              : event
+                ? `${event} Learning Hub`
+                : "Learning Hub"}
           </Typography>
         </Box>
 
@@ -105,6 +117,7 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
                   channelAvatar: string;
                   views: number;
                   uploadDate: string;
+                  category: string | null;
                 }) => (
                   <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={video.id}>
                     <VideoCard
