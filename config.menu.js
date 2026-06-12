@@ -1,5 +1,5 @@
 import ActionButtons from "./src/components/ActionButton/ActionButtons";
-
+import VideoSearch from "./src/components/Search/VideoSearch";
 const menuConfig = {
   topMenu: [],
   sideMenu: [
@@ -65,6 +65,7 @@ const menuConfig = {
   ],
 
   actionButtons: [ActionButtons],
+  topBar: VideoSearch,
   fullScreenLayout: "left",
 };
 
