@@ -526,13 +526,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T09:00:00Z",
-      "tags": [
-        "opening",
-        "alexander-gray",
-        "francesca-rossi",
-        "jon-lenchner",
-        "asim-munawar"
-      ],
+      "tags": ["general-overview", "grand-challenges", "limitations-of-llms"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -548,7 +543,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T10:00:00Z",
-      "tags": ["neuro-symbolic", "ai", "artur-davila-garcez"],
+      "tags": ["general-overview", "knowledge-extraction", "neural-reasoning"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -564,13 +560,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T10:30:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "ai",
-        "open-problems",
-        "ibm-progress",
-        "alexander-gray"
-      ],
+      "tags": ["general-overview", "grand-challenges", "limitations-of-llms"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -586,7 +577,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T11:00:00Z",
-      "tags": ["knowledge-foundations", "ai-applications", "maria-chang"],
+      "tags": ["knowledge_representation", "knowledge_graphs"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -602,14 +594,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T12:00:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "knowledge",
-        "rosario-uceda-sosa",
-        "guilherme-lima",
-        "alexandre-rademaker"
-      ],
+      "tags": ["knowledge_graphs", "open_source", "ns_framework"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -625,7 +611,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T13:00:00Z",
-      "tags": ["logic", "reasoning", "achille-fokoue"],
+      "tags": ["logical_reasoning"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -641,13 +628,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T14:00:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "knowledge",
-        "ndivhuwo-makondo",
-        "hima-karanam"
-      ],
+      "tags": ["ns_framework", "atp", "logical_reasoning", "rl"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -663,7 +645,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T14:30:00Z",
-      "tags": ["ibm", "research", "knowledge", "ron-fagin", "rik-sengupta"],
+      "tags": ["logical_reasoning", "math_foundations"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -679,7 +662,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T15:30:00Z",
-      "tags": ["neuro-symbolic", "concept-learning", "brenden-lake", "nyu"],
+      "tags": ["logical_reasoning"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -711,17 +695,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T09:30:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "neuro-symbolic",
-        "inductive-logic-programming",
-        "lnn",
-        "prithviraj-sen",
-        "breno-de-carvalho",
-        "ryan-riegal",
-        "alexander-gray"
-      ],
+      "tags": ["inductive_reasoning"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -737,15 +712,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T10:00:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "neuro-symbolic",
-        "architecture-zoo",
-        "lnn",
-        "tengfei-ma",
-        "ronny-luss"
-      ],
+      "tags": ["ns_taxonomy", "inductive_reasoning"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -761,11 +729,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T11:00:00Z",
-      "tags": [
-        "deep-semantic-parsing",
-        "abstract-meaning-representation",
-        "ramon-astudillo"
-      ],
+      "tags": ["semantic_parsing", "autoformalization", "nlp"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -781,19 +746,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T12:00:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "entity-linking",
-        "gp-shrivatsa-bhargav",
-        "saswati-dana",
-        "dinesh-khandelwal",
-        "dinesh-garg",
-        "pavan-kapanipathi",
-        "salim-rukos",
-        "alex-gray",
-        "l-venkata-subramaniam"
-      ],
+      "tags": ["nlp", "knowledge_extraction"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -809,15 +763,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T12:30:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "reliable-reasoning",
-        "foundation-models",
-        "abstractive-summarization",
-        "pavan-kapanipathi",
-        "hans-florian"
-      ],
+      "tags": ["nlp", "knowledge_graphs"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -833,7 +780,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T13:00:00Z",
-      "tags": ["reinforcement-learning", "tutorial", "miao-liu"],
+      "tags": ["rl"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -849,7 +797,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T13:30:00Z",
-      "tags": ["ibm", "research", "ai-planning", "michael-katz"],
+      "tags": ["planning"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -865,14 +814,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T14:00:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "sdm",
-        "sequential-decision-making",
-        "planning",
-        "reinforcement-learning"
-      ],
+      "tags": ["planning", "rl"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -888,13 +831,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T15:30:00Z",
-      "tags": [
-        "ibm",
-        "research",
-        "logical-optimal-actions",
-        "don-joven-agravante",
-        "maxwell-crouse"
-      ],
+      "tags": ["rl", "inductive_reasoning", "nlp"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -910,7 +848,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T15:30:00Z",
-      "tags": ["ibm", "neuro-symbolic", "ai-toolkit", "naweed-khan"],
+      "tags": ["open_source"],
+      "category": "Tutorial",
       "event": "SS2022"
     },
     {
@@ -926,7 +865,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-13T16:00:00Z",
-      "tags": ["closing", "alexander-gray", "neuro-symbolic"],
+      "tags": ["general_overview"],
+      "category": "Talk",
       "event": "SS2022"
     },
     {
@@ -1129,12 +1069,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-12-15T011:30:00Z",
-      "tags": [
-        "paper",
-        "neuro-symbolic",
-        "3d-scenes",
-        "universal-scene-description-language"
-      ],
+      "tags": ["paper", "neuro-symbolic"],
       "event": "WW2024"
     },
     {
@@ -1150,12 +1085,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-12-15T012:00:00Z",
-      "tags": [
-        "paper",
-        "neuro-symbolic",
-        "3d-scenes",
-        "universal-scene-description-language"
-      ],
+      "tags": ["paper", "neuro-symbolic"],
       "event": "WW2024"
     },
     {
@@ -1171,12 +1101,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-12-15T012:30:00Z",
-      "tags": [
-        "paper",
-        "neuro-symbolic",
-        "3d-scenes",
-        "universal-scene-description-language"
-      ],
+      "tags": ["paper", "neuro-symbolic"],
       "event": "WW2024"
     },
     {
@@ -1192,12 +1117,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-12-15T013:30:00Z",
-      "tags": [
-        "paper",
-        "neuro-symbolic",
-        "3d-scenes",
-        "universal-scene-description-language"
-      ],
+      "tags": ["paper", "neuro-symbolic"],
       "event": "WW2024"
     },
     {
@@ -1213,15 +1133,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "research",
-        "program",
-        "goals",
-        "highlights",
-        "alexander",
-        "gray"
-      ],
       "event": "WW2023"
     },
     {
@@ -1237,15 +1148,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "great",
-        "integration",
-        "challenge",
-        "deep",
-        "learning",
-        "reasoning",
-        "moshe"
-      ],
       "event": "WW2023"
     },
     {
@@ -1261,15 +1163,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "how",
-        "augment",
-        "supervised",
-        "learning",
-        "reasoning",
-        "leslie",
-        "valiant"
-      ],
       "event": "WW2023"
     },
     {
@@ -1285,7 +1178,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["logical", "credal", "networks", "radu", "marinescu", "ibm"],
       "event": "WW2023"
     },
     {
@@ -1301,15 +1193,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "probabilistic",
-        "logical",
-        "neural",
-        "networks",
-        "jon",
-        "lenchner",
-        "ibm"
-      ],
       "event": "WW2023"
     },
     {
@@ -1325,15 +1208,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "probabilistic",
-        "logics",
-        "neural",
-        "symbolic",
-        "luc",
-        "raedt",
-        "leuven"
-      ],
       "event": "WW2023"
     },
     {
@@ -1349,15 +1223,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "reasoning",
-        "neurosymbolic",
-        "including",
-        "logic",
-        "tensor",
-        "networks",
-        "artur"
-      ],
       "event": "WW2023"
     },
     {
@@ -1373,7 +1238,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["thinking", "fast", "slow", "francesca", "rossi", "ibm"],
       "event": "WW2023"
     },
     {
@@ -1389,15 +1253,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "panel",
-        "invited",
-        "chair",
-        "moshe",
-        "vardi",
-        "rice",
-        "university"
-      ],
+      "category": "Panel",
       "event": "WW2023"
     },
     {
@@ -1413,7 +1269,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["opening", "alexander", "gray"],
       "event": "WW2023"
     },
     {
@@ -1429,15 +1284,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "question",
-        "answering",
-        "over",
-        "structured",
-        "data",
-        "ibrahim"
-      ],
       "event": "WW2023"
     },
     {
@@ -1453,15 +1299,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "predicting",
-        "unfolding",
-        "events",
-        "achille",
-        "fokoue",
-        "maria",
-        "chang"
-      ],
       "event": "WW2023"
     },
     {
@@ -1477,7 +1314,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["neuro-symbolic", "benchmarks", "murray", "campbell"],
       "event": "WW2023"
     },
     {
@@ -1493,15 +1329,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "interactive",
-        "fiction",
-        "text",
-        "adventure",
-        "games",
-        "keerthiram",
-        "murugesan"
-      ],
       "event": "WW2023"
     },
     {
@@ -1517,15 +1344,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "modeling",
-        "evaluating",
-        "faithful",
-        "generation",
-        "language",
-        "vision",
-        "mohit"
-      ],
       "event": "WW2023"
     },
     {
@@ -1541,15 +1359,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "towards",
-        "benchmark",
-        "suite",
-        "neuro-symbolic",
-        "approaches",
-        "challenge",
-        "set"
-      ],
       "event": "WW2023"
     },
     {
@@ -1565,15 +1374,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "panel",
-        "invited",
-        "chair",
-        "pranava",
-        "madhyastha",
-        "city",
-        "university"
-      ],
+      "category": "Panel",
       "event": "WW2023"
     },
 
@@ -1590,14 +1391,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "models",
-        "concept",
-        "learning",
-        "brenden",
-        "lake"
-      ],
       "event": "WW2023"
     },
     {
@@ -1613,7 +1406,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["neuro-symbolic", "research", "products", "aditya", "kalyanpur"],
       "event": "WW2023"
     },
     {
@@ -1629,7 +1421,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["opening", "alexander", "gray"],
       "event": "WW2023"
     },
     {
@@ -1645,7 +1436,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["marrying", "information", "theory", "logic", "luis", "lastras"],
       "event": "WW2023"
     },
     {
@@ -1661,15 +1451,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "panel",
-        "invited",
-        "chair",
-        "alexander",
-        "koller",
-        "saarland",
-        "university"
-      ],
+      "category": "Panel",
       "event": "WW2023"
     },
     {
@@ -1685,7 +1467,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["agi", "where", "have", "been", "need", "limitations", "large"],
       "event": "WW2023"
     },
     {
@@ -1701,15 +1482,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "can",
-        "explicit",
-        "knowledge",
-        "reasoning",
-        "offer",
-        "capabilities",
-        "beyond"
-      ],
       "event": "WW2023"
     },
     {
@@ -1725,15 +1497,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "deep",
-        "semantic",
-        "parsing",
-        "abstract",
-        "meaning",
-        "representation",
-        "ramon"
-      ],
       "event": "WW2023"
     },
     {
@@ -1749,15 +1512,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "systematic",
-        "analysis",
-        "chain-of-thought",
-        "reasoning",
-        "llms",
-        "large",
-        "language"
-      ],
       "event": "WW2023"
     },
     {
@@ -1773,14 +1527,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "generation",
-        "summarization",
-        "semantic",
-        "representation",
-        "kathleen",
-        "mckeown"
-      ],
       "event": "WW2023"
     },
     {
@@ -1796,15 +1542,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "rule",
-        "learning",
-        "text",
-        "towards",
-        "reliable",
-        "reasoning"
-      ],
       "event": "WW2023"
     },
     {
@@ -1820,7 +1557,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["opening", "alexander", "gray"],
       "event": "WW2023"
     },
     {
@@ -1836,15 +1572,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "scaffolds",
-        "reliable",
-        "commonsense",
-        "world",
-        "modeling",
-        "antoine"
-      ],
       "event": "WW2023"
     },
     {
@@ -1860,15 +1587,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "federating",
-        "major",
-        "public",
-        "knowledge",
-        "graphs",
-        "rosario",
-        "uceda-sosa"
-      ],
       "event": "WW2023"
     },
     {
@@ -1884,15 +1602,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "panel",
-        "invited",
-        "chair",
-        "martha",
-        "palmer",
-        "university",
-        "colorado"
-      ],
+      "category": "Panel",
       "event": "WW2023"
     },
     {
@@ -1908,7 +1618,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["compact", "rule", "induction", "sanjeeb", "dash"],
       "event": "WW2023"
     },
     {
@@ -1924,15 +1633,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "how",
-        "can",
-        "overcome",
-        "knowledge",
-        "including",
-        "common",
-        "sense"
-      ],
       "event": "WW2023"
     },
     {
@@ -1948,14 +1648,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "knowledge",
-        "acquisition",
-        "refineries",
-        "schools",
-        "ken",
-        "forbus"
-      ],
       "event": "WW2023"
     },
     {
@@ -1971,17 +1663,8 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "probabilistic",
-        "logic",
-        "rule",
-        "induction",
-        "fabrizio",
-        "riguzzi"
-      ],
       "event": "WW2023"
     },
-
     {
       "id": "ad100fb8-9b77-44d3-95f0-45d9057d3142",
       "title": "NSWW 2023 - Day 4 Symbolic Knowledge Distillation (Yejin Choi)",
@@ -1995,7 +1678,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["symbolic", "knowledge", "distillation", "yejin", "choi"],
       "event": "WW2023"
     },
     {
@@ -2011,7 +1693,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["opening", "alexander", "gray"],
       "event": "WW2023"
     },
     {
@@ -2027,15 +1708,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "general",
-        "through",
-        "learned",
-        "symbolic",
-        "representations",
-        "george",
-        "konidaris"
-      ],
       "event": "WW2023"
     },
     {
@@ -2051,7 +1723,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["event", "closing", "alexander", "gray"],
       "event": "WW2023"
     },
     {
@@ -2067,15 +1738,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "program",
-        "learning",
-        "one",
-        "example",
-        "comparison",
-        "chatgpt",
-        "stephen"
-      ],
       "event": "WW2023"
     },
     {
@@ -2091,15 +1753,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "part",
-        "reinforcement",
-        "learning",
-        "don",
-        "joven",
-        "agravante"
-      ],
       "event": "WW2023"
     },
     {
@@ -2115,7 +1768,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["panel", "invited", "chair", "luis", "lamb", "ufrgs", "all"],
+      "category": "Panel",
       "event": "WW2023"
     },
     {
@@ -2131,15 +1784,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "integrating",
-        "planning",
-        "short",
-        "intro",
-        "into",
-        "michael",
-        "katz"
-      ],
       "event": "WW2023"
     },
     {
@@ -2155,15 +1799,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "part",
-        "retrofitting",
-        "neural",
-        "models",
-        "symbolic",
-        "reasoning"
-      ],
       "event": "WW2023"
     },
 
@@ -2180,15 +1815,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "structural",
-        "supervision",
-        "improves",
-        "compositional",
-        "generalization",
-        "soham",
-        "dan"
-      ],
       "event": "WW2023"
     },
     {
@@ -2204,15 +1830,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": [
-        "can",
-        "perform",
-        "learning",
-        "less",
-        "data",
-        "via",
-        "compositional"
-      ],
       "event": "WW2023"
     },
     {
@@ -2228,7 +1845,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-12-12T09:00:00Z",
-      "tags": ["can", "learn", "data", "reason", "guy", "van", "den"],
       "event": "WW2023"
     },
     {
@@ -2244,17 +1860,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "introduction",
-        "workshop",
-        "francesca",
-        "rossi",
-        "ibm",
-        "murray",
-        "campbell",
-        "lior",
-        "horesh"
-      ],
       "event": "WW2022"
     },
     {
@@ -2270,17 +1875,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "history",
-        "evolution",
-        "neuro-symbolic",
-        "luis",
-        "lamb",
-        "universidade",
-        "federal",
-        "rio",
-        "grande"
-      ],
+      "tags": ["knowledge_representation", "logical_reasoning"],
       "event": "WW2022"
     },
     {
@@ -2296,7 +1891,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["neuro-symbolic", "overview", "alexander", "gray", "ibm"],
       "event": "WW2022"
     },
     {
@@ -2312,7 +1906,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["general", "interactive", "action", "murray", "campbell", "ibm"],
       "event": "WW2022"
     },
     {
@@ -2328,17 +1921,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "learnable",
-        "reasoning",
-        "ndivhuwo",
-        "makondo",
-        "ibm",
-        "hima",
-        "karanam",
-        "ryan",
-        "riegel"
-      ],
       "event": "WW2022"
     },
     {
@@ -2354,7 +1936,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["theory", "real-valued", "logics", "ron", "fagin", "ibm"],
       "event": "WW2022"
     },
     {
@@ -2370,17 +1951,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "bridging",
-        "lukasiewicz",
-        "logic",
-        "neural",
-        "networks",
-        "fruitful",
-        "link",
-        "antonio",
-        "nola"
-      ],
       "event": "WW2022"
     },
     {
@@ -2396,17 +1966,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "system",
-        "reasoning",
-        "box",
-        "embeddings",
-        "subgraph",
-        "cases",
-        "andrew",
-        "mccallum",
-        "university"
-      ],
       "event": "WW2022"
     },
     {
@@ -2422,17 +1981,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "knowledge-based",
-        "question",
-        "answering",
-        "pavan",
-        "kapanipathi",
-        "ibm",
-        "salim",
-        "roukos"
-      ],
       "event": "WW2022"
     },
     {
@@ -2448,17 +1996,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "its",
-        "time",
-        "reason",
-        "dan",
-        "roth",
-        "university",
-        "pennsylvania",
-        "amazon",
-        "aws"
-      ],
       "event": "WW2022"
     },
     {
@@ -2474,17 +2011,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "knowledge",
-        "representation",
-        "reasoning",
-        "neuro-symbolic",
-        "rosario",
-        "uceda-sosa",
-        "ibm",
-        "maria",
-        "chang"
-      ],
       "event": "WW2022"
     },
     {
@@ -2500,17 +2026,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "designing",
-        "ai-enabled",
-        "systems",
-        "longevity",
-        "deborah",
-        "mcguinness",
-        "rensselaer",
-        "polytechnic",
-        "institute"
-      ],
       "event": "WW2022"
     },
     {
@@ -2526,17 +2041,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "positive",
-        "social",
-        "commonsense",
-        "models",
-        "maarten",
-        "sap",
-        "allen",
-        "institute",
-        "cmu"
-      ],
       "event": "WW2022"
     },
     {
@@ -2552,15 +2056,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "optimal",
-        "action",
-        "shirin",
-        "sohrabi",
-        "ibm",
-        "debarun",
-        "bhattacharjya"
-      ],
       "event": "WW2022"
     },
     {
@@ -2576,16 +2071,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "rich",
-        "representations",
-        "rational",
-        "robots",
-        "leslie",
-        "pack",
-        "kaelbling",
-        "mit"
-      ],
       "event": "WW2022"
     },
     {
@@ -2601,17 +2086,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "building",
-        "taskable",
-        "reinforcement",
-        "learning",
-        "agents",
-        "sheila",
-        "mcilraith",
-        "university",
-        "toronto"
-      ],
       "event": "WW2022"
     },
     {
@@ -2627,7 +2101,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["insight", "renato", "cerqueira", "ibm", "sanjeeb", "dash"],
       "event": "WW2022"
     },
     {
@@ -2643,17 +2116,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "whats",
-        "new",
-        "learning",
-        "reasoning",
-        "stephen",
-        "muggleton",
-        "imperial",
-        "college",
-        "london"
-      ],
       "event": "WW2022"
     },
     {
@@ -2669,17 +2131,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "building",
-        "machines",
-        "that",
-        "see",
-        "learn",
-        "think",
-        "like",
-        "people",
-        "joshua"
-      ],
       "event": "WW2022"
     },
     {
@@ -2695,17 +2146,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "learning",
-        "less",
-        "mark",
-        "squillante",
-        "ken",
-        "clarkson",
-        "yuhai",
-        "soumyadip",
-        "ghosh"
-      ],
       "event": "WW2022"
     },
     {
@@ -2721,16 +2161,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "meta-learning",
-        "timothy",
-        "hospedales",
-        "university",
-        "edinburgh",
-        "samsung",
-        "research",
-        "centre"
-      ],
       "event": "WW2022"
     },
     {
@@ -2746,17 +2176,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "implicit",
-        "symbolic",
-        "representation",
-        "reasoning",
-        "deep",
-        "neural",
-        "networks",
-        "jacob",
-        "andreas"
-      ],
       "event": "WW2022"
     },
     {
@@ -2772,14 +2191,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "neuro-symbolic",
-        "related",
-        "advances",
-        "lior",
-        "horesh",
-        "ibm"
-      ],
       "event": "WW2022"
     },
     {
@@ -2795,7 +2206,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["rebooting", "gary", "marcus", "nyu"],
       "event": "WW2022"
     },
     {
@@ -2811,7 +2221,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["synagi", "james", "kozloski", "ibm"],
       "event": "WW2022"
     },
     {
@@ -2827,7 +2236,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["nsai", "toolkit", "naweed", "khan", "ibm"],
       "event": "WW2022"
     },
     {
@@ -2843,17 +2251,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": [
-        "panel-",
-        "future",
-        "neuro-symbolic",
-        "ai-",
-        "leslie",
-        "kaebling",
-        "mit",
-        "henry",
-        "kautz"
-      ],
       "event": "WW2022"
     },
     {
@@ -2869,7 +2266,6 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-12-12T09:00:00Z",
-      "tags": ["closing", "remark", "alexander", "gray", "ibm"],
       "event": "WW2022"
     }
   ]
