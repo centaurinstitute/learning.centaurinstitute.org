@@ -1,10 +1,10 @@
 import ActionButtons from "./src/components/ActionButton/ActionButtons";
-
+import VideoSearch from "./src/components/Search/VideoSearch";
 const menuConfig = {
   topMenu: [],
   sideMenu: [
     {
-      subheader: "Centaur Learning",
+      subheader: "Events",
       items: [
         {
           title: "Home",
@@ -14,7 +14,7 @@ const menuConfig = {
         {
           title: "Summer School 2025",
           icon: "tabler:sun-filled",
-          path: "/learning",
+          path: "/learning/2025",
         },
         {
           title: "Summer School 2024",
@@ -65,6 +65,7 @@ const menuConfig = {
   ],
 
   actionButtons: [ActionButtons],
+  topBar: VideoSearch,
   fullScreenLayout: "left",
 };
 

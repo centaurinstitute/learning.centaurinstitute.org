@@ -1,47 +1,54 @@
-import FollowUs from "../FollowUs";
-import React from "react";
+import { ArrowBack } from "@mui/icons-material";
+import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import useVideos from "../../hooks/useVideos";
 
 import {
-  AccessTime,
-  ArrowBack,
-  Share,
-  ThumbDown,
-  ThumbUp,
-  Visibility,
-} from "@mui/icons-material";
-import {
-  Avatar,
   Box,
   Button,
   Card,
   Chip,
   Container,
-  Divider,
   Stack,
   Typography,
 } from "@mui/material";
-import { formatDate, formatViews } from "../../utils/format";
+import React, { useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 type VideoDetailLocationState = {
   from?: string;
 };
 
-type Video = {
-  id: string;
-  title: string;
-  videoUrl: string;
+const RelatedVideoThumbnail = ({
+  thumbnail,
+  title,
+  event,
+}: {
   thumbnail: string;
-  channelName: string;
-  channelAvatar: string;
-  views: number;
-  uploadDate: string;
-  likes: number;
-  dislikes: number;
-  description: string;
-  tags?: string[];
-  event?: string;
+  title: string;
+  event?: string | null;
+}) => {
+  const fallbackThumbnail = getFallbackThumbnail(event);
+  const [imageSrc, setImageSrc] = useState(thumbnail || fallbackThumbnail);
+
+  return (
+    <Box
+      component="img"
+      src={imageSrc}
+      alt={title}
+      onError={() => {
+        if (imageSrc !== fallbackThumbnail) {
+          setImageSrc(fallbackThumbnail);
+        }
+      }}
+      sx={{
+        width: 50,
+        height: 50,
+        objectFit: "cover",
+        borderRadius: 1,
+        mr: 1,
+      }}
+    />
+  );
 };
 
 const VideoDetail = () => {
@@ -57,15 +64,16 @@ const VideoDetail = () => {
     "/learning/ww2022": "WW2022",
   };
 
-  const event = from ? eventByRoute[from] : undefined;
-
-  const fallbackThumbnail =
-    "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
+  const fromPath = from ? from.split("?")[0] : undefined;
+  const event = fromPath ? eventByRoute[fromPath] : undefined;
 
   const { videoId } = useParams<{ videoId: string }>();
   const navigate = useNavigate();
-  const { getRelatedVideos } = useVideos();
-  const { relatedVideos, loading } = getRelatedVideos({ event });
+  const { getVideo, getRelatedVideos } = useVideos();
+  const { video, loading: videoLoading } = getVideo(videoId!);
+  const { relatedVideos, loading: relatedLoading } = getRelatedVideos(
+    event ? { event } : undefined,
+  );
 
   const backTarget =
     (location.state as VideoDetailLocationState | null)?.from || "/learning";
@@ -74,7 +82,7 @@ const VideoDetail = () => {
     navigate(backTarget);
   };
 
-  if (loading) {
+  if (videoLoading || relatedLoading) {
     return (
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Typography variant="h6">Loading...</Typography>
@@ -82,9 +90,7 @@ const VideoDetail = () => {
     );
   }
 
-  const video = relatedVideos?.find((v: Video) => v.id === videoId);
-
-  if (!video) {
+  if (!video || !videoId) {
     return (
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Button
@@ -102,7 +108,6 @@ const VideoDetail = () => {
 
   return (
     <>
-      <FollowUs />
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Button
           startIcon={<ArrowBack />}
@@ -145,102 +150,23 @@ const VideoDetail = () => {
               </Box>
             </Card>
 
-            <Box sx={{ mb: 3 }}>
-              <Typography
-                variant="h4"
-                fontWeight="bold"
-                sx={{ mb: 2, lineHeight: 1.2 }}
-              >
-                {video.title}
-              </Typography>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: { xs: "column", sm: "row" },
-                  justifyContent: "space-between",
-                  alignItems: { xs: "flex-start", sm: "center" },
-                  gap: 2,
-                }}
-              >
-                <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                    <Visibility
-                      sx={{ fontSize: 16, color: "text.secondary" }}
-                    />
-                    <Typography variant="body2" color="text.secondary">
-                      {formatViews(video.views)} views
-                    </Typography>
-                  </Box>
-                  <Typography variant="body2" color="text.secondary">
-                    •
-                  </Typography>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                    <AccessTime
-                      sx={{ fontSize: 16, color: "text.secondary" }}
-                    />
-                    <Typography variant="body2" color="text.secondary">
-                      {formatDate(video.uploadDate)}
-                    </Typography>
-                  </Box>
-                </Box>
-
-                <Stack direction="row" spacing={1}>
-                  <Button
-                    variant="outlined"
-                    startIcon={<ThumbUp />}
-                    size="small"
-                    sx={{ borderRadius: 2 }}
-                  >
-                    {formatViews(video.likes)}
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    startIcon={<ThumbDown />}
-                    size="small"
-                    sx={{ borderRadius: 2 }}
-                  >
-                    {formatViews(video.dislikes)}
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    startIcon={<Share />}
-                    size="small"
-                    sx={{ borderRadius: 2 }}
-                  >
-                    Share
-                  </Button>
-                </Stack>
-              </Box>
-            </Box>
-
             <Card sx={{ borderRadius: 3, p: 3 }}>
               <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
-                <Avatar
-                  src={video.channelAvatar}
-                  sx={{ width: 48, height: 48, mr: 2 }}
-                />
                 <Box>
                   <Typography variant="h6" fontWeight="600">
-                    {video.channelName}
+                    {video.title}
                   </Typography>
                 </Box>
               </Box>
-
-              <Divider sx={{ my: 2 }} />
-
-              <Typography
-                variant="body1"
-                sx={{ mb: 3, lineHeight: 1.8, whiteSpace: "pre-line" }}
-              >
-                {video.description}
-              </Typography>
 
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                 {video.tags?.map((tag) => (
                   <Chip
+                    onClick={() => {
+                      navigate(`/learning?tag=${encodeURIComponent(tag)}`);
+                    }}
                     key={tag}
-                    label={`#${tag}`}
+                    label={`${tag}`}
                     size="small"
                     sx={{
                       backgroundColor: "primary.main",
@@ -250,6 +176,21 @@ const VideoDetail = () => {
                     }}
                   />
                 ))}
+                {video.category && (
+                  <Chip
+                    label={video.category}
+                    size="small"
+                    sx={{
+                      backgroundColor: "text.secondary",
+                      color: "white",
+                      fontWeight: 500,
+                      "&:hover": {
+                        backgroundColor: "text.secondary",
+                        cursor: "default",
+                      },
+                    }}
+                  />
+                )}
               </Box>
             </Card>
           </Box>
@@ -278,17 +219,10 @@ const VideoDetail = () => {
                   }
                 >
                   <Box sx={{ display: "flex", p: 1 }}>
-                    <Box
-                      component="img"
-                      src={fallbackThumbnail}
-                      alt={relatedVideo.title}
-                      sx={{
-                        width: 100,
-                        height: 100,
-                        objectFit: "cover",
-                        borderRadius: 1,
-                        mr: 2,
-                      }}
+                    <RelatedVideoThumbnail
+                      thumbnail={relatedVideo.thumbnail}
+                      title={relatedVideo.title}
+                      event={relatedVideo.event}
                     />
                     <Box sx={{ flex: 1, minWidth: 0 }}>
                       <Typography
@@ -296,24 +230,12 @@ const VideoDetail = () => {
                         fontWeight="600"
                         sx={{
                           display: "-webkit-box",
-                          WebkitLineClamp: 2,
+                          WebkitLineClamp: 3,
                           WebkitBoxOrient: "vertical",
                           overflow: "hidden",
-                          mb: 0.5,
                         }}
                       >
                         {relatedVideo.title}
-                      </Typography>
-                      <Typography
-                        variant="caption"
-                        color="text.secondary"
-                        sx={{ display: "block" }}
-                      >
-                        {relatedVideo.channelName}
-                      </Typography>
-                      <Typography variant="caption" color="text.secondary">
-                        {formatViews(relatedVideo.views)} views •{" "}
-                        {formatDate(relatedVideo.uploadDate)}
                       </Typography>
                     </Box>
                   </Box>

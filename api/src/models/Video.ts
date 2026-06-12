@@ -63,13 +63,17 @@ class Video extends Model {
   @Column(DataType.DATE)
   declare uploadDate: Date;
 
-  @AllowNull(false)
+  @AllowNull(true)
   @Column(DataType.JSONB)
-  declare tags: string[];
+  declare tags: string[] | null;
 
   @AllowNull(true)
   @Column(DataType.STRING)
   declare event: string | null;
+
+  @AllowNull(true)
+  @Column(DataType.STRING)
+  declare category: string | null;
 }
 
 export default Video;
