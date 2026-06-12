@@ -4,6 +4,7 @@ import useApi from "./useApi";
 
 type DependencyArray = object[];
 type GetVideosOptions = {
+  tags?: string;
   event?: string;
   fetchState?: DependencyArray;
 };
@@ -11,13 +12,19 @@ type GetVideosOptions = {
 function useVideos() {
   const { Api } = useApi();
 
-  const getVideos = ({ event, fetchState = [] }: GetVideosOptions = {}) => {
+  const getVideos = ({
+    tags,
+    event,
+    fetchState = [],
+  }: GetVideosOptions = {}) => {
     const url = event
       ? `/videos?event=${encodeURIComponent(event)}`
-      : "/videos";
+      : tags
+        ? `/videos?tags=${encodeURIComponent(tags)}`
+        : "/videos";
     const { data, loading, error, fetch } = Api(
       () => http.get(url),
-      [event, ...fetchState],
+      [event, tags, ...fetchState],
     );
 
     if (data) {
@@ -32,13 +39,18 @@ function useVideos() {
     };
   };
 
+  const getVideo = (id: string) => {
+    const { data, loading, error } = Api(() => http.get(`/videos/${id}`), [id]);
+    return { video: data, loading, error };
+  };
+
   const getRelatedVideos = ({
     event,
     fetchState = [],
   }: GetVideosOptions = {}) => {
     const url = event
       ? `/videos?event=${encodeURIComponent(event)}&limit=5`
-      : "/videos";
+      : "/videos?limit=5";
     const { data, loading, error, fetch } = Api(
       () => http.get(url),
       [event, ...fetchState],
@@ -58,6 +70,7 @@ function useVideos() {
   };
 
   return {
+    getVideo,
     getVideos,
     getRelatedVideos,
   };
