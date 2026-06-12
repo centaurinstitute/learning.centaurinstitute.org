@@ -135,9 +135,12 @@ const VideoDetail = () => {
                 }}
               >
                 <iframe
-                  src={video.videoUrl}
+                  src={`${video.videoUrl}${
+                    video.videoUrl.includes("?") ? "&" : "?"
+                  }autoplay=1&muted=1`}
                   title={video.title}
                   frameBorder="0"
+                  allow="autoplay; fullscreen"
                   allowFullScreen
                   style={{
                     position: "absolute",
