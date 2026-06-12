@@ -1,4 +1,5 @@
 import { ArrowBack } from "@mui/icons-material";
+import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import useVideos from "../../hooks/useVideos";
 
 import {
@@ -17,16 +18,16 @@ type VideoDetailLocationState = {
   from?: string;
 };
 
-const fallbackThumbnail =
-  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
-
 const RelatedVideoThumbnail = ({
   thumbnail,
   title,
+  event,
 }: {
   thumbnail: string;
   title: string;
+  event?: string | null;
 }) => {
+  const fallbackThumbnail = getFallbackThumbnail(event);
   const [imageSrc, setImageSrc] = useState(thumbnail || fallbackThumbnail);
 
   return (
@@ -221,6 +222,7 @@ const VideoDetail = () => {
                     <RelatedVideoThumbnail
                       thumbnail={relatedVideo.thumbnail}
                       title={relatedVideo.title}
+                      event={relatedVideo.event}
                     />
                     <Box sx={{ flex: 1, minWidth: 0 }}>
                       <Typography

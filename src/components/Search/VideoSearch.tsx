@@ -1,3 +1,4 @@
+import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import useVideos from "../../hooks/useVideos";
 
 import {
@@ -18,9 +19,6 @@ import Fuse, { IFuseOptions } from "fuse.js";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const fallbackThumbnail =
-  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
-
 type Video = {
   id: string;
   title: string;
@@ -35,6 +33,7 @@ type Video = {
   channelAvatar: string;
   uploadDate: string;
   tags: string[];
+  event?: string | null;
 };
 
 const getRelatedTags = (video: Video, query: string): string[] => {
@@ -52,10 +51,13 @@ const getRelatedTags = (video: Video, query: string): string[] => {
 const SearchResultThumbnail = ({
   thumbnail,
   title,
+  event,
 }: {
   thumbnail: string;
   title: string;
+  event?: string | null;
 }) => {
+  const fallbackThumbnail = getFallbackThumbnail(event);
   const [imageSrc, setImageSrc] = useState(thumbnail || fallbackThumbnail);
 
   return (
@@ -174,6 +176,7 @@ const VideoSearch = ({
                           <SearchResultThumbnail
                             thumbnail={video.thumbnail}
                             title={video.title}
+                            event={video.event}
                           />
                         </ListItemAvatar>
                         <ListItemText

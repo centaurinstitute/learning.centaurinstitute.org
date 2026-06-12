@@ -1,5 +1,6 @@
 import { PlayArrow } from "@mui/icons-material";
 import React from "react";
+import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import { useState } from "react";
 
 import {
@@ -10,9 +11,6 @@ import {
   Chip,
   Typography,
 } from "@mui/material";
-
-const fallbackThumbnail =
-  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
 
 const VideoCard = ({
   video,
@@ -28,9 +26,11 @@ const VideoCard = ({
     uploadDate: string;
     duration: string;
     category: string | null;
+    event?: string | null;
   };
   videoClick: (videoId: string) => void;
 }) => {
+  const fallbackThumbnail = getFallbackThumbnail(video.event);
   const [imageSrc, setImageSrc] = useState(
     video.thumbnail || fallbackThumbnail,
   );
