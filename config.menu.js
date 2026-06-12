@@ -65,7 +65,7 @@ const menuConfig = {
   ],
 
   actionButtons: [ActionButtons],
-  topBar: VideoSearch,
+  // topBar: VideoSearch,
   fullScreenLayout: "left",
 };
 
