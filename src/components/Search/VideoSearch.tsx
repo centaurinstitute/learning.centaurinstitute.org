@@ -14,6 +14,8 @@ import {
   Portal,
   TextField,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import Fuse, { IFuseOptions } from "fuse.js";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
@@ -52,10 +54,12 @@ const SearchResultThumbnail = ({
   thumbnail,
   title,
   event,
+  size = 72,
 }: {
   thumbnail: string;
   title: string;
   event?: string | null;
+  size?: number;
 }) => {
   const fallbackThumbnail = getFallbackThumbnail(event);
   const [imageSrc, setImageSrc] = useState(thumbnail || fallbackThumbnail);
@@ -65,7 +69,7 @@ const SearchResultThumbnail = ({
       variant="rounded"
       src={imageSrc}
       alt={title}
-      sx={{ width: 72, height: 72 }}
+      sx={{ width: size, height: size }}
       slotProps={{
         img: {
           onError: () => {
@@ -85,6 +89,8 @@ const VideoSearch = ({
   placeholder?: string;
 } = {}) => {
   const [query, setQuery] = useState("");
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const navigate = useNavigate();
   const location = useLocation();
   const { getVideos } = useVideos();
@@ -140,11 +146,12 @@ const VideoSearch = ({
             sx={{
               position: "fixed",
               top: rect.bottom + 8,
-              left: rect.left,
-              width: rect.width,
+              left: isMobile ? 8 : rect.left,
+              right: isMobile ? 8 : "auto",
+              width: isMobile ? "auto" : rect.width,
               zIndex: 1400,
               borderRadius: 2,
-              maxHeight: 480,
+              maxHeight: `calc(100vh - ${rect.bottom + 16}px)`,
               overflowY: "auto",
             }}
           >
@@ -162,7 +169,12 @@ const VideoSearch = ({
                   return (
                     <ListItem key={video.id} disableGutters>
                       <ListItemButton
-                        sx={{ "&:hover": { cursor: "pointer" } }}
+                        sx={{
+                          "&:hover": { cursor: "pointer" },
+                          alignItems: "flex-start",
+                          gap: isMobile ? 1 : 0,
+                          py: isMobile ? 1 : 0.75,
+                        }}
                         onClick={() => {
                           setQuery("");
                           navigate(`/learning/video/${video.id}`, {
@@ -172,11 +184,12 @@ const VideoSearch = ({
                           });
                         }}
                       >
-                        <ListItemAvatar>
+                        <ListItemAvatar sx={{ minWidth: "auto" }}>
                           <SearchResultThumbnail
                             thumbnail={video.thumbnail}
                             title={video.title}
                             event={video.event}
+                            size={isMobile ? 56 : 72}
                           />
                         </ListItemAvatar>
                         <ListItemText
