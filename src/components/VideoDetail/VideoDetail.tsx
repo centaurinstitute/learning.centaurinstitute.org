@@ -1,5 +1,4 @@
 import { ArrowBack } from "@mui/icons-material";
-import React from "react";
 import useVideos from "../../hooks/useVideos";
 
 import {
@@ -11,26 +10,44 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import React, { useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 type VideoDetailLocationState = {
   from?: string;
 };
 
-type Video = {
-  id: string;
-  title: string;
-  videoUrl: string;
+const fallbackThumbnail =
+  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
+
+const RelatedVideoThumbnail = ({
+  thumbnail,
+  title,
+}: {
   thumbnail: string;
-  channelName: string;
-  channelAvatar: string;
-  views: number;
-  uploadDate: string;
-  likes: number;
-  dislikes: number;
-  description: string;
-  tags?: string[];
-  event?: string;
+  title: string;
+}) => {
+  const [imageSrc, setImageSrc] = useState(thumbnail || fallbackThumbnail);
+
+  return (
+    <Box
+      component="img"
+      src={imageSrc}
+      alt={title}
+      onError={() => {
+        if (imageSrc !== fallbackThumbnail) {
+          setImageSrc(fallbackThumbnail);
+        }
+      }}
+      sx={{
+        width: 50,
+        height: 50,
+        objectFit: "cover",
+        borderRadius: 1,
+        mr: 1,
+      }}
+    />
+  );
 };
 
 const VideoDetail = () => {
@@ -46,12 +63,16 @@ const VideoDetail = () => {
     "/learning/ww2022": "WW2022",
   };
 
-  const event = from ? eventByRoute[from] : undefined;
+  const fromPath = from ? from.split("?")[0] : undefined;
+  const event = fromPath ? eventByRoute[fromPath] : undefined;
 
   const { videoId } = useParams<{ videoId: string }>();
   const navigate = useNavigate();
-  const { getRelatedVideos } = useVideos();
-  const { relatedVideos, loading } = getRelatedVideos({ event });
+  const { getVideo, getRelatedVideos } = useVideos();
+  const { video, loading: videoLoading } = getVideo(videoId!);
+  const { relatedVideos, loading: relatedLoading } = getRelatedVideos(
+    event ? { event } : undefined,
+  );
 
   const backTarget =
     (location.state as VideoDetailLocationState | null)?.from || "/learning";
@@ -60,7 +81,7 @@ const VideoDetail = () => {
     navigate(backTarget);
   };
 
-  if (loading) {
+  if (videoLoading || relatedLoading) {
     return (
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Typography variant="h6">Loading...</Typography>
@@ -68,9 +89,7 @@ const VideoDetail = () => {
     );
   }
 
-  const video = relatedVideos?.find((v: Video) => v.id === videoId);
-
-  if (!video) {
+  if (!video || !videoId) {
     return (
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Button
@@ -142,6 +161,9 @@ const VideoDetail = () => {
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                 {video.tags?.map((tag) => (
                   <Chip
+                    onClick={() => {
+                      navigate(`/learning?tag=${encodeURIComponent(tag)}`);
+                    }}
                     key={tag}
                     label={`${tag}`}
                     size="small"
@@ -153,6 +175,21 @@ const VideoDetail = () => {
                     }}
                   />
                 ))}
+                {video.category && (
+                  <Chip
+                    label={video.category}
+                    size="small"
+                    sx={{
+                      backgroundColor: "text.secondary",
+                      color: "white",
+                      fontWeight: 500,
+                      "&:hover": {
+                        backgroundColor: "text.secondary",
+                        cursor: "default",
+                      },
+                    }}
+                  />
+                )}
               </Box>
             </Card>
           </Box>
@@ -181,17 +218,9 @@ const VideoDetail = () => {
                   }
                 >
                   <Box sx={{ display: "flex", p: 1 }}>
-                    <Box
-                      component="img"
-                      src={relatedVideo.thumbnail}
-                      alt={relatedVideo.title}
-                      sx={{
-                        width: 50,
-                        height: 50,
-                        objectFit: "cover",
-                        borderRadius: 1,
-                        mr: 1,
-                      }}
+                    <RelatedVideoThumbnail
+                      thumbnail={relatedVideo.thumbnail}
+                      title={relatedVideo.title}
                     />
                     <Box sx={{ flex: 1, minWidth: 0 }}>
                       <Typography

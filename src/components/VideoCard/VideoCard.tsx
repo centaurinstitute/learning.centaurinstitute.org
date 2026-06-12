@@ -2,7 +2,14 @@ import { PlayArrow } from "@mui/icons-material";
 import React from "react";
 import { useState } from "react";
 
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  Chip,
+  Typography,
+} from "@mui/material";
 
 const fallbackThumbnail =
   "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
@@ -20,6 +27,7 @@ const VideoCard = ({
     views: number;
     uploadDate: string;
     duration: string;
+    category: string | null;
   };
   videoClick: (videoId: string) => void;
 }) => {
@@ -121,6 +129,21 @@ const VideoCard = ({
         >
           {video.title}
         </Typography>
+        {video.category && (
+          <Chip
+            label={video.category}
+            size="small"
+            sx={{
+              backgroundColor: "text.secondary",
+              color: "white",
+              fontWeight: 500,
+              "&:hover": {
+                backgroundColor: "text.secondary",
+                cursor: "default",
+              },
+            }}
+          />
+        )}
       </CardContent>
     </Card>
   );
