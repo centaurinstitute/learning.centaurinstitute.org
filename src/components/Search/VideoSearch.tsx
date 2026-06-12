@@ -63,14 +63,16 @@ const SearchResultThumbnail = ({
       variant="rounded"
       src={imageSrc}
       alt={title}
-      imgProps={{
-        onError: () => {
-          if (imageSrc !== fallbackThumbnail) {
-            setImageSrc(fallbackThumbnail);
-          }
+      sx={{ width: 72, height: 72 }}
+      slotProps={{
+        img: {
+          onError: () => {
+            if (imageSrc !== fallbackThumbnail) {
+              setImageSrc(fallbackThumbnail);
+            }
+          },
         },
       }}
-      sx={{ width: 72, height: 72 }}
     />
   );
 };

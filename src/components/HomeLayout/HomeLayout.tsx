@@ -59,7 +59,7 @@ const HomeLayout = () => {
         spacing={{ xs: 2, sm: 3, md: 4 }}
       >
         {columns.map((column) => (
-          <Grid item xs={1} key={column.title}>
+          <Grid key={column.title} size={1}>
             <Stack spacing={{ xs: 2, md: 3 }}>
               <Typography
                 variant="subtitle2"
