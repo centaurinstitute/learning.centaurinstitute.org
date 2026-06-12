@@ -14,7 +14,7 @@ const menuConfig = {
         {
           title: "Summer School 2025",
           icon: "tabler:sun-filled",
-          path: "/learning",
+          path: "/learning/2025",
         },
         {
           title: "Summer School 2024",
