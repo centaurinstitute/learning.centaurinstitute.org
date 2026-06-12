@@ -13,10 +13,9 @@
     "serve": "npx @nucleoidai/http-server start --port 5173"
   },
   "dependencies": {
-    "@canmingir/link": "^1.2.25",
-    "@mui/icons-material": "^5.16.4",
-    "@mui/material": "^5.16.4",
-    "@nucleoidai/platform": "^1.0.52",
+    "@canmingir/link": "^1.2.30",
+    "@mui/icons-material": "^7.3.9",
+    "@mui/material": "^7.3.9",
     "@nucleoidai/react-event": "^1.1.7",
     "@nucleoidjs/webstorage": "^1.0.5",
     "axios": "^1.7.2",

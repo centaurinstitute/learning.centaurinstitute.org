@@ -76,7 +76,15 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
         <Grid container spacing={3}>
           {loading
             ? Array.from({ length: 6 }).map((_, idx) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={idx}>
+                <Grid
+                  key={idx}
+                  size={{
+                    xs: 12,
+                    sm: 6,
+                    md: 4,
+                    lg: 3,
+                  }}
+                >
                   <Card sx={{ borderRadius: 3 }}>
                     <Skeleton variant="rectangular" height={200} />
                     <CardContent>
@@ -108,7 +116,15 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
                   views: number;
                   uploadDate: string;
                 }) => (
-                  <Grid item xs={12} sm={6} md={4} lg={3} key={video.id}>
+                  <Grid
+                    key={video.id}
+                    size={{
+                      xs: 12,
+                      sm: 6,
+                      md: 4,
+                      lg: 3,
+                    }}
+                  >
                     <VideoCard
                       video={video}
                       videoClick={() => handleVideoClick(video.id)}

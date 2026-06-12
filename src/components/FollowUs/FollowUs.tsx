@@ -85,9 +85,13 @@ const FollowUs = () => {
           <Tooltip
             title="Join our Discord community"
             arrow
-            TransitionComponent={Fade}
-            TransitionProps={{ timeout: 600 }}
             placement={isMobile ? "top" : "left"}
+            slots={{
+              transition: Fade,
+            }}
+            slotProps={{
+              transition: { timeout: 600 },
+            }}
           >
             <IconButton
               onClick={handleDiscordClick}
@@ -130,9 +134,13 @@ const FollowUs = () => {
           <Tooltip
             title="Check out our GitHub"
             arrow
-            TransitionComponent={Fade}
-            TransitionProps={{ timeout: 600 }}
             placement={isMobile ? "top" : "left"}
+            slots={{
+              transition: Fade,
+            }}
+            slotProps={{
+              transition: { timeout: 600 },
+            }}
           >
             <IconButton
               onClick={handleGitHubClick}
