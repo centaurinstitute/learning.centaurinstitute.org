@@ -1,4 +1,24 @@
-import ActionButtons from "./src/components/ActionButton/ActionButtons";
+import React, { Suspense } from "react";
+
+const LazyActionButtons = React.lazy(
+  () => import("./src/components/ActionButton/ActionButtons"),
+);
+const LazyVideoSearch = React.lazy(
+  () => import("./src/components/Search/VideoSearch"),
+);
+
+const ActionButtons = (props) => (
+  <Suspense fallback={null}>
+    <LazyActionButtons {...props} />
+  </Suspense>
+);
+
+const VideoSearch = (props) => (
+  <Suspense fallback={null}>
+    <LazyVideoSearch {...props} />
+  </Suspense>
+);
+
 const menuConfig = {
   topMenu: [],
   sideMenu: [
@@ -64,6 +84,7 @@ const menuConfig = {
   ],
 
   actionButtons: [ActionButtons],
+  topBar: VideoSearch,
   fullScreenLayout: "left",
 };
 

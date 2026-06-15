@@ -1,23 +1,37 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
+import useVideos from "../../hooks/useVideos";
 
 import { Box, Chip } from "@mui/material";
+import React, { useMemo } from "react";
 
-const TAGS = [
-  "neuro-symbolic",
-  "reasoning",
-  "logical_reasoning",
-  "rl",
-  "nlp",
-  "llms",
-];
+type Video = { tags?: string[] };
+
+const TOP_TAGS_COUNT = 10;
+
+const getTopTags = (videos: Video[]): string[] => {
+  const counts = new Map<string, number>();
+  videos.forEach((video) => {
+    (video.tags ?? []).forEach((tag) => {
+      counts.set(tag, (counts.get(tag) ?? 0) + 1);
+    });
+  });
+
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, TOP_TAGS_COUNT)
+    .map(([tag]) => tag);
+};
 
 const ActionButtons = () => {
   const navigate = useNavigate();
+  const { getVideos } = useVideos();
+  const { videos } = getVideos();
+
+  const tags = useMemo(() => getTopTags(videos ?? []), [videos]);
 
   return (
     <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, ml: 2 }}>
-      {TAGS.map((tag) => (
+      {tags.map((tag) => (
         <Chip
           onClick={() => {
             navigate(`/learning?tag=${encodeURIComponent(tag)}`);
