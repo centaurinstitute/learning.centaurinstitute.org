@@ -1,3 +1,4 @@
+import { http } from "@canmingir/link/platform/http";
 import { publish } from "@nucleoidai/react-event";
 import useApi from "./useApi";
 
@@ -8,8 +9,8 @@ type GetVideosOptions = {
   fetchState?: DependencyArray;
 };
 
-const getHttp = async () =>
-  (await import("@canmingir/link/platform/http")).default;
+// const getHttp = async () =>
+//   (await import("@canmingir/link/platform/http")).default;
 
 function useVideos() {
   const { Api } = useApi();
@@ -25,7 +26,7 @@ function useVideos() {
         ? `/videos?tags=${encodeURIComponent(tags)}`
         : "/videos";
     const { data, loading, error, fetch } = Api(
-      async () => (await getHttp()).get(url),
+      async () => http.get(url),
       [event, tags, ...fetchState],
     );
 
@@ -38,7 +39,7 @@ function useVideos() {
 
   const getVideo = (id: string) => {
     const { data, loading, error } = Api(
-      async () => (await getHttp()).get(`/videos/${id}`),
+      async () => http.get(`/videos/${id}`),
       [id],
     );
     return { video: data, loading, error };
@@ -52,7 +53,7 @@ function useVideos() {
       ? `/videos?event=${encodeURIComponent(event)}&limit=5`
       : "/videos?limit=5";
     const { data, loading, error, fetch } = Api(
-      async () => (await getHttp()).get(url),
+      async () => http.get(url),
       [event, ...fetchState],
     );
 
