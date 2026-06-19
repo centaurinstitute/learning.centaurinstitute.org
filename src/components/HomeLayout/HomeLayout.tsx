@@ -1,47 +1,35 @@
-import React from "react";
+import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
+import useVideos from "../../hooks/useVideos";
 
-import { Card, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Card, Container, Grid, Stack, Typography } from "@mui/material";
+import React, { useMemo, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const imageUrl =
-  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
+type Video = {
+  id: string;
+  title: string;
+  thumbnail: string;
+  event?: string | null;
+};
 
-const columns = [
-  {
-    title: "Luminaries",
-    items: Array.from({ length: 3 }, (_, index) => ({
-      image: imageUrl,
-      alt: `Luminaries ${index + 1}`,
-    })),
-  },
-  {
-    title: "Intro to Neuro-Symbolic",
-    items: Array.from({ length: 3 }, (_, index) => ({
-      image: imageUrl,
-      alt: `Intro to Neuro-Symbolic ${index + 1}`,
-    })),
-  },
-  {
-    title: "Non-Technical",
-    items: Array.from({ length: 3 }, (_, index) => ({
-      image: imageUrl,
-      alt: `Non-Technical ${index + 1}`,
-    })),
-  },
-  {
-    title: "Recent Research",
-    items: Array.from({ length: 3 }, (_, index) => ({
-      image: imageUrl,
-      alt: `Recent Research ${index + 1}`,
-    })),
-  },
-  {
-    title: "Foundational Research",
-    items: Array.from({ length: 3 }, (_, index) => ({
-      image: imageUrl,
-      alt: `Foundational Research ${index + 1}`,
-    })),
-  },
+const columnTitles = [
+  "Luminaries",
+  "Intro to Neuro-Symbolic",
+  "Non-Technical",
+  "Recent Research",
+  "Foundational Research",
 ];
+
+const ITEMS_PER_COLUMN = 3;
+
+const shuffle = <T,>(items: T[]): T[] => {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+};
 
 const cardImageStyles = {
   width: "100%",
@@ -50,7 +38,47 @@ const cardImageStyles = {
   borderRadius: 3,
 };
 
+const VideoThumbnail = ({ video }: { video: Video }) => {
+  const fallback = getFallbackThumbnail(video.event);
+  const [src, setSrc] = useState(video.thumbnail || fallback);
+
+  return (
+    <img
+      src={src}
+      alt={video.title}
+      style={cardImageStyles}
+      onError={() => {
+        if (src !== fallback) {
+          setSrc(fallback);
+        }
+      }}
+    />
+  );
+};
+
 const HomeLayout = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { getVideos } = useVideos();
+  const { videos } = getVideos();
+
+  const columns = useMemo(() => {
+    const shuffled = shuffle((videos as Video[]) || []);
+    return columnTitles.map((title, index) => ({
+      title,
+      items: shuffled.slice(
+        index * ITEMS_PER_COLUMN,
+        (index + 1) * ITEMS_PER_COLUMN,
+      ),
+    }));
+  }, [videos]);
+
+  const handleVideoClick = (videoId: string) => {
+    navigate(`/learning/video/${videoId}`, {
+      state: { from: `${location.pathname}${location.search}` },
+    });
+  };
+
   return (
     <Container maxWidth="lg" sx={{ py: { xs: 2, md: 3 } }}>
       <Grid
@@ -72,12 +100,12 @@ const HomeLayout = () => {
                 {column.title}
               </Typography>
 
-              {column.items.map((item) => (
+              {column.items.map((video) => (
                 <Card
-                  key={item.alt}
+                  key={video.id}
+                  onClick={() => handleVideoClick(video.id)}
                   sx={{
                     borderRadius: 3,
-                    height: { xs: 220, sm: 240, md: 250 },
                     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                     transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                     cursor: "pointer",
@@ -89,11 +117,24 @@ const HomeLayout = () => {
                     p: 2,
                   }}
                 >
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    style={cardImageStyles}
-                  />
+                  <Box sx={{ height: { xs: 220, sm: 240, md: 250 } }}>
+                    <VideoThumbnail video={video} />
+                  </Box>
+                  <Typography
+                    variant="body2"
+                    fontWeight="600"
+                    sx={{
+                      mt: 1.5,
+                      lineHeight: 1.4,
+                      height: "2.8em",
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                    }}
+                  >
+                    {video.title}
+                  </Typography>
                 </Card>
               ))}
             </Stack>
