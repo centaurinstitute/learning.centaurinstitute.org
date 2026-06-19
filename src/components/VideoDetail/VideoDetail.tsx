@@ -140,7 +140,6 @@ const VideoDetail = () => {
                   }autoplay=1&muted=1`}
                   title={video.title}
                   frameBorder="0"
-                  allow="autoplay; fullscreen"
                   allowFullScreen
                   style={{
                     position: "absolute",
@@ -153,8 +152,8 @@ const VideoDetail = () => {
               </Box>
             </Card>
 
-            <Card sx={{ borderRadius: 3, p: 3 }}>
-              <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
+            <Card sx={{ borderRadius: 3, p: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
                 <Box>
                   <Typography variant="h6" fontWeight="600">
                     {video.title}
@@ -195,6 +194,14 @@ const VideoDetail = () => {
                   />
                 )}
               </Box>
+
+              {video.authors && video.authors.length > 0 && (
+                <Box sx={{ mt: 1, display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  {video.authors.map((author: string) => (
+                    <Chip key={author} label={author} size="small" />
+                  ))}
+                </Box>
+              )}
             </Card>
           </Box>
 
