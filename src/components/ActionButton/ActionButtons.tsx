@@ -6,7 +6,7 @@ import React, { useMemo } from "react";
 
 type Video = { tags?: string[] };
 
-const TOP_TAGS_COUNT = 8;
+const TOP_TAGS_COUNT = 15;
 
 const SETTINGS_STORAGE_KEY = "settings";
 
