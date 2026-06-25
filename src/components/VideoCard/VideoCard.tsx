@@ -127,23 +127,24 @@ const VideoCard = ({
             lineHeight: 1.3,
           }}
         >
+          {video.category && (
+            <Chip
+              label={video.category}
+              size="small"
+              sx={{
+                backgroundColor: "text.secondary",
+                color: "white",
+                fontWeight: 500,
+                mr: 1,
+                "&:hover": {
+                  backgroundColor: "text.secondary",
+                  cursor: "default",
+                },
+              }}
+            />
+          )}
           {video.title}
         </Typography>
-        {video.category && (
-          <Chip
-            label={video.category}
-            size="small"
-            sx={{
-              backgroundColor: "text.secondary",
-              color: "white",
-              fontWeight: 500,
-              "&:hover": {
-                backgroundColor: "text.secondary",
-                cursor: "default",
-              },
-            }}
-          />
-        )}
       </CardContent>
     </Card>
   );

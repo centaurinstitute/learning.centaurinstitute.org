@@ -6,7 +6,18 @@ import React, { useMemo } from "react";
 
 type Video = { tags?: string[] };
 
-const TOP_TAGS_COUNT = 10;
+const TOP_TAGS_COUNT = 15;
+
+const SETTINGS_STORAGE_KEY = "settings";
+
+const isNavCollapsed = (): boolean => {
+  try {
+    const raw = window.localStorage.getItem(SETTINGS_STORAGE_KEY);
+    return raw ? JSON.parse(raw).themeLayout === "mini" : false;
+  } catch {
+    return false;
+  }
+};
 
 const getTopTags = (videos: Video[]): string[] => {
   const counts = new Map<string, number>();
@@ -29,8 +40,12 @@ const ActionButtons = () => {
 
   const tags = useMemo(() => getTopTags(videos ?? []), [videos]);
 
+  if (isNavCollapsed()) {
+    return null;
+  }
+
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, ml: 2 }}>
+    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, ml: 2, mb: -1 }}>
       {tags.map((tag) => (
         <Chip
           onClick={() => {

@@ -74,6 +74,10 @@ class Video extends Model {
   @AllowNull(true)
   @Column(DataType.STRING)
   declare category: string | null;
+
+  @AllowNull(true)
+  @Column(DataType.JSONB)
+  declare authors: string[] | null;
 }
 
 export default Video;

@@ -14,11 +14,13 @@ declare module "express-serve-static-core" {
   }
 }
 
-const { express: app, authorization } = platform;
+const { express: app, authorization, error } = platform;
 
 app.use(authorization.verify);
 app.use(authorization.authorize("ADMIN"));
 
 app.use("/videos", learning);
+
+app.use(error.handle);
 
 export default app;
