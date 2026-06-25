@@ -35,6 +35,7 @@ type Video = {
   channelAvatar: string;
   uploadDate: string;
   tags: string[];
+  authors?: string[];
   event?: string | null;
 };
 
@@ -116,7 +117,7 @@ const VideoSearch = ({
 
   const fuse = useMemo(() => {
     const options: IFuseOptions<Video> = {
-      keys: ["title", "description", "tags"],
+      keys: ["title", "description", "tags", "authors"],
       threshold: 0.35,
       ignoreLocation: true,
     };
@@ -213,6 +214,15 @@ const VideoSearch = ({
                               >
                                 {video.channelName} • {video.duration}
                               </Typography>
+                              {video.authors && video.authors.length > 0 && (
+                                <Typography
+                                  variant="caption"
+                                  color="text.secondary"
+                                  display="block"
+                                >
+                                  By {video.authors.join(", ")}
+                                </Typography>
+                              )}
                               <Typography
                                 variant="caption"
                                 color="text.secondary"
