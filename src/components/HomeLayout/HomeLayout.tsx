@@ -171,6 +171,11 @@ const HomeLayout = () => {
               sx={{
                 minHeight: { lg: 40 },
                 whiteSpace: "pre-line",
+                position: "sticky",
+                top: 55,
+                zIndex: 1,
+                bgcolor: "background.default",
+                py: 1,
               }}
             >
               {column.title}
