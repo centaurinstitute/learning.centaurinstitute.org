@@ -1,4 +1,5 @@
 import VideoCard from "../components/VideoCard/VideoCard";
+import { getEventLabel } from "../utils/eventLabel";
 import useVideos from "../hooks/useVideos";
 
 import {
@@ -76,9 +77,9 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
         <Box sx={{ mb: 4 }}>
           <Typography variant="h3" fontWeight="800">
             {tagQuery
-              ? `${tagQuery.charAt(0).toUpperCase() + tagQuery.slice(1)} related videos`
+              ? `"${tagQuery.slice(0)}" related videos`
               : event
-                ? `${event} Learning Hub`
+                ? `${getEventLabel(event)}`
                 : "Learning Hub"}
           </Typography>
         </Box>

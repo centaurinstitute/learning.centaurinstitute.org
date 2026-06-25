@@ -1,5 +1,6 @@
-import ActionButtons from "./src/components/ActionButton/ActionButtons";
-import VideoSearch from "./src/components/Search/VideoSearch";
+import ActionButtons from "./src/components/ActionButton/ActionButtons.lazy";
+import VideoSearch from "./src/components/Search/VideoSearch.lazy";
+
 const menuConfig = {
   topMenu: [],
   sideMenu: [

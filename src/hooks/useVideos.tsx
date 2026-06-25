@@ -9,6 +9,9 @@ type GetVideosOptions = {
   fetchState?: DependencyArray;
 };
 
+// const getHttp = async () =>
+//   (await import("@canmingir/link/platform/http")).default;
+
 function useVideos() {
   const { Api } = useApi();
 
@@ -23,7 +26,7 @@ function useVideos() {
         ? `/videos?tags=${encodeURIComponent(tags)}`
         : "/videos";
     const { data, loading, error, fetch } = Api(
-      () => http.get(url),
+      async () => http.get(url),
       [event, tags, ...fetchState],
     );
 
@@ -31,16 +34,14 @@ function useVideos() {
       publish("VIDEOS_LOADED", { videos: data });
     }
 
-    return {
-      videos: data,
-      loading,
-      error,
-      fetch,
-    };
+    return { videos: data, loading, error, fetch };
   };
 
   const getVideo = (id: string) => {
-    const { data, loading, error } = Api(() => http.get(`/videos/${id}`), [id]);
+    const { data, loading, error } = Api(
+      async () => http.get(`/videos/${id}`),
+      [id],
+    );
     return { video: data, loading, error };
   };
 
@@ -52,7 +53,7 @@ function useVideos() {
       ? `/videos?event=${encodeURIComponent(event)}&limit=5`
       : "/videos?limit=5";
     const { data, loading, error, fetch } = Api(
-      () => http.get(url),
+      async () => http.get(url),
       [event, ...fetchState],
     );
 
@@ -60,20 +61,10 @@ function useVideos() {
       publish("VIDEOS_LOADED", { relatedVideos: data });
     }
 
-    return {
-      videos: data,
-      relatedVideos: data,
-      loading,
-      error,
-      fetch,
-    };
+    return { videos: data, relatedVideos: data, loading, error, fetch };
   };
 
-  return {
-    getVideo,
-    getVideos,
-    getRelatedVideos,
-  };
+  return { getVideo, getVideos, getRelatedVideos };
 }
 
 export default useVideos;
