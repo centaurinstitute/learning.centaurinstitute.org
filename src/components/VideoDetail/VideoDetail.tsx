@@ -1,17 +1,26 @@
-import { ArrowBack } from "@mui/icons-material";
+import { getCurrentUserIdentity } from "../../utils/currentUserIdentity";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
+import http from "@canmingir/link/platform/http";
+import { publish } from "@nucleoidai/react-event";
 import useVideos from "../../hooks/useVideos";
 
+import { Add, ArrowBack } from "@mui/icons-material";
 import {
   Box,
   Button,
   Card,
   Chip,
+  CircularProgress,
   Container,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
   Stack,
+  TextField,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 type VideoDetailLocationState = {
@@ -75,12 +84,77 @@ const VideoDetail = () => {
     event ? { event } : undefined,
   );
 
+  const [suggestedTag, setSuggestedTag] = useState("");
+  const [submittingTags, setSubmittingTags] = useState(false);
+  const [suggestDialogOpen, setSuggestDialogOpen] = useState(false);
+  const [suggestSubmitted, setSuggestSubmitted] = useState(false);
+
   const backTarget =
     (location.state as VideoDetailLocationState | null)?.from || "/learning";
 
   const handleBack = () => {
     navigate(backTarget);
   };
+
+  const handleSuggestTags = async () => {
+    const tag = suggestedTag.trim();
+    if (!tag || !videoId) {
+      return;
+    }
+
+    setSubmittingTags(true);
+    try {
+      const identity = await getCurrentUserIdentity();
+
+      if (!identity.email && !identity.name) {
+        publish("GLOBAL_MESSAGE_POSTED", {
+          status: true,
+          message: "We couldn't verify your identity, please log in again",
+          severity: "warning",
+        });
+        return;
+      }
+
+      await http.post(`/videos/${videoId}/tag-suggestions`, {
+        tags: [tag],
+        name: identity.name,
+        email: identity.email,
+        identityProvider: identity.identityProvider,
+      });
+
+      setSuggestedTag("");
+      setSuggestSubmitted(true);
+    } catch (error) {
+      console.error("Failed to submit tag suggestion:", error);
+      publish("GLOBAL_MESSAGE_POSTED", {
+        status: true,
+        message: "Failed to submit your suggestion, please try again",
+        severity: "error",
+      });
+    } finally {
+      setSubmittingTags(false);
+    }
+  };
+
+  const handleCloseSuggestDialog = () => {
+    setSuggestDialogOpen(false);
+    setSuggestedTag("");
+    setSuggestSubmitted(false);
+  };
+
+  useEffect(() => {
+    if (!suggestSubmitted) {
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setSuggestDialogOpen(false);
+      setSuggestedTag("");
+      setSuggestSubmitted(false);
+    }, 8000);
+
+    return () => clearTimeout(timer);
+  }, [suggestSubmitted]);
 
   if (videoLoading || relatedLoading) {
     return (
@@ -193,6 +267,13 @@ const VideoDetail = () => {
                     }}
                   />
                 )}
+                <Chip
+                  icon={<Add sx={{ fontSize: 16 }} />}
+                  label="Suggest a tag"
+                  size="small"
+                  variant="outlined"
+                  onClick={() => setSuggestDialogOpen(true)}
+                />
               </Box>
 
               {video.authors && video.authors.length > 0 && (
@@ -255,6 +336,63 @@ const VideoDetail = () => {
           </Box>
         </Box>
       </Container>
+
+      <Dialog
+        open={suggestDialogOpen}
+        onClose={handleCloseSuggestDialog}
+        fullWidth
+        maxWidth="xs"
+      >
+        <DialogTitle>Suggest a tag</DialogTitle>
+        <DialogContent>
+          {suggestSubmitted ? (
+            <Typography sx={{ py: 1 }}>
+              Your request has been sent, it will be added after being
+              reviewed.
+            </Typography>
+          ) : (
+            <TextField
+              autoFocus
+              fullWidth
+              disabled={submittingTags}
+              variant="outlined"
+              size="small"
+              placeholder="Enter a tag"
+              value={suggestedTag}
+              onChange={(event) => setSuggestedTag(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") {
+                  handleSuggestTags();
+                }
+              }}
+              sx={{ mt: 1 }}
+            />
+          )}
+        </DialogContent>
+        <DialogActions>
+          {suggestSubmitted ? (
+            <Button onClick={handleCloseSuggestDialog}>Close</Button>
+          ) : (
+            <>
+              <Button onClick={handleCloseSuggestDialog} disabled={submittingTags}>
+                Cancel
+              </Button>
+              <Button
+                variant="contained"
+                onClick={handleSuggestTags}
+                disabled={submittingTags || !suggestedTag.trim()}
+                startIcon={
+                  submittingTags ? (
+                    <CircularProgress size={16} color="inherit" />
+                  ) : undefined
+                }
+              >
+                {submittingTags ? "Submitting..." : "Suggest"}
+              </Button>
+            </>
+          )}
+        </DialogActions>
+      </Dialog>
     </>
   );
 };

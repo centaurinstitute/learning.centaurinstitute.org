@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 5173",
-    "build": "tsc -b && vite build",
+    "dev": "rm -rf ./node_modules/.vite && concurrently -n web,api -c blue,green \"vite\" \"cd api && bun run dev\"",
+    "build": "tsc && vite build",
     "lint": "eslint .",
-    "lint:api": "cd api && npm run lint",
-    "lint:all": "npm run lint && npm run lint:api",
+    "lint:api": "cd api && bun run lint",
+    "lint:all": "bun run lint && bun run lint:api",
     "preview": "vite preview",
-    "serve": "npx @nucleoidai/http-server start --port 5173"
+    "serve": "bunx @nucleoidai/http-server start --port 5173"
   },
   "dependencies": {
     "@canmingir/link": "^1.2.54",
@@ -31,6 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.0.0",
+    "concurrently": "^10.0.3",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",

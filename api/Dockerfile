@@ -1,12 +1,10 @@
-FROM node:20
+FROM oven/bun:1
 
 WORKDIR /app
 
 COPY . .
 
-RUN npm rebuild sqlite3
-
 
 EXPOSE 3000
 
-ENTRYPOINT ["npm", "run", "dev"]
+ENTRYPOINT ["bun", "run", "dev"]
