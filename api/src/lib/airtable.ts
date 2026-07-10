@@ -32,13 +32,14 @@ async function appendTagSuggestion({
             Timestamp: new Date().toISOString(),
             "Video ID": videoId,
             "Video Title": videoTitle,
-            Tags: tags.join(", "),
+            Tags: tags,
             Name: name,
             Email: email || "",
             Provider: identityProvider,
           },
         },
       ],
+      typecast: true,
     },
     {
       headers: {

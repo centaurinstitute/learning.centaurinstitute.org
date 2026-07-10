@@ -1,5 +1,6 @@
 import Video from "../models/Video";
 import airtable from "../lib/airtable";
+import axios from "axios";
 import express from "express";
 import github from "../lib/github";
 import platform from "@canmingir/link-express";
@@ -79,7 +80,10 @@ router.post("/:id/tag-suggestions", async (req, res) => {
     });
     res.status(201).json({ message: "Tag suggestion recorded" });
   } catch (error) {
-    console.error("Failed to record tag suggestion:", error);
+    console.error(
+      "Failed to record tag suggestion:",
+      axios.isAxiosError(error) ? error.response?.data : error,
+    );
     res
       .status(502)
       .json({ message: "Failed to save suggestion, please try again later" });
