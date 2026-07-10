@@ -1,6 +1,7 @@
 import Video from "../models/Video";
 import airtable from "../lib/airtable";
 import express from "express";
+import github from "../lib/github";
 import platform from "@canmingir/link-express";
 const router = express.Router();
 
@@ -48,21 +49,33 @@ router.post("/:id/tag-suggestions", async (req, res) => {
       .json({ message: "tags must be a non-empty array of strings" });
   }
 
-  const cleanTags = [
-    ...new Set(tags.map((tag: string) => tag.trim())),
-  ].slice(0, 10);
+  const cleanTags = [...new Set(tags.map((tag: string) => tag.trim()))].slice(
+    0,
+    10,
+  );
+
+  const provider = identityProvider.toUpperCase();
+
+  let resolvedName = name?.trim() || null;
+  let resolvedEmail = email?.trim() || null;
+
+  if (provider === "GITHUB") {
+    const providerToken = req.headers["x-refresh-token"] as string;
+    if (providerToken) {
+      const identity = await github.fetchIdentity(providerToken);
+      resolvedName = identity.name || resolvedName;
+      resolvedEmail = identity.email || resolvedEmail;
+    }
+  }
 
   try {
     await airtable.appendTagSuggestion({
       videoId: video.id,
       videoTitle: video.title,
       tags: cleanTags,
-      name: typeof name === "string" && name.trim() ? name.trim() : "Unknown",
-      email: typeof email === "string" && email.trim() ? email.trim() : null,
-      identityProvider:
-        typeof identityProvider === "string" && identityProvider
-          ? identityProvider
-          : "UNKNOWN",
+      name: resolvedName || "Unknown",
+      email: resolvedEmail || null,
+      identityProvider: provider,
     });
     res.status(201).json({ message: "Tag suggestion recorded" });
   } catch (error) {

@@ -1,4 +1,3 @@
-import axios from "axios";
 import config from "../../config";
 import { storage } from "@nucleoidjs/webstorage";
 
@@ -6,28 +5,19 @@ export type CurrentUserIdentity = {
   name: string | null;
   email: string | null;
   identityProvider: string | null;
+
+  providerToken?: string | null;
 };
 
 async function getGithubIdentity(): Promise<CurrentUserIdentity> {
   const identityProvider = "GITHUB";
   const token = await storage.get("link", "refreshToken");
-  if (!token) {
-    return { name: null, email: null, identityProvider };
-  }
-
-  try {
-    const { data } = await axios.get("https://api.github.com/user", {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    return {
-      name: data.login || null,
-      email: data.email || null,
-      identityProvider,
-    };
-  } catch (error) {
-    console.error("Failed to fetch GitHub user details:", error);
-    return { name: null, email: null, identityProvider };
-  }
+  return {
+    name: null,
+    email: null,
+    identityProvider,
+    providerToken: token || null,
+  };
 }
 
 function getCognitoIdentity(): CurrentUserIdentity {
@@ -60,6 +50,10 @@ export async function getCurrentUserIdentity(): Promise<CurrentUserIdentity> {
     case "COGNITO":
       return getCognitoIdentity();
     default:
-      return { name: null, email: null, identityProvider: identityProvider || null };
+      return {
+        name: null,
+        email: null,
+        identityProvider: identityProvider || null,
+      };
   }
 }
