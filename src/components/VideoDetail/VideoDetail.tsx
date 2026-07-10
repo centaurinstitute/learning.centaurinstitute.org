@@ -1,17 +1,23 @@
-import { ArrowBack } from "@mui/icons-material";
+import { getCurrentUserIdentity } from "../../utils/currentUserIdentity";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
+import http from "@canmingir/link/platform/http";
+import { publish } from "@nucleoidai/react-event";
 import useVideos from "../../hooks/useVideos";
 
+import { Add, ArrowBack, Check, Close } from "@mui/icons-material";
 import {
   Box,
   Button,
   Card,
   Chip,
+  CircularProgress,
   Container,
+  IconButton,
   Stack,
+  TextField,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 type VideoDetailLocationState = {
@@ -75,12 +81,87 @@ const VideoDetail = () => {
     event ? { event } : undefined,
   );
 
+  const [suggestedTag, setSuggestedTag] = useState("");
+  const [submittingTags, setSubmittingTags] = useState(false);
+  const [suggestInputOpen, setSuggestInputOpen] = useState(false);
+  const [suggestSubmitted, setSuggestSubmitted] = useState(false);
+
   const backTarget =
     (location.state as VideoDetailLocationState | null)?.from || "/learning";
 
   const handleBack = () => {
     navigate(backTarget);
   };
+
+  const handleSuggestTags = async () => {
+    const tag = suggestedTag.trim();
+    if (!tag || !videoId) {
+      return;
+    }
+
+    setSubmittingTags(true);
+    getCurrentUserIdentity()
+      .then((identity) => {
+        if (!identity.email && !identity.name && !identity.providerToken) {
+          publish("GLOBAL_MESSAGE_POSTED", {
+            status: true,
+            message: "We couldn't verify your identity, please log in again",
+            severity: "warning",
+          });
+          throw new Error("Unverified identity");
+        }
+        return http.post(
+          `/videos/${videoId}/tag-suggestions`,
+          {
+            tags: [tag],
+            name: identity.name,
+            email: identity.email,
+            identityProvider: identity.identityProvider,
+          },
+          identity.providerToken
+            ? { headers: { "X-Refresh-Token": identity.providerToken } }
+            : undefined,
+        );
+      })
+      .then(() => {
+        setSuggestedTag("");
+        setSuggestSubmitted(true);
+      })
+      .catch((error) => {
+        if (error.message === "Unverified identity") {
+          return;
+        }
+        console.error("Failed to submit tag suggestion:", error);
+        publish("GLOBAL_MESSAGE_POSTED", {
+          status: true,
+          message: "Failed to submit your suggestion, please try again",
+          severity: "error",
+        });
+      })
+      .finally(() => {
+        setSubmittingTags(false);
+      });
+  };
+
+  const handleCancelSuggestInput = () => {
+    setSuggestInputOpen(false);
+    setSuggestedTag("");
+    setSuggestSubmitted(false);
+  };
+
+  useEffect(() => {
+    if (!suggestSubmitted) {
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setSuggestInputOpen(false);
+      setSuggestedTag("");
+      setSuggestSubmitted(false);
+    }, 8000);
+
+    return () => clearTimeout(timer);
+  }, [suggestSubmitted]);
 
   if (videoLoading || relatedLoading) {
     return (
@@ -191,6 +272,73 @@ const VideoDetail = () => {
                         cursor: "default",
                       },
                     }}
+                  />
+                )}
+                {!suggestInputOpen && !suggestSubmitted && (
+                  <Chip
+                    icon={<Add sx={{ fontSize: 16 }} />}
+                    label="Suggest a tag"
+                    size="small"
+                    variant="outlined"
+                    onClick={() => setSuggestInputOpen(true)}
+                  />
+                )}
+
+                {suggestInputOpen && !suggestSubmitted && (
+                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                    <TextField
+                      autoFocus
+                      disabled={submittingTags}
+                      variant="outlined"
+                      size="small"
+                      placeholder="Enter a tag"
+                      value={suggestedTag}
+                      onChange={(event) => setSuggestedTag(event.target.value)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter") {
+                          handleSuggestTags();
+                        } else if (event.key === "Escape") {
+                          handleCancelSuggestInput();
+                        }
+                      }}
+                      sx={{
+                        width: 160,
+                        "& .MuiOutlinedInput-root": {
+                          borderRadius: "16px",
+                          height: 32,
+                          fontSize: "0.8125rem",
+                        },
+                      }}
+                    />
+                    {submittingTags ? (
+                      <CircularProgress size={20} sx={{ mx: 1 }} />
+                    ) : (
+                      <>
+                        <IconButton
+                          size="small"
+                          color="primary"
+                          disabled={!suggestedTag.trim()}
+                          onClick={handleSuggestTags}
+                        >
+                          <Check fontSize="small" />
+                        </IconButton>
+                        <IconButton
+                          size="small"
+                          onClick={handleCancelSuggestInput}
+                        >
+                          <Close fontSize="small" />
+                        </IconButton>
+                      </>
+                    )}
+                  </Box>
+                )}
+
+                {suggestSubmitted && (
+                  <Chip
+                    label="Sent — pending review"
+                    size="small"
+                    color="success"
+                    variant="outlined"
                   />
                 )}
               </Box>

@@ -2,5 +2,10 @@ import { defineConfig } from "vite";
 import { vite } from "@canmingir/link/vite";
 
 export default () => {
-  return defineConfig(vite());
+  return defineConfig(
+    vite().then((config) => {
+      delete config.server;
+      return config;
+    }),
+  );
 };
