@@ -86,3 +86,14 @@ body,
   color: var(--menu-active-color);
   background-color: var(--menu-active-background);
 }
+
+.MuiMenuItem-root {
+  color: var(--menu-color) !important;
+  font-family: var(--title-font) !important;
+  font-weight: 800 !important;
+}
+
+.MuiTypography-subtitle2 {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
