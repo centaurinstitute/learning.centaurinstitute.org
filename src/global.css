@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poiret+One&display=swap");
+
+:root {
+  --app-background: #e7decb;
+  --display-font: "Poiret One", cursive;
+  --title-font: "DM Mono", monospace;
+
+  --menu-color: #ce4a25;
+  --menu-background: var(--app-background);
+  --menu-active-color: #8c2f14;
+  --menu-active-background: rgba(206, 74, 37, 0.12);
+  --menu-hover-background: rgba(206, 74, 37, 0.08);
+  --menu-subheader-color: rgba(206, 74, 37, 0.6);
+}
+
+html,
+body,
+#root {
+  background-color: var(--app-background) !important;
+}
+
+.MuiPaper-root.MuiPaper-elevation,
+.MuiAppBar-root .MuiButtonBase-root,
+.MuiCollapse-wrapperInner {
+  background-color: var(--app-background);
+}
+
+.css-bpj6gj-MuiPaper-root-MuiDrawer-paper {
+  background-color: var(--app-background) !important;
+}
+
+.MuiDrawer-root .MuiDrawer-paper {
+  background-color: var(--menu-background);
+}
+
+#nav-section-vertical .MuiListSubheader-root,
+#nav-section-mini .MuiListSubheader-root {
+  font-family: var(--title-font) !important;
+  color: var(--menu-subheader-color);
+}
+
+#nav-section-vertical .MuiListItemButton-root,
+#nav-section-mini .MuiListItemButton-root {
+  color: var(--menu-color);
+  background-color: transparent;
+}
+
+#nav-section-vertical .MuiListItemButton-root .label,
+#nav-section-mini .MuiListItemButton-root .label {
+  font-family: var(--title-font);
+}
+
+#nav-section-vertical .MuiListItemButton-root:hover,
+#nav-section-mini .MuiListItemButton-root:hover {
+  background-color: var(--menu-hover-background);
+}
+
+.css-1ya2jbm-MuiTypography-root {
+  color: var(--menu-color) !important;
+  font-family: var(--title-font) !important;
+}
+
+.css-kun65z-MuiTypography-root {
+  color: var(--menu-color) !important;
+  font-family: var(--title-font) !important;
+}
+
+.MuiIconButton-root.MuiIconButton-sizeSmall {
+  background-color: var(--menu-background) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiIconButton-root .component-iconify,
+.MuiIconButton-root svg {
+  color: var(--menu-color) !important;
+}
+
+.css-gs0cb3-MuiPaper-root-MuiDialog-paper {
+  background-color: var(--app-background) !important;
+}
+
+#nav-section-vertical .MuiListItemButton-root.active,
+#nav-section-vertical .MuiListItemButton-root.active:hover,
+#nav-section-mini .MuiListItemButton-root.active,
+#nav-section-mini .MuiListItemButton-root.active:hover {
+  color: var(--menu-active-color);
+  background-color: var(--menu-active-background);
+}
