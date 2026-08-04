@@ -18,7 +18,7 @@ const templateConfig = {
     colorPresets: "cyan",
   },
   login: {
-    variant: "modern",
+    variant: "special",
     image:
       "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
     icon: "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
