@@ -24,6 +24,9 @@ type VideoDetailLocationState = {
   from?: string;
 };
 
+const isDirectMediaUrl = (url: string) =>
+  /\.(mp4|webm|ogg|ogv|mov|m4v)(\?|#|$)/i.test(url);
+
 const RelatedVideoThumbnail = ({
   thumbnail,
   title,
@@ -236,21 +239,37 @@ const VideoDetail = () => {
                   height: 0,
                 }}
               >
-                <iframe
-                  src={`${video.videoUrl}${
-                    video.videoUrl.includes("?") ? "&" : "?"
-                  }autoplay=1&muted=1`}
-                  title={video.title}
-                  frameBorder="0"
-                  allowFullScreen
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
+                {isDirectMediaUrl(video.videoUrl) ? (
+                  <video
+                    src={video.videoUrl}
+                    title={video.title}
+                    controls
+                    autoPlay={false}
+                    preload="metadata"
+                    poster={video.thumbnail}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                ) : (
+                  <iframe
+                    src={video.videoUrl}
+                    title={video.title}
+                    frameBorder="0"
+                    allowFullScreen
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                )}
               </Box>
             </Card>
 
