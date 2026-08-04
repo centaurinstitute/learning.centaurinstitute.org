@@ -20,9 +20,10 @@ const templateConfig = {
   login: {
     variant: "modern",
     image:
-      "https://cdn.nucleoid.com/media/3b7f96ee-c245-4c93-97b8-d5503340f262.png",
-    icon: "/logo.png",
-    largeIcon: "/logo.png",
+      "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
+    icon: "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
+    largeIcon:
+      "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
   },
 };
 
