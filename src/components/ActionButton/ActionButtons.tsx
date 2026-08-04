@@ -55,11 +55,12 @@ const ActionButtons = () => {
           label={`${tag}`}
           size="small"
           sx={{
-            backgroundColor: "primary.main",
-            color: "white",
-            fontWeight: 500,
-            "&:hover": { backgroundColor: "primary.dark", cursor: "pointer" },
+            backgroundColor: "#ce4a25",
+            color: "#e7decb",
+            "&:hover": { backgroundColor: "#ce4a25", cursor: "pointer" },
             cursor: "pointer",
+            fontWeight: "400",
+            fontFamily: "var(--title-font)",
           }}
         />
       ))}

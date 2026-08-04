@@ -58,7 +58,7 @@ const VideoCard = ({
         sx={{
           position: "relative",
           width: "100%",
-          paddingTop: "100%",
+          paddingTop: "66.6667%",
           overflow: "hidden",
         }}
       >
@@ -125,6 +125,8 @@ const VideoCard = ({
             WebkitBoxOrient: "vertical",
             overflow: "hidden",
             lineHeight: 1.3,
+            color: "#ce4a25",
+            fontWeight: "400",
           }}
         >
           {video.category && (
@@ -132,12 +134,13 @@ const VideoCard = ({
               label={video.category}
               size="small"
               sx={{
-                backgroundColor: "text.secondary",
-                color: "white",
-                fontWeight: 500,
+                backgroundColor: "#ce4a25",
+                color: "#e7decb",
+                fontWeight: 400,
+                fontFamily: "var(--title-font)",
                 mr: 1,
                 "&:hover": {
-                  backgroundColor: "text.secondary",
+                  backgroundColor: "#ce4a25",
                   cursor: "default",
                 },
               }}

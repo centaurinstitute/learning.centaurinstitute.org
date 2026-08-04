@@ -97,10 +97,13 @@ const shuffle = <T,>(items: T[]): T[] => {
 };
 
 const cardImageStyles = {
+  position: "absolute" as const,
+  top: 0,
+  left: 0,
   width: "100%",
   height: "100%",
   objectFit: "cover" as const,
-  borderRadius: 3,
+  borderRadius: 12,
 };
 
 const VideoThumbnail = ({ video }: { video: Video }) => {
@@ -166,7 +169,7 @@ const HomeLayout = () => {
         <Grid key={column.title} size={1}>
           <Stack spacing={{ xs: 1, md: 2 }}>
             <Typography
-              variant="subtitle2"
+              variant="body2"
               align="center"
               sx={{
                 minHeight: { lg: 40 },
@@ -174,7 +177,11 @@ const HomeLayout = () => {
                 position: "sticky",
                 top: 55,
                 zIndex: 1,
-                bgcolor: "background.default",
+                bgcolor: "#ce4a25",
+                color: "#e7decb",
+                borderRadius: 2,
+                fontWeight: "700",
+                fontFamily: "var(--display-font)",
                 py: 1,
               }}
             >
@@ -198,7 +205,14 @@ const HomeLayout = () => {
                   p: 2,
                 }}
               >
-                <Box sx={{ height: { xs: 220, sm: 240, md: 250 } }}>
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    paddingTop: "66.6667%",
+                    overflow: "hidden",
+                  }}
+                >
                   <VideoThumbnail video={video} />
                 </Box>
                 <Typography
@@ -212,6 +226,9 @@ const HomeLayout = () => {
                     WebkitLineClamp: 2,
                     WebkitBoxOrient: "vertical",
                     overflow: "hidden",
+                    color: "#ce4a25",
+                    fontWeight: "400",
+                    fontFamily: "var(--title-font)",
                   }}
                 >
                   {video.title}

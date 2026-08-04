@@ -178,11 +178,25 @@ const VideoDetail = () => {
           startIcon={<ArrowBack />}
           onClick={handleBack}
           variant="outlined"
-          sx={{ mb: 2 }}
+          sx={{
+            fontWeight: "400",
+            fontFamily: "var(--title-font)",
+            mb: 3,
+            borderRadius: 2,
+            backgroundColor: "#ce4a25",
+            color: "#e7decb",
+          }}
         >
           Back to Learning Hub
         </Button>
-        <Typography variant="h6">Video not found</Typography>
+        <Typography
+          sx={{ color: "#e7decb" }}
+          variant="h6"
+          fontWeight="400"
+          fontFamily="var(--title-font)"
+        >
+          Video not found
+        </Typography>
       </Container>
     );
   }
@@ -194,7 +208,14 @@ const VideoDetail = () => {
           startIcon={<ArrowBack />}
           onClick={handleBack}
           variant="outlined"
-          sx={{ mb: 3, borderRadius: 2 }}
+          sx={{
+            fontWeight: "400",
+            fontFamily: "var(--title-font)",
+            mb: 3,
+            borderRadius: 2,
+            backgroundColor: "#ce4a25",
+            color: "#e7decb",
+          }}
         >
           Back to Learning Hub
         </Button>
@@ -236,7 +257,13 @@ const VideoDetail = () => {
             <Card sx={{ borderRadius: 3, p: 2 }}>
               <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
                 <Box>
-                  <Typography variant="h6" fontWeight="600">
+                  <Typography
+                    variant="h6"
+                    fontWeight="400"
+                    sx={{
+                      color: "#ce4a25",
+                    }}
+                  >
                     {video.title}
                   </Typography>
                 </Box>
@@ -252,10 +279,15 @@ const VideoDetail = () => {
                     label={`${tag}`}
                     size="small"
                     sx={{
-                      backgroundColor: "primary.main",
-                      color: "white",
-                      fontWeight: 500,
-                      "&:hover": { backgroundColor: "primary.dark" },
+                      backgroundColor: "#ce4a25",
+                      color: "#e7decb",
+                      fontWeight: 400,
+                      fontFamily: "var(--title-font)",
+                      "&:hover": {
+                        backgroundColor: "#ce4a25",
+                        cursor: "pointer",
+                      },
+                      cursor: "pointer",
                     }}
                   />
                 ))}
@@ -264,11 +296,12 @@ const VideoDetail = () => {
                     label={video.category}
                     size="small"
                     sx={{
-                      backgroundColor: "text.secondary",
-                      color: "white",
-                      fontWeight: 500,
+                      backgroundColor: "#ce4a25",
+                      color: "#e7decb",
+                      fontWeight: 400,
+                      fontFamily: "var(--title-font)",
                       "&:hover": {
-                        backgroundColor: "text.secondary",
+                        backgroundColor: "#ce4a25",
                         cursor: "default",
                       },
                     }}
@@ -281,6 +314,16 @@ const VideoDetail = () => {
                     size="small"
                     variant="outlined"
                     onClick={() => setSuggestInputOpen(true)}
+                    sx={{
+                      backgroundColor: "#ce4a25",
+                      color: "#e7decb",
+                      fontWeight: 400,
+                      fontFamily: "var(--title-font)",
+                      "&:hover": {
+                        backgroundColor: "#ce4a25",
+                        cursor: "default",
+                      },
+                    }}
                   />
                 )}
 
@@ -303,10 +346,15 @@ const VideoDetail = () => {
                       }}
                       sx={{
                         width: 160,
-                        "& .MuiOutlinedInput-root": {
-                          borderRadius: "16px",
-                          height: 32,
-                          fontSize: "0.8125rem",
+                        "& .MuiInputBase-input": {
+                          color: "#ce4a25",
+                          fontFamily: "var(--title-font)",
+                          fontWeight: 400,
+                        },
+                        "& .MuiInputBase-input::placeholder": {
+                          color: "#ce4a25",
+                          fontFamily: "var(--title-font)",
+                          fontWeight: 400,
                         },
                       }}
                     />
@@ -346,7 +394,22 @@ const VideoDetail = () => {
               {video.authors && video.authors.length > 0 && (
                 <Box sx={{ mt: 1, display: "flex", flexWrap: "wrap", gap: 1 }}>
                   {video.authors.map((author: string) => (
-                    <Chip key={author} label={author} size="small" />
+                    <Chip
+                      key={author}
+                      label={author}
+                      size="small"
+                      sx={{
+                        backgroundColor: "#ce4a25",
+                        color: "#e7decb",
+                        "&:hover": {
+                          backgroundColor: "#ce4a25",
+                          cursor: "pointer",
+                        },
+                        cursor: "pointer",
+                        fontWeight: "700",
+                        fontFamily: "var(--display-font)",
+                      }}
+                    />
                   ))}
                 </Box>
               )}
@@ -354,7 +417,11 @@ const VideoDetail = () => {
           </Box>
 
           <Box sx={{ width: { xs: "100%", lg: 400 } }}>
-            <Typography variant="h6" fontWeight="600" sx={{ mb: 2 }}>
+            <Typography
+              variant="h6"
+              fontWeight="400"
+              sx={{ mb: 2, color: "#ce4a25" }}
+            >
               More Videos
             </Typography>
             <Stack spacing={2}>
@@ -391,6 +458,8 @@ const VideoDetail = () => {
                           WebkitLineClamp: 3,
                           WebkitBoxOrient: "vertical",
                           overflow: "hidden",
+                          fontWeight: "400",
+                          color: "#ce4a25",
                         }}
                       >
                         {relatedVideo.title}

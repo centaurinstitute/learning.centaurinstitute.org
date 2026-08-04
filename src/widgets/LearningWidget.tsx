@@ -75,7 +75,14 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
     <>
       <Box sx={{ width: "100%", padding: { xs: 2, md: 3 } }}>
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h3" fontWeight="800">
+          <Typography
+            sx={{
+              color: "#ce4a25",
+              fontWeight: "400",
+              fontFamily: "var(--title-font)",
+            }}
+            variant="h3"
+          >
             {tagQuery
               ? `"${tagQuery.slice(0)}" related videos`
               : event
