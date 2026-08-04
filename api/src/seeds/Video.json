@@ -13,11 +13,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-11-04T03:28:00Z",
-      "tags": [
-        "general_overview",
-        "grand_challenges",
-        "limitations_of_llms"
-      ],
+      "tags": ["general_overview", "grand_challenges", "limitations_of_llms"],
       "event": "SS2022",
       "authors": [
         "Alexander Gray",
@@ -40,15 +36,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-30T23:41:00Z",
-      "tags": [
-        "general_overview",
-        "knowledge_extraction",
-        "neural_reasoning"
-      ],
+      "tags": ["general_overview", "knowledge_extraction", "neural_reasoning"],
       "event": "SS2022",
-      "authors": [
-        "Artur d'Avila Garcez"
-      ],
+      "authors": ["Artur d'Avila Garcez"],
       "category": "Talk"
     },
     {
@@ -64,15 +54,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-10-13T05:42:00Z",
-      "tags": [
-        "general_overview",
-        "grand_challenges",
-        "limitations_of_llms"
-      ],
+      "tags": ["general_overview", "grand_challenges", "limitations_of_llms"],
       "event": "SS2022",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -88,14 +72,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-09-24T10:42:00Z",
-      "tags": [
-        "knowledge_representation",
-        "knowledge_graphs"
-      ],
+      "tags": ["knowledge_representation", "knowledge_graphs"],
       "event": "SS2022",
-      "authors": [
-        "Maria Chang"
-      ],
+      "authors": ["Maria Chang"],
       "category": "Tutorial"
     },
     {
@@ -111,11 +90,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-09-24T10:16:00Z",
-      "tags": [
-        "knowledge_graphs",
-        "open_source",
-        "ns_framework"
-      ],
+      "tags": ["knowledge_graphs", "open_source", "ns_framework"],
       "event": "SS2022",
       "authors": [
         "Rosario Uceda-Sosa",
@@ -137,13 +112,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-07-04T04:41:00Z",
-      "tags": [
-        "logical_reasoning"
-      ],
+      "tags": ["logical_reasoning"],
       "event": "SS2022",
-      "authors": [
-        "Achille Fokoue"
-      ],
+      "authors": ["Achille Fokoue"],
       "category": "Tutorial"
     },
     {
@@ -159,16 +130,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-06-04T19:17:00Z",
-      "tags": [
-        "ns_framework",
-        "atp",
-        "logical_reasoning",
-        "rl"
-      ],
+      "tags": ["ns_framework", "atp", "logical_reasoning", "rl"],
       "event": "SS2022",
-      "authors": [
-        "Ndivhuwo Makondo"
-      ],
+      "authors": ["Ndivhuwo Makondo"],
       "category": "Talk"
     },
     {
@@ -184,13 +148,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-09-11T16:12:00Z",
-      "tags": [
-        "logical_reasoning"
-      ],
+      "tags": ["logical_reasoning"],
       "event": "SS2022",
-      "authors": [
-        "Marco L. Carmosino"
-      ],
+      "authors": ["Marco L. Carmosino"],
       "category": "Tutorial"
     },
     {
@@ -206,21 +166,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-19T13:21:00Z",
-      "tags": [
-        "computational_complexity",
-        "math_foundations"
-      ],
+      "tags": ["computational_complexity", "math_foundations"],
       "event": "SS2022",
-      "authors": [
-        "Jon Lenchner"
-      ],
+      "authors": ["Jon Lenchner"],
       "category": "Tutorial"
     },
     {
       "id": "d7334953-c6e7-4aff-a5ee-762f169aac2b",
       "title": "Theory of Real-Valued Logics",
       "description": "This presentation, titled 'Theory of Real-Valued Logics', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/d7334953-c6e7-4aff-a5ee-762f169aac2b_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/f6b27457-a272-4fe9-9b82-eca1cb42d677.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/d7334953-c6e7-4aff-a5ee-762f169aac2b.mp4",
       "duration": "29:50",
       "views": 1169,
@@ -229,14 +184,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-09-27T21:59:00Z",
-      "tags": [
-        "logical_reasoning",
-        "math_foundations"
-      ],
+      "tags": ["logical_reasoning", "math_foundations"],
       "event": "SS2022",
-      "authors": [
-        "Ron Fagin"
-      ],
+      "authors": ["Ron Fagin"],
       "category": "Tutorial"
     },
     {
@@ -252,14 +202,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-22T11:02:00Z",
-      "tags": [
-        "math_foundations",
-        "computational_complexity"
-      ],
+      "tags": ["math_foundations", "computational_complexity"],
       "event": "SS2022",
-      "authors": [
-        "Rik Sengupta"
-      ],
+      "authors": ["Rik Sengupta"],
       "category": "Tutorial"
     },
     {
@@ -275,14 +220,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-09-30T09:04:00Z",
-      "tags": [
-        "transformers"
-      ],
+      "tags": ["transformers"],
       "event": "SS2022",
-      "authors": [
-        "Mark Wegman",
-        "Hans Florian"
-      ],
+      "authors": ["Mark Wegman", "Hans Florian"],
       "category": "Tutorial"
     },
     {
@@ -298,13 +238,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-10-25T23:33:00Z",
-      "tags": [
-        "inductive_reasoning"
-      ],
+      "tags": ["inductive_reasoning"],
       "event": "SS2022",
-      "authors": [
-        "Prithviraj Sen"
-      ],
+      "authors": ["Prithviraj Sen"],
       "category": "Talk"
     },
     {
@@ -320,15 +256,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-14T04:40:00Z",
-      "tags": [
-        "ns_taxonomy",
-        "inductive_reasoning"
-      ],
+      "tags": ["ns_taxonomy", "inductive_reasoning"],
       "event": "SS2022",
-      "authors": [
-        "Tengfei Ma",
-        "Ronny Luss"
-      ],
+      "authors": ["Tengfei Ma", "Ronny Luss"],
       "category": "Talk"
     },
     {
@@ -344,15 +274,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-11-02T04:16:00Z",
-      "tags": [
-        "semantic_parsing",
-        "autoformalization",
-        "nlp"
-      ],
+      "tags": ["semantic_parsing", "autoformalization", "nlp"],
       "event": "SS2022",
-      "authors": [
-        "Ramon Fernandez Astudillo"
-      ],
+      "authors": ["Ramon Fernandez Astudillo"],
       "category": "Tutorial"
     },
     {
@@ -368,14 +292,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-06-21T13:01:00Z",
-      "tags": [
-        "nlp",
-        "knowledge_extraction"
-      ],
+      "tags": ["nlp", "knowledge_extraction"],
       "event": "SS2022",
-      "authors": [
-        "Dinesh Garg"
-      ],
+      "authors": ["Dinesh Garg"],
       "category": "Talk"
     },
     {
@@ -391,14 +310,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-07-15T14:36:00Z",
-      "tags": [
-        "nlp",
-        "knowledge_graphs"
-      ],
+      "tags": ["nlp", "knowledge_graphs"],
       "event": "SS2022",
-      "authors": [
-        "Pavan Kapanipathi"
-      ],
+      "authors": ["Pavan Kapanipathi"],
       "category": "Talk"
     },
     {
@@ -414,16 +328,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-12T10:42:00Z",
-      "tags": [
-        "rl",
-        "inductive_reasoning",
-        "nlp"
-      ],
+      "tags": ["rl", "inductive_reasoning", "nlp"],
       "event": "SS2022",
-      "authors": [
-        "Don Joven Ravoy Agravante",
-        "Maxwell Crouse"
-      ],
+      "authors": ["Don Joven Ravoy Agravante", "Maxwell Crouse"],
       "category": "Talk"
     },
     {
@@ -439,13 +346,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-11-01T09:11:00Z",
-      "tags": [
-        "rl"
-      ],
+      "tags": ["rl"],
       "event": "SS2022",
-      "authors": [
-        "Miao Liu"
-      ],
+      "authors": ["Miao Liu"],
       "category": "Tutorial"
     },
     {
@@ -461,13 +364,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-09-23T08:25:00Z",
-      "tags": [
-        "planning"
-      ],
+      "tags": ["planning"],
       "event": "SS2022",
-      "authors": [
-        "Michael Katz"
-      ],
+      "authors": ["Michael Katz"],
       "category": "Tutorial"
     },
     {
@@ -483,14 +382,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-08-10T18:05:00Z",
-      "tags": [
-        "planning",
-        "rl"
-      ],
+      "tags": ["planning", "rl"],
       "event": "SS2022",
-      "authors": [
-        "Junkyu Lee"
-      ],
+      "authors": ["Junkyu Lee"],
       "category": "Talk"
     },
     {
@@ -506,13 +400,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-06-15T07:31:00Z",
-      "tags": [
-        "open_source"
-      ],
+      "tags": ["open_source"],
       "event": "SS2022",
-      "authors": [
-        "Naweed Khan"
-      ],
+      "authors": ["Naweed Khan"],
       "category": "Tutorial"
     },
     {
@@ -528,13 +418,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-06-30T20:57:00Z",
-      "tags": [
-        "general_overview"
-      ],
+      "tags": ["general_overview"],
       "event": "SS2022",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -552,11 +438,7 @@
       "uploadDate": "2022-10-07T16:17:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Murray Campbell",
-        "Lior Horesh",
-        "Francesca Rossi"
-      ],
+      "authors": ["Murray Campbell", "Lior Horesh", "Francesca Rossi"],
       "category": "Talk"
     },
     {
@@ -572,14 +454,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2022-09-22T08:47:00Z",
-      "tags": [
-        "knowledge_representation",
-        "logical_reasoning"
-      ],
+      "tags": ["knowledge_representation", "logical_reasoning"],
       "event": "WW2022",
-      "authors": [
-        "Luís C. Lamb"
-      ]
+      "authors": ["Luís C. Lamb"]
     },
     {
       "id": "5d864bc9-1776-4db3-bb91-b2261079f3a7",
@@ -596,9 +473,7 @@
       "uploadDate": "2022-11-17T18:26:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Alexander Gray"
-      ]
+      "authors": ["Alexander Gray"]
     },
     {
       "id": "d1a06635-fd34-4c61-9931-93e8d474e378",
@@ -615,9 +490,7 @@
       "uploadDate": "2022-11-09T01:10:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Murray Campbell"
-      ]
+      "authors": ["Murray Campbell"]
     },
     {
       "id": "b65b9cdf-e215-40b8-b1f4-16468d0b92aa",
@@ -645,7 +518,7 @@
       "id": "bd2cb27c-ae22-4145-aad8-d8a0394e688f",
       "title": "Theory of Real-Valued Logics",
       "description": "This presentation, titled 'Theory of Real-Valued Logics', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/bd2cb27c-ae22-4145-aad8-d8a0394e688f_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/f6b27457-a272-4fe9-9b82-eca1cb42d677.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/bd2cb27c-ae22-4145-aad8-d8a0394e688f.mp4",
       "duration": "53:46",
       "views": 940,
@@ -656,9 +529,7 @@
       "uploadDate": "2022-10-11T00:21:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Ron Fagin"
-      ]
+      "authors": ["Ron Fagin"]
     },
     {
       "id": "33d864a9-b5e2-41fd-81a9-e0e36467b626",
@@ -675,9 +546,7 @@
       "uploadDate": "2022-06-15T18:09:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Antonio Di Nola"
-      ]
+      "authors": ["Antonio Di Nola"]
     },
     {
       "id": "edec84e9-a65f-45f6-b384-7729c0b202b4",
@@ -694,9 +563,7 @@
       "uploadDate": "2022-11-10T13:02:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Pavan Kapanipathi"
-      ]
+      "authors": ["Pavan Kapanipathi"]
     },
     {
       "id": "eb30bd3a-8952-42eb-bdd1-386f198ab34a",
@@ -713,9 +580,7 @@
       "uploadDate": "2022-10-15T18:38:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Dan Roth"
-      ]
+      "authors": ["Dan Roth"]
     },
     {
       "id": "19841bf4-a56e-435c-8078-b95abddb7bef",
@@ -732,9 +597,7 @@
       "uploadDate": "2022-08-02T15:24:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Andrew McCallum"
-      ]
+      "authors": ["Andrew McCallum"]
     },
     {
       "id": "a5be0c12-c5ff-4dc5-95a4-0c871556b9db",
@@ -751,11 +614,7 @@
       "uploadDate": "2022-11-27T22:21:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Maria Chang",
-        "Rosario Uceda-Sosa",
-        "Guilherme Lima"
-      ]
+      "authors": ["Maria Chang", "Rosario Uceda-Sosa", "Guilherme Lima"]
     },
     {
       "id": "6cb26bad-750a-4a90-9d23-c7be11afbadb",
@@ -772,9 +631,7 @@
       "uploadDate": "2022-09-27T05:14:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Deborah L. McGuinness"
-      ]
+      "authors": ["Deborah L. McGuinness"]
     },
     {
       "id": "43eaab28-22f8-4d14-bb91-2a3eaacade12",
@@ -791,9 +648,7 @@
       "uploadDate": "2022-10-31T23:02:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Maarten Sap"
-      ]
+      "authors": ["Maarten Sap"]
     },
     {
       "id": "106a679b-af2a-4290-b3ce-2f70beebfccd",
@@ -810,10 +665,7 @@
       "uploadDate": "2022-08-01T22:47:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Shirin Sohrabi",
-        "Debarun Bhattacharjya"
-      ]
+      "authors": ["Shirin Sohrabi", "Debarun Bhattacharjya"]
     },
     {
       "id": "40311f32-178d-4e2e-becb-901c18a52134",
@@ -830,9 +682,7 @@
       "uploadDate": "2022-06-17T20:11:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Leslie Pack Kaelbling"
-      ]
+      "authors": ["Leslie Pack Kaelbling"]
     },
     {
       "id": "6d58ee2b-fb17-4524-8306-584b00f76609",
@@ -849,9 +699,7 @@
       "uploadDate": "2022-10-01T16:57:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Sheila A. McIlraith"
-      ]
+      "authors": ["Sheila A. McIlraith"]
     },
     {
       "id": "a643e1b9-824d-4088-b033-abee8f40d091",
@@ -868,10 +716,7 @@
       "uploadDate": "2022-08-03T09:21:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Renato Cerqueira",
-        "Sanjeeb Dash"
-      ]
+      "authors": ["Renato Cerqueira", "Sanjeeb Dash"]
     },
     {
       "id": "a1f26b74-bcd8-43f0-9faf-305bde90a089",
@@ -888,9 +733,7 @@
       "uploadDate": "2022-10-05T18:36:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Stephen Muggleton"
-      ]
+      "authors": ["Stephen Muggleton"]
     },
     {
       "id": "ef0cbfe6-4c1e-4260-b137-d38a73c19402",
@@ -907,9 +750,7 @@
       "uploadDate": "2022-08-14T15:03:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Josh Tenenbaum"
-      ]
+      "authors": ["Josh Tenenbaum"]
     },
     {
       "id": "452e1c00-4cba-44c2-af03-82e88e969084",
@@ -926,10 +767,7 @@
       "uploadDate": "2022-09-11T06:54:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Ken Clarkson",
-        "Mark Squillante"
-      ]
+      "authors": ["Ken Clarkson", "Mark Squillante"]
     },
     {
       "id": "b0a2adb2-1bd5-4298-87f5-550debc2da24",
@@ -946,9 +784,7 @@
       "uploadDate": "2022-09-01T22:48:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Yuhai Tu"
-      ]
+      "authors": ["Yuhai Tu"]
     },
     {
       "id": "3536a0b8-9a68-4f15-aeb2-b4a36ddb2d14",
@@ -965,9 +801,7 @@
       "uploadDate": "2022-10-22T23:48:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Soumyadip Ghosh"
-      ]
+      "authors": ["Soumyadip Ghosh"]
     },
     {
       "id": "fa39799c-72c5-4961-a2b8-0081f402fcfc",
@@ -984,9 +818,7 @@
       "uploadDate": "2022-11-16T16:00:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Mark Squillante"
-      ]
+      "authors": ["Mark Squillante"]
     },
     {
       "id": "ccc33526-cccd-4bbe-b9f9-e52c088c2b35",
@@ -1003,9 +835,7 @@
       "uploadDate": "2022-09-17T19:51:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Tim Klinger"
-      ]
+      "authors": ["Tim Klinger"]
     },
     {
       "id": "990db85e-fcac-4590-92d2-f4886498e17c",
@@ -1022,9 +852,7 @@
       "uploadDate": "2022-11-17T16:50:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Shashanka Ubaru"
-      ]
+      "authors": ["Shashanka Ubaru"]
     },
     {
       "id": "2cabca0f-cf84-4b03-8c63-2cce56bab1a6",
@@ -1041,9 +869,7 @@
       "uploadDate": "2022-09-19T00:56:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Parikshit Ram"
-      ]
+      "authors": ["Parikshit Ram"]
     },
     {
       "id": "f79a57f0-744e-4291-8a31-476d62008a44",
@@ -1060,9 +886,7 @@
       "uploadDate": "2022-10-08T05:48:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Ken Clarkson"
-      ]
+      "authors": ["Ken Clarkson"]
     },
     {
       "id": "3614de5f-fc51-45c5-a8c5-df08e1694d48",
@@ -1079,9 +903,7 @@
       "uploadDate": "2022-11-16T21:38:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Timothy Hospedales"
-      ]
+      "authors": ["Timothy Hospedales"]
     },
     {
       "id": "9c5e7099-1921-4db9-b672-aa6fa9221d01",
@@ -1098,9 +920,7 @@
       "uploadDate": "2022-07-02T14:55:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Jacob Andreas"
-      ]
+      "authors": ["Jacob Andreas"]
     },
     {
       "id": "301a36a9-293c-4bcc-8b8d-65fad0b058de",
@@ -1117,15 +937,13 @@
       "uploadDate": "2022-08-31T19:35:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Lior Horesh"
-      ]
+      "authors": ["Lior Horesh"]
     },
     {
       "id": "f85aa3a2-d731-45a1-8b9f-7372741d6653",
       "title": "Towards a Proper Foundation for Robust Artificial Intelligence",
       "description": "This presentation, titled 'Towards a Proper Foundation for Robust Artificial Intelligence', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/f85aa3a2-d731-45a1-8b9f-7372741d6653_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/f6b27457-a272-4fe9-9b82-eca1cb42d677.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/f85aa3a2-d731-45a1-8b9f-7372741d6653.mp4",
       "duration": "40:22",
       "views": 1577,
@@ -1136,9 +954,7 @@
       "uploadDate": "2022-06-23T22:30:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Gary Marcus"
-      ]
+      "authors": ["Gary Marcus"]
     },
     {
       "id": "7c52ef48-4807-4846-aad1-d781e7ab259a",
@@ -1155,9 +971,7 @@
       "uploadDate": "2022-11-20T03:59:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "James Kozloski"
-      ]
+      "authors": ["James Kozloski"]
     },
     {
       "id": "e45defbc-bf9b-4b3c-887c-fde8b48c61c3",
@@ -1174,15 +988,13 @@
       "uploadDate": "2022-07-12T04:27:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Naweed Khan"
-      ]
+      "authors": ["Naweed Khan"]
     },
     {
       "id": "21242fce-92ad-4af4-ad9e-a740e73c1f10",
       "title": "Panel on the future of (neuro-symbolic) AI",
       "description": "This presentation, titled 'Panel on the future of (neuro-symbolic) AI', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/21242fce-92ad-4af4-ad9e-a740e73c1f10_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/f6b27457-a272-4fe9-9b82-eca1cb42d677.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/21242fce-92ad-4af4-ad9e-a740e73c1f10.mp4",
       "duration": "42:46",
       "views": 79,
@@ -1218,16 +1030,14 @@
       "uploadDate": "2022-11-17T03:25:00Z",
       "tags": [],
       "event": "WW2022",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
       "id": "20b2271b-8605-4cfc-91bf-c1267199cdf6",
       "title": "Introduction to the NSAI Summer School 2023",
       "description": "This presentation, titled 'Introduction to the NSAI Summer School 2023', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/20b2271b-8605-4cfc-91bf-c1267199cdf6_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/20b2271b-8605-4cfc-91bf-c1267199cdf6.mp4",
       "duration": "30:03",
       "views": 431,
@@ -1236,22 +1046,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-06-15T19:51:00Z",
-      "tags": [
-        "general_overview",
-        "grand_challenges",
-        "limitations_of_llms"
-      ],
+      "tags": ["general_overview", "grand_challenges", "limitations_of_llms"],
       "event": "SS2023",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
       "id": "dfe2fa23-d83a-4d0e-aa76-f665e84e9439",
       "title": "Intro to Practical Knowledge Representation and Logic",
       "description": "This presentation, titled 'Intro to Practical Knowledge Representation and Logic', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/dfe2fa23-d83a-4d0e-aa76-f665e84e9439_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/dfe2fa23-d83a-4d0e-aa76-f665e84e9439.mp4",
       "duration": "35:33",
       "views": 1742,
@@ -1260,20 +1064,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-10-04T06:39:00Z",
-      "tags": [
-        "logical_reasoning",
-        "knowledge_representation"
-      ],
+      "tags": ["logical_reasoning", "knowledge_representation"],
       "event": "SS2023",
-      "authors": [
-        "Benjamin Grosof"
-      ]
+      "authors": ["Benjamin Grosof"]
     },
     {
       "id": "26faff14-7f40-40e7-a5b7-f53f935670fc",
       "title": "State-of-the-Art Practical Reasoning and Meta Logic",
       "description": "This presentation, titled 'State-of-the-Art Practical Reasoning and Meta Logic', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/26faff14-7f40-40e7-a5b7-f53f935670fc_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/26faff14-7f40-40e7-a5b7-f53f935670fc.mp4",
       "duration": "35:16",
       "views": 251,
@@ -1282,19 +1081,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-08-12T17:13:00Z",
-      "tags": [
-        "logical_reasoning"
-      ],
+      "tags": ["logical_reasoning"],
       "event": "SS2023",
-      "authors": [
-        "Benjamin Grosof"
-      ]
+      "authors": ["Benjamin Grosof"]
     },
     {
       "id": "f19c8a76-fa4e-4b9e-86a4-e87a73b3dfc9",
       "title": "A bit of Neuro-Probabilistic-Logic Programming...",
       "description": "This presentation, titled 'A bit of Neuro-Probabilistic-Logic Programming...', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/f19c8a76-fa4e-4b9e-86a4-e87a73b3dfc9_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/f19c8a76-fa4e-4b9e-86a4-e87a73b3dfc9.mp4",
       "duration": "23:12",
       "views": 1502,
@@ -1303,19 +1098,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-06-03T23:44:00Z",
-      "tags": [
-        "probabilistic_reasoning"
-      ],
+      "tags": ["probabilistic_reasoning"],
       "event": "SS2023",
-      "authors": [
-        "Fabio G. Cozman"
-      ]
+      "authors": ["Fabio G. Cozman"]
     },
     {
       "id": "7fa023c5-ee34-4619-9ba4-0599a7206a6d",
       "title": "Logic with Probabilities",
       "description": "This presentation, titled 'Logic with Probabilities', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/7fa023c5-ee34-4619-9ba4-0599a7206a6d_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/7fa023c5-ee34-4619-9ba4-0599a7206a6d.mp4",
       "duration": "39:00",
       "views": 1263,
@@ -1324,19 +1115,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-08-05T13:45:00Z",
-      "tags": [
-        "probabilistic_reasoning"
-      ],
+      "tags": ["probabilistic_reasoning"],
       "event": "SS2023",
-      "authors": [
-        "Fabrizio Riguzzi"
-      ]
+      "authors": ["Fabrizio Riguzzi"]
     },
     {
       "id": "794366a5-1438-4bb6-b397-66f2382457ea",
       "title": "From Probabilistic Logics to Neuro-Symbolic AI",
       "description": "This presentation, titled 'From Probabilistic Logics to Neuro-Symbolic AI', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/794366a5-1438-4bb6-b397-66f2382457ea_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/794366a5-1438-4bb6-b397-66f2382457ea.mp4",
       "duration": "16:44",
       "views": 1639,
@@ -1351,15 +1138,13 @@
         "inductive_reasoning"
       ],
       "event": "SS2023",
-      "authors": [
-        "Luc De Raedt"
-      ]
+      "authors": ["Luc De Raedt"]
     },
     {
       "id": "445135b1-2807-44c5-93cc-a8ddc0059296",
       "title": "Reasoning with Large Language Models",
       "description": "This presentation, titled 'Reasoning with Large Language Models', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/445135b1-2807-44c5-93cc-a8ddc0059296_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/445135b1-2807-44c5-93cc-a8ddc0059296.mp4",
       "duration": "21:56",
       "views": 421,
@@ -1368,20 +1153,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-08-24T05:25:00Z",
-      "tags": [
-        "limitations_of_llms",
-        "neural_reasoning"
-      ],
+      "tags": ["limitations_of_llms", "neural_reasoning"],
       "event": "SS2023",
-      "authors": [
-        "Abulhair Saparov"
-      ]
+      "authors": ["Abulhair Saparov"]
     },
     {
       "id": "7e723859-0244-4fbd-93a9-74eafb540bbe",
       "title": "Robust Logic",
       "description": "This presentation, titled 'Robust Logic', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/7e723859-0244-4fbd-93a9-74eafb540bbe_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/7e723859-0244-4fbd-93a9-74eafb540bbe.mp4",
       "duration": "27:34",
       "views": 1246,
@@ -1390,20 +1170,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-07-29T14:28:00Z",
-      "tags": [
-        "logical_reasoning",
-        "inductive_reasoning"
-      ],
+      "tags": ["logical_reasoning", "inductive_reasoning"],
       "event": "SS2023",
-      "authors": [
-        "Leslie Valiant"
-      ]
+      "authors": ["Leslie Valiant"]
     },
     {
       "id": "73a0561d-bdd3-48aa-8b69-235989ccd672",
       "title": "Compositional Generalization",
       "description": "This presentation, titled 'Compositional Generalization', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/73a0561d-bdd3-48aa-8b69-235989ccd672_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/73a0561d-bdd3-48aa-8b69-235989ccd672.mp4",
       "duration": "18:00",
       "views": 886,
@@ -1412,21 +1187,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-08-29T00:08:00Z",
-      "tags": [
-        "compositionality",
-        "computational_learning_theory"
-      ],
+      "tags": ["compositionality", "computational_learning_theory"],
       "event": "SS2023",
-      "authors": [
-        "Soham Dan"
-      ],
+      "authors": ["Soham Dan"],
       "category": "Tutorial"
     },
     {
       "id": "b55af06f-9a81-48c9-af54-d0f3f14d4295",
       "title": "2023 Summer School Panel #1",
       "description": "This presentation, titled '2023 Summer School Panel #1', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/b55af06f-9a81-48c9-af54-d0f3f14d4295_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/b55af06f-9a81-48c9-af54-d0f3f14d4295.mp4",
       "duration": "48:12",
       "views": 599,
@@ -1435,11 +1205,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-09-02T17:08:00Z",
-      "tags": [
-        "math_foundations",
-        "grand_challenges",
-        "general_audience"
-      ],
+      "tags": ["math_foundations", "grand_challenges", "general_audience"],
       "event": "SS2023",
       "authors": [
         "Benjamin Grosof",
@@ -1456,7 +1222,7 @@
       "id": "2c7ac9de-867e-4a7a-9659-0e4f41c6e8b0",
       "title": "Robust Logic: Some Applications and Extensions",
       "description": "This presentation, titled 'Robust Logic: Some Applications and Extensions', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/2c7ac9de-867e-4a7a-9659-0e4f41c6e8b0_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/2c7ac9de-867e-4a7a-9659-0e4f41c6e8b0.mp4",
       "duration": "24:50",
       "views": 246,
@@ -1465,20 +1231,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-07-22T19:34:00Z",
-      "tags": [
-        "ns_framework",
-        "inductive_reasoning"
-      ],
+      "tags": ["ns_framework", "inductive_reasoning"],
       "event": "SS2023",
-      "authors": [
-        "Naoki Abe"
-      ]
+      "authors": ["Naoki Abe"]
     },
     {
       "id": "ce658fda-3f5b-4479-b7d2-9185f0f7a92c",
       "title": "Deep Learning with Logical Requirements",
       "description": "This presentation, titled 'Deep Learning with Logical Requirements', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/ce658fda-3f5b-4479-b7d2-9185f0f7a92c_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/ce658fda-3f5b-4479-b7d2-9185f0f7a92c.mp4",
       "duration": "53:10",
       "views": 98,
@@ -1494,15 +1255,13 @@
         "self_driving_cars"
       ],
       "event": "SS2023",
-      "authors": [
-        "Eleonora Giunchiglia"
-      ]
+      "authors": ["Eleonora Giunchiglia"]
     },
     {
       "id": "e46dd07f-2e9b-4842-9b86-e512f1db7732",
       "title": "A Neuro-vector-symbolic Architecture for Solving Raven’s Progressive Matrices",
       "description": "This presentation, titled 'A Neuro-vector-symbolic Architecture for Solving Raven’s Progressive Matrices', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/e46dd07f-2e9b-4842-9b86-e512f1db7732_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/e46dd07f-2e9b-4842-9b86-e512f1db7732.mp4",
       "duration": "30:15",
       "views": 1234,
@@ -1511,20 +1270,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-10-14T00:10:00Z",
-      "tags": [
-        "tensor_logics"
-      ],
+      "tags": ["tensor_logics"],
       "event": "SS2023",
-      "authors": [
-        "Michael Hersche"
-      ],
+      "authors": ["Michael Hersche"],
       "category": "Talk"
     },
     {
       "id": "308728c0-ba82-4ced-bb7d-09c6f4aa54ec",
       "title": "AI can learn from data. But can it learn to reason?",
       "description": "This presentation, titled 'AI can learn from data. But can it learn to reason?', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/308728c0-ba82-4ced-bb7d-09c6f4aa54ec_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/308728c0-ba82-4ced-bb7d-09c6f4aa54ec.mp4",
       "duration": "52:23",
       "views": 1283,
@@ -1539,15 +1294,13 @@
         "probabilistic_reasoning"
       ],
       "event": "SS2023",
-      "authors": [
-        "Guy Van den Broeck"
-      ]
+      "authors": ["Guy Van den Broeck"]
     },
     {
       "id": "5b599bf9-ecd1-4a01-85d2-a93a9e6b126f",
       "title": "Thinking Fast and Slow in AI: Can it Help for Planning?",
       "description": "This presentation, titled 'Thinking Fast and Slow in AI: Can it Help for Planning?', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/5b599bf9-ecd1-4a01-85d2-a93a9e6b126f_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/5b599bf9-ecd1-4a01-85d2-a93a9e6b126f.mp4",
       "duration": "28:09",
       "views": 738,
@@ -1556,21 +1309,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-10-25T01:27:00Z",
-      "tags": [
-        "planning",
-        "cognitive_architectures"
-      ],
+      "tags": ["planning", "cognitive_architectures"],
       "event": "SS2023",
-      "authors": [
-        "Francesca Rossi"
-      ],
+      "authors": ["Francesca Rossi"],
       "category": "Talk"
     },
     {
       "id": "e3a50925-dea0-4525-bf2e-eda1ba12e537",
       "title": "Compositional Program Generation for Systematic Generalization",
       "description": "This presentation, titled 'Compositional Program Generation for Systematic Generalization', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/e3a50925-dea0-4525-bf2e-eda1ba12e537_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/e3a50925-dea0-4525-bf2e-eda1ba12e537.mp4",
       "duration": "43:48",
       "views": 363,
@@ -1579,19 +1327,15 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-09-20T19:33:00Z",
-      "tags": [
-        "compositionality"
-      ],
+      "tags": ["compositionality"],
       "event": "SS2023",
-      "authors": [
-        "Tim Klinger"
-      ]
+      "authors": ["Tim Klinger"]
     },
     {
       "id": "12ff5efa-8d0c-4bf2-87e1-f8e028f5e769",
       "title": "Causal abstraction for faithful, human-interpretable model explanations",
       "description": "This presentation, titled 'Causal abstraction for faithful, human-interpretable model explanations', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/12ff5efa-8d0c-4bf2-87e1-f8e028f5e769_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/12ff5efa-8d0c-4bf2-87e1-f8e028f5e769.mp4",
       "duration": "16:51",
       "views": 758,
@@ -1606,15 +1350,13 @@
         "limitations_of_llms"
       ],
       "event": "SS2023",
-      "authors": [
-        "Christopher Potts"
-      ]
+      "authors": ["Christopher Potts"]
     },
     {
       "id": "27219e98-6f47-4c9c-8f9f-1bc226310e60",
       "title": "Model-based ML: Towards Causal Reasoning in an AI Scientist",
       "description": "This presentation, titled 'Model-based ML: Towards Causal Reasoning in an AI Scientist', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/27219e98-6f47-4c9c-8f9f-1bc226310e60_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/27219e98-6f47-4c9c-8f9f-1bc226310e60.mp4",
       "duration": "40:41",
       "views": 1366,
@@ -1623,20 +1365,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2023-11-03T01:21:00Z",
-      "tags": [
-        "causal_reasoning"
-      ],
+      "tags": ["causal_reasoning"],
       "event": "SS2023",
-      "authors": [
-        "Yoshua Bengio"
-      ],
+      "authors": ["Yoshua Bengio"],
       "category": "Talk"
     },
     {
       "id": "0f1ae4be-1253-4057-9891-82dbaef3b833",
       "title": "2023 Summer School Panel #2",
       "description": "This presentation, titled '2023 Summer School Panel #2', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/0f1ae4be-1253-4057-9891-82dbaef3b833_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/0f1ae4be-1253-4057-9891-82dbaef3b833.mp4",
       "duration": "55:32",
       "views": 1385,
@@ -1674,9 +1412,7 @@
       "uploadDate": "2023-09-17T17:58:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -1694,15 +1430,13 @@
       "uploadDate": "2023-06-03T23:32:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Moshe Y. Vardi"
-      ]
+      "authors": ["Moshe Y. Vardi"]
     },
     {
       "id": "9c7afc4f-7e70-4e28-9ade-facd95e883e3",
       "title": "How to Augment Supervised Learning with Reasoning",
       "description": "This presentation, titled 'How to Augment Supervised Learning with Reasoning', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/9c7afc4f-7e70-4e28-9ade-facd95e883e3_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/9c7afc4f-7e70-4e28-9ade-facd95e883e3.mp4",
       "duration": "15:56",
       "views": 1154,
@@ -1713,9 +1447,7 @@
       "uploadDate": "2023-09-01T04:13:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Leslie Valiant"
-      ]
+      "authors": ["Leslie Valiant"]
     },
     {
       "id": "fba6855c-8e24-426e-89ff-90ab980ddd91",
@@ -1732,9 +1464,7 @@
       "uploadDate": "2023-10-23T12:00:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Radu Marinescu"
-      ]
+      "authors": ["Radu Marinescu"]
     },
     {
       "id": "b384fbe2-00f9-488e-80e2-b9e7a13328dd",
@@ -1751,9 +1481,7 @@
       "uploadDate": "2023-11-28T12:09:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Jon Lenchner"
-      ]
+      "authors": ["Jon Lenchner"]
     },
     {
       "id": "99e87393-95c3-4151-a11a-0bc25010f9ec",
@@ -1770,9 +1498,7 @@
       "uploadDate": "2023-11-28T22:15:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Luc De Raedt"
-      ]
+      "authors": ["Luc De Raedt"]
     },
     {
       "id": "620d99f6-6e57-4048-8587-d9fb02fceb57",
@@ -1789,9 +1515,7 @@
       "uploadDate": "2023-07-21T05:52:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Artur d’Avila Garcez"
-      ]
+      "authors": ["Artur d’Avila Garcez"]
     },
     {
       "id": "96d3ba20-b990-4cc8-979d-76a89dc10270",
@@ -1808,15 +1532,13 @@
       "uploadDate": "2023-07-27T22:20:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Francesca Rossi"
-      ]
+      "authors": ["Francesca Rossi"]
     },
     {
       "id": "c8609074-8976-469f-86b1-fbf9ea65c4ae",
       "title": "Panel: Invited Chair: Moshe Vardi",
       "description": "This presentation, titled 'Panel: Invited Chair: Moshe Vardi', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/c8609074-8976-469f-86b1-fbf9ea65c4ae_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/c8609074-8976-469f-86b1-fbf9ea65c4ae.mp4",
       "duration": "16:42",
       "views": 1281,
@@ -1853,9 +1575,7 @@
       "uploadDate": "2023-10-28T15:15:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Achille Fokoue"
-      ]
+      "authors": ["Achille Fokoue"]
     },
     {
       "id": "0fe68f50-d88c-4d8a-8dae-f3ac4ce7313a",
@@ -1872,10 +1592,7 @@
       "uploadDate": "2023-11-28T10:30:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Steve Carrow",
-        "Olga Vilenskaia"
-      ]
+      "authors": ["Steve Carrow", "Olga Vilenskaia"]
     },
     {
       "id": "31514196-af06-4744-af51-2d66f5379d8e",
@@ -1892,9 +1609,7 @@
       "uploadDate": "2023-07-05T08:57:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Anamitra Roy Choudhury"
-      ]
+      "authors": ["Anamitra Roy Choudhury"]
     },
     {
       "id": "aa5462ec-1dce-4b0c-9851-22a523db975c",
@@ -1911,9 +1626,7 @@
       "uploadDate": "2023-06-29T09:53:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Kyle Erwin"
-      ]
+      "authors": ["Kyle Erwin"]
     },
     {
       "id": "e16c5799-5acc-4907-93ba-9bfbef4b7a6c",
@@ -1930,9 +1643,7 @@
       "uploadDate": "2023-09-21T22:10:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Radu Marinescu"
-      ]
+      "authors": ["Radu Marinescu"]
     },
     {
       "id": "42e37ff7-7eac-42f3-8103-e05feeb7f10c",
@@ -1949,9 +1660,7 @@
       "uploadDate": "2023-08-21T21:06:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Cornelio Cristina"
-      ]
+      "authors": ["Cornelio Cristina"]
     },
     {
       "id": "69d0f13f-1f61-4d1d-a65d-af1ba7231a60",
@@ -1968,9 +1677,7 @@
       "uploadDate": "2023-10-31T15:28:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Gustav Šír (Šourek)"
-      ]
+      "authors": ["Gustav Šír (Šourek)"]
     },
     {
       "id": "54b047ee-5f54-4fb5-9075-0847b35bea16",
@@ -1987,9 +1694,7 @@
       "uploadDate": "2023-10-21T16:36:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Yufang Hou"
-      ]
+      "authors": ["Yufang Hou"]
     },
     {
       "id": "5ebbff3b-e1e7-4efc-a31e-6b6203a2aa09",
@@ -2006,9 +1711,7 @@
       "uploadDate": "2023-11-01T09:02:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -2026,9 +1729,7 @@
       "uploadDate": "2023-08-17T00:08:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Pranava Madhyastha"
-      ]
+      "authors": ["Pranava Madhyastha"]
     },
     {
       "id": "8272f274-a606-4be0-b423-f48fe79ef6f6",
@@ -2045,9 +1746,7 @@
       "uploadDate": "2023-06-30T21:48:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Murray Campbell"
-      ]
+      "authors": ["Murray Campbell"]
     },
     {
       "id": "0c46fde1-5b47-48e7-bc95-85b02770ce84",
@@ -2064,9 +1763,7 @@
       "uploadDate": "2023-07-02T14:05:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Keerthiram Murugesan"
-      ]
+      "authors": ["Keerthiram Murugesan"]
     },
     {
       "id": "aa31a337-4d5b-4dfe-872c-d84b00db9716",
@@ -2083,9 +1780,7 @@
       "uploadDate": "2023-11-04T04:08:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Ibrahim Abdelaziz"
-      ]
+      "authors": ["Ibrahim Abdelaziz"]
     },
     {
       "id": "e24e8cd3-8d4f-4f6f-a087-615929c0b48b",
@@ -2102,11 +1797,7 @@
       "uploadDate": "2023-10-08T03:47:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Achille Fokoue",
-        "Oktie Hassanzadeh",
-        "Maria Chang"
-      ]
+      "authors": ["Achille Fokoue", "Oktie Hassanzadeh", "Maria Chang"]
     },
     {
       "id": "654f0de3-6ecc-45be-8a12-010fc776eaa6",
@@ -2123,9 +1814,7 @@
       "uploadDate": "2023-07-11T04:53:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Adi Kalyanpur"
-      ]
+      "authors": ["Adi Kalyanpur"]
     },
     {
       "id": "9036a594-4090-46a1-a2e5-0d2bbd4d5b20",
@@ -2142,9 +1831,7 @@
       "uploadDate": "2023-11-03T12:21:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Mohit Bansal"
-      ]
+      "authors": ["Mohit Bansal"]
     },
     {
       "id": "0be13def-e96d-4822-a8a4-9d04545006ab",
@@ -2161,9 +1848,7 @@
       "uploadDate": "2023-07-08T01:30:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Brenden Lake"
-      ]
+      "authors": ["Brenden Lake"]
     },
     {
       "id": "28107370-ab69-4cf3-badc-8d383705ad4c",
@@ -2209,9 +1894,7 @@
       "uploadDate": "2023-08-31T09:30:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Elizabeth M. Daly"
-      ]
+      "authors": ["Elizabeth M. Daly"]
     },
     {
       "id": "3b4bb8df-c816-4da9-af8d-a5dad82f4c55",
@@ -2228,9 +1911,7 @@
       "uploadDate": "2023-06-27T01:05:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Jason Rute"
-      ]
+      "authors": ["Jason Rute"]
     },
     {
       "id": "6727bd5f-7d52-4a32-948c-67cffce9655d",
@@ -2247,9 +1928,7 @@
       "uploadDate": "2023-08-08T01:42:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Lan Hoang"
-      ]
+      "authors": ["Lan Hoang"]
     },
     {
       "id": "2d5894df-6d80-47b6-8e71-df3fccd13203",
@@ -2266,9 +1945,7 @@
       "uploadDate": "2023-09-19T08:01:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -2286,15 +1963,13 @@
       "uploadDate": "2023-09-07T12:35:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Alexander Koller"
-      ]
+      "authors": ["Alexander Koller"]
     },
     {
       "id": "c589b449-5b79-46da-a581-5e8563d7b71c",
       "title": "A(G)I: Where we have been, and where we need to go",
       "description": "This presentation, titled 'A(G)I: Where we have been, and where we need to go', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/c589b449-5b79-46da-a581-5e8563d7b71c_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/c589b449-5b79-46da-a581-5e8563d7b71c.mp4",
       "duration": "30:45",
       "views": 1305,
@@ -2305,9 +1980,7 @@
       "uploadDate": "2023-06-10T02:28:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Gary Marcus"
-      ]
+      "authors": ["Gary Marcus"]
     },
     {
       "id": "b492852b-ed20-4d84-b704-9aba7b455794",
@@ -2324,9 +1997,7 @@
       "uploadDate": "2023-08-10T03:20:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "He He"
-      ]
+      "authors": ["He He"]
     },
     {
       "id": "f54d0a6b-ec40-426d-a08a-b08eba990d97",
@@ -2343,9 +2014,7 @@
       "uploadDate": "2023-10-22T10:17:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Pavan Kapanipathi"
-      ]
+      "authors": ["Pavan Kapanipathi"]
     },
     {
       "id": "5e7c6791-a6f7-49df-9242-eafe88403117",
@@ -2362,9 +2031,7 @@
       "uploadDate": "2023-08-14T01:43:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Ramon Fernandez Astudillo"
-      ]
+      "authors": ["Ramon Fernandez Astudillo"]
     },
     {
       "id": "9b20ff5f-f2af-41d5-ad2f-b0cad241ef24",
@@ -2381,9 +2048,7 @@
       "uploadDate": "2023-10-02T09:30:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Kathleen McKeown"
-      ]
+      "authors": ["Kathleen McKeown"]
     },
     {
       "id": "d916d350-3642-4001-abe4-12f755abfad7",
@@ -2400,15 +2065,13 @@
       "uploadDate": "2023-09-30T20:52:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Luis A. Lastras"
-      ]
+      "authors": ["Luis A. Lastras"]
     },
     {
       "id": "fc9f0f21-6227-47ba-a58a-4df1096c93f0",
       "title": "Panel: Invited Chair: Alexander Koller",
       "description": "This presentation, titled 'Panel: Invited Chair: Alexander Koller', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/fc9f0f21-6227-47ba-a58a-4df1096c93f0_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/c6ac6650-24c0-4b5f-b85a-6c91cdbc537f.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/fc9f0f21-6227-47ba-a58a-4df1096c93f0.mp4",
       "duration": "22:50",
       "views": 1419,
@@ -2445,9 +2108,7 @@
       "uploadDate": "2023-06-15T19:24:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "G P Shrivatsa Bhargav"
-      ]
+      "authors": ["G P Shrivatsa Bhargav"]
     },
     {
       "id": "c8303698-8751-4b5a-b50e-ab9be7b27f42",
@@ -2464,9 +2125,7 @@
       "uploadDate": "2023-06-04T02:36:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Sarthak Dash"
-      ]
+      "authors": ["Sarthak Dash"]
     },
     {
       "id": "6ccc0909-9b54-464f-8333-d82783552d91",
@@ -2483,9 +2142,7 @@
       "uploadDate": "2023-06-24T04:01:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Subhajit Chaudhury"
-      ]
+      "authors": ["Subhajit Chaudhury"]
     },
     {
       "id": "787ec075-45bb-4c8a-9dc9-d6deb4500c82",
@@ -2502,9 +2159,7 @@
       "uploadDate": "2023-09-26T14:14:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -2522,9 +2177,7 @@
       "uploadDate": "2023-11-09T07:17:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Martha Palmer"
-      ]
+      "authors": ["Martha Palmer"]
     },
     {
       "id": "3db93ae9-c7a4-4364-a502-3d9cf929c4ad",
@@ -2541,9 +2194,7 @@
       "uploadDate": "2023-09-07T14:40:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Kenneth D. Forbus"
-      ]
+      "authors": ["Kenneth D. Forbus"]
     },
     {
       "id": "774c541b-20c3-4c0b-8adb-8c98d180b021",
@@ -2560,10 +2211,7 @@
       "uploadDate": "2023-06-03T02:49:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Rosario Uceda-Sosa",
-        "Guilherme Lima"
-      ]
+      "authors": ["Rosario Uceda-Sosa", "Guilherme Lima"]
     },
     {
       "id": "b7052b78-71de-4f79-aa48-de4221ed834e",
@@ -2580,9 +2228,7 @@
       "uploadDate": "2023-08-29T02:59:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Yejin Choi"
-      ]
+      "authors": ["Yejin Choi"]
     },
     {
       "id": "240e2866-a43d-4111-b4d3-98ec17f7d8ae",
@@ -2599,9 +2245,7 @@
       "uploadDate": "2023-06-17T22:46:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Antoine Bosselut"
-      ]
+      "authors": ["Antoine Bosselut"]
     },
     {
       "id": "65d84e5a-dfb7-4513-96e3-ee417d1b9809",
@@ -2618,9 +2262,7 @@
       "uploadDate": "2023-09-21T00:06:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Sanjeeb Dash"
-      ]
+      "authors": ["Sanjeeb Dash"]
     },
     {
       "id": "cc3013e9-0b3c-4467-b64d-f10503c0efed",
@@ -2637,9 +2279,7 @@
       "uploadDate": "2023-08-30T02:38:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Fabrizio Riguzzi"
-      ]
+      "authors": ["Fabrizio Riguzzi"]
     },
     {
       "id": "dd4afe95-9218-4986-a317-d2ce4414e215",
@@ -2683,10 +2323,7 @@
       "uploadDate": "2023-09-07T06:58:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Gaetano Rossiello",
-        "Faisal Chowdhury"
-      ]
+      "authors": ["Gaetano Rossiello", "Faisal Chowdhury"]
     },
     {
       "id": "edff1649-03a6-4daa-a5fd-18da5f1a95e8",
@@ -2703,9 +2340,7 @@
       "uploadDate": "2023-08-16T17:08:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -2723,9 +2358,7 @@
       "uploadDate": "2023-10-26T06:05:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Luís C. Lamb"
-      ]
+      "authors": ["Luís C. Lamb"]
     },
     {
       "id": "cc363545-a6d8-476c-ad97-8eaf7e93b04f",
@@ -2742,9 +2375,7 @@
       "uploadDate": "2023-11-27T03:01:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Stephen Muggleton"
-      ]
+      "authors": ["Stephen Muggleton"]
     },
     {
       "id": "645396b2-2bab-4702-9bbc-3cb4c896a05c",
@@ -2761,9 +2392,7 @@
       "uploadDate": "2023-07-05T07:23:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Soham Dan"
-      ]
+      "authors": ["Soham Dan"]
     },
     {
       "id": "477b4c88-ad27-4177-a243-566d15f5894e",
@@ -2780,9 +2409,7 @@
       "uploadDate": "2023-10-03T01:43:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Guy Van den Broeck"
-      ]
+      "authors": ["Guy Van den Broeck"]
     },
     {
       "id": "048c28da-7b43-42d0-889e-94c4a720091e",
@@ -2799,9 +2426,7 @@
       "uploadDate": "2023-10-22T18:42:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "George Konidaris"
-      ]
+      "authors": ["George Konidaris"]
     },
     {
       "id": "436fc6b8-5f92-41be-b9a5-c9310807b913",
@@ -2818,9 +2443,7 @@
       "uploadDate": "2023-09-09T10:58:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Don Joven Agravante"
-      ]
+      "authors": ["Don Joven Agravante"]
     },
     {
       "id": "1d258aba-8c73-428c-a576-7036d6d4c1ce",
@@ -2837,9 +2460,7 @@
       "uploadDate": "2023-10-24T10:04:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Keerthiram Murugesan"
-      ]
+      "authors": ["Keerthiram Murugesan"]
     },
     {
       "id": "012e115f-e80e-4cab-95d9-da65353bfdfc",
@@ -2856,9 +2477,7 @@
       "uploadDate": "2023-11-03T15:14:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Michael Katz"
-      ]
+      "authors": ["Michael Katz"]
     },
     {
       "id": "6831f078-b57c-4469-9ed1-9485d9ab194b",
@@ -2902,9 +2521,7 @@
       "uploadDate": "2023-08-28T05:28:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
@@ -2922,9 +2539,7 @@
       "uploadDate": "2023-10-08T19:03:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Sarath Sreedharan"
-      ]
+      "authors": ["Sarath Sreedharan"]
     },
     {
       "id": "80b26046-939d-4fbd-b29d-3374ac80dcbd",
@@ -2941,9 +2556,7 @@
       "uploadDate": "2023-09-01T03:49:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Soumyadip Ghosh"
-      ]
+      "authors": ["Soumyadip Ghosh"]
     },
     {
       "id": "1a93283f-e5b0-4c23-8116-89fe3f0b2566",
@@ -2960,9 +2573,7 @@
       "uploadDate": "2023-07-30T02:25:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Shashanka Ubaru"
-      ]
+      "authors": ["Shashanka Ubaru"]
     },
     {
       "id": "538bf7df-7be2-48db-b705-0ec07c8dd58d",
@@ -2979,9 +2590,7 @@
       "uploadDate": "2023-06-03T22:40:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Yuhai Tu"
-      ]
+      "authors": ["Yuhai Tu"]
     },
     {
       "id": "7c0dd372-41d7-4393-877b-045a76443faa",
@@ -2998,11 +2607,7 @@
       "uploadDate": "2023-10-26T14:19:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Songtao Lu",
-        "Parikshit Ram",
-        "Mark Squillante"
-      ]
+      "authors": ["Songtao Lu", "Parikshit Ram", "Mark Squillante"]
     },
     {
       "id": "4925d01c-50e9-40b4-82bb-4d79808ef79d",
@@ -3019,9 +2624,7 @@
       "uploadDate": "2023-10-11T20:35:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Clement Gehring"
-      ]
+      "authors": ["Clement Gehring"]
     },
     {
       "id": "815d24fe-7db8-436e-89fb-a82ba2917151",
@@ -3038,9 +2641,7 @@
       "uploadDate": "2023-11-11T23:39:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Elliot Nelson"
-      ]
+      "authors": ["Elliot Nelson"]
     },
     {
       "id": "e0538329-4078-4b61-831f-d971fb2a988d",
@@ -3057,9 +2658,7 @@
       "uploadDate": "2023-09-03T10:22:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Ken Clarkson"
-      ]
+      "authors": ["Ken Clarkson"]
     },
     {
       "id": "96910818-4635-442f-8912-c0db5f2a47ba",
@@ -3076,9 +2675,7 @@
       "uploadDate": "2023-07-26T06:43:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Farhad Mohsin"
-      ]
+      "authors": ["Farhad Mohsin"]
     },
     {
       "id": "f6efa518-d107-4db4-8f57-8d4a070477df",
@@ -3095,15 +2692,13 @@
       "uploadDate": "2023-09-21T18:02:00Z",
       "tags": [],
       "event": "WW2023",
-      "authors": [
-        "Cameron Allen"
-      ]
+      "authors": ["Cameron Allen"]
     },
     {
       "id": "4734f3fc-063b-41ff-8e42-559d4f0e4b30",
       "title": "Introduction: Neuro-Symbolic AI",
       "description": "This presentation, titled 'Introduction: Neuro-Symbolic AI', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/4734f3fc-063b-41ff-8e42-559d4f0e4b30_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/4734f3fc-063b-41ff-8e42-559d4f0e4b30.mp4",
       "duration": "49:41",
       "views": 1230,
@@ -3112,22 +2707,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-07-28T06:06:00Z",
-      "tags": [
-        "general_overview",
-        "grand_challenges",
-        "limitations_of_llms"
-      ],
+      "tags": ["general_overview", "grand_challenges", "limitations_of_llms"],
       "event": "SS2024",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
       "id": "09a3c49d-5546-4fc0-b110-9950f18a5447",
       "title": "A Taxonomy of Neuro-Symbolic AI or Are We Already There?",
       "description": "This presentation, titled 'A Taxonomy of Neuro-Symbolic AI or Are We Already There?', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/09a3c49d-5546-4fc0-b110-9950f18a5447_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/09a3c49d-5546-4fc0-b110-9950f18a5447.mp4",
       "duration": "32:13",
       "views": 1443,
@@ -3136,20 +2725,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-07-23T09:51:00Z",
-      "tags": [
-        "ns_taxonomy"
-      ],
+      "tags": ["ns_taxonomy"],
       "event": "SS2024",
-      "authors": [
-        "Henry Kautz"
-      ],
+      "authors": ["Henry Kautz"],
       "category": "Tutorial"
     },
     {
       "id": "0147edc6-ce94-48cb-912c-988933e1f0a3",
       "title": "Logical Reasoning: Inference",
       "description": "This presentation, titled 'Logical Reasoning: Inference', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/0147edc6-ce94-48cb-912c-988933e1f0a3_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/0147edc6-ce94-48cb-912c-988933e1f0a3.mp4",
       "duration": "37:56",
       "views": 1330,
@@ -3158,21 +2743,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-06-01T13:47:00Z",
-      "tags": [
-        "logical_reasoning",
-        "inductive_reasoning"
-      ],
+      "tags": ["logical_reasoning", "inductive_reasoning"],
       "event": "SS2024",
-      "authors": [
-        "Alessandra Russo"
-      ],
+      "authors": ["Alessandra Russo"],
       "category": "Tutorial"
     },
     {
       "id": "c90a371f-bca1-4bac-8b56-04ecd54ff85a",
       "title": "Logic-based Machine Learning: Recent Advances and their Roles in Neuro-Symbolic AI",
       "description": "This presentation, titled 'Logic-based Machine Learning: Recent Advances and their Roles in Neuro-Symbolic AI', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/c90a371f-bca1-4bac-8b56-04ecd54ff85a_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/c90a371f-bca1-4bac-8b56-04ecd54ff85a.mp4",
       "duration": "53:02",
       "views": 541,
@@ -3181,21 +2761,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-09-30T00:30:00Z",
-      "tags": [
-        "logical_reasoning",
-        "inductive_reasoning"
-      ],
+      "tags": ["logical_reasoning", "inductive_reasoning"],
       "event": "SS2024",
-      "authors": [
-        "Alessandra Russo"
-      ],
+      "authors": ["Alessandra Russo"],
       "category": "Tutorial"
     },
     {
       "id": "a75c6e9b-181c-4e25-b7ae-ec014ed46aaf",
       "title": "LLM-Modulo Frameworks as Compound AI Architectures for Robust Planning (and Reasoning)",
       "description": "This presentation, titled 'LLM-Modulo Frameworks as Compound AI Architectures for Robust Planning (and Reasoning)', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/a75c6e9b-181c-4e25-b7ae-ec014ed46aaf_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/a75c6e9b-181c-4e25-b7ae-ec014ed46aaf.mp4",
       "duration": "17:00",
       "views": 1819,
@@ -3204,22 +2779,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-07-05T19:02:00Z",
-      "tags": [
-        "planning",
-        "neural_reasoning",
-        "ns_framework"
-      ],
+      "tags": ["planning", "neural_reasoning", "ns_framework"],
       "event": "SS2024",
-      "authors": [
-        "Subbarao Kambhampati"
-      ],
+      "authors": ["Subbarao Kambhampati"],
       "category": "Talk"
     },
     {
       "id": "7642f72a-64d3-4857-9f8c-d03747bfa4c7",
       "title": "General Intelligence: Define it, measure it, build it",
       "description": "This presentation, titled 'General Intelligence: Define it, measure it, build it', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/7642f72a-64d3-4857-9f8c-d03747bfa4c7_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/09847d65-35ba-4cdd-acf2-a795d7702e84.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/7642f72a-64d3-4857-9f8c-d03747bfa4c7.mp4",
       "duration": "24:13",
       "views": 390,
@@ -3235,16 +2804,14 @@
         "general_audience"
       ],
       "event": "SS2024",
-      "authors": [
-        "François Chollet"
-      ],
+      "authors": ["François Chollet"],
       "category": "Tutorial"
     },
     {
       "id": "56d70c3d-d411-486e-9f2a-778d70a476b8",
       "title": "Neurocompositionality through Tensor-Product Representations",
       "description": "This presentation, titled 'Neurocompositionality through Tensor-Product Representations', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/56d70c3d-d411-486e-9f2a-778d70a476b8_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/56d70c3d-d411-486e-9f2a-778d70a476b8.mp4",
       "duration": "25:00",
       "views": 330,
@@ -3255,16 +2822,14 @@
       "uploadDate": "2024-09-02T10:29:00Z",
       "tags": [],
       "event": "SS2024",
-      "authors": [
-        "Paul Smolensky"
-      ],
+      "authors": ["Paul Smolensky"],
       "category": "Tutorial"
     },
     {
       "id": "00664b7c-2fc6-4422-a3a0-63f4d5d05902",
       "title": "Directions in Neuro-Symbolic Reasoning",
       "description": "This presentation, titled 'Directions in Neuro-Symbolic Reasoning', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/00664b7c-2fc6-4422-a3a0-63f4d5d05902_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/00664b7c-2fc6-4422-a3a0-63f4d5d05902.mp4",
       "duration": "50:42",
       "views": 282,
@@ -3273,20 +2838,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-06-09T11:01:00Z",
-      "tags": [
-        "limitations_of_llms"
-      ],
+      "tags": ["limitations_of_llms"],
       "event": "SS2024",
-      "authors": [
-        "Artur d'Avila Garcez"
-      ],
+      "authors": ["Artur d'Avila Garcez"],
       "category": "Tutorial"
     },
     {
       "id": "ffcd537a-8c49-4a58-bcc8-f35a797bc836",
       "title": "Neuro-Argumentative Learning",
       "description": "This presentation, titled 'Neuro-Argumentative Learning', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/ffcd537a-8c49-4a58-bcc8-f35a797bc836_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/ffcd537a-8c49-4a58-bcc8-f35a797bc836.mp4",
       "duration": "15:14",
       "views": 133,
@@ -3295,20 +2856,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-11-05T04:14:00Z",
-      "tags": [
-        "nlp"
-      ],
+      "tags": ["nlp"],
       "event": "SS2024",
-      "authors": [
-        "Francesca Toni"
-      ],
+      "authors": ["Francesca Toni"],
       "category": "Tutorial"
     },
     {
       "id": "ff6dc33a-3d3a-4bf1-92d9-50959cb61268",
       "title": "A Neuro-Symbolic Meetup of AI and Formal Methods: How Can AI Systems Make Dependable and Safe Decisions Under Uncertainty?",
       "description": "This presentation, titled 'A Neuro-Symbolic Meetup of AI and Formal Methods: How Can AI Systems Make Dependable and Safe Decisions Under Uncertainty?', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/ff6dc33a-3d3a-4bf1-92d9-50959cb61268_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/ff6dc33a-3d3a-4bf1-92d9-50959cb61268.mp4",
       "duration": "37:28",
       "views": 1740,
@@ -3317,21 +2874,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-08-08T16:18:00Z",
-      "tags": [
-        "safety",
-        "formal_verification"
-      ],
+      "tags": ["safety", "formal_verification"],
       "event": "SS2024",
-      "authors": [
-        "Nils Jansen"
-      ],
+      "authors": ["Nils Jansen"],
       "category": "Talk"
     },
     {
       "id": "bb685a06-47f9-4b22-8648-8b4c04523da4",
       "title": "How to Train your Neuro-Symbolic Dragon",
       "description": "This presentation, titled 'How to Train your Neuro-Symbolic Dragon', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/bb685a06-47f9-4b22-8648-8b4c04523da4_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/bb685a06-47f9-4b22-8648-8b4c04523da4.mp4",
       "duration": "22:56",
       "views": 74,
@@ -3340,20 +2892,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-10-08T23:54:00Z",
-      "tags": [
-        "nlp"
-      ],
+      "tags": ["nlp"],
       "event": "SS2024",
-      "authors": [
-        "Loizos Michael"
-      ],
+      "authors": ["Loizos Michael"],
       "category": "Talk"
     },
     {
       "id": "588a03d8-02ad-4531-b420-baa3660e1434",
       "title": "Probabilistic Circuits for Neuro-Symbolic Reasoning for Large Language Models",
       "description": "This presentation, titled 'Probabilistic Circuits for Neuro-Symbolic Reasoning for Large Language Models', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/588a03d8-02ad-4531-b420-baa3660e1434_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/588a03d8-02ad-4531-b420-baa3660e1434.mp4",
       "duration": "47:00",
       "views": 784,
@@ -3368,16 +2916,14 @@
         "hallucinations_factuality"
       ],
       "event": "SS2024",
-      "authors": [
-        "Guy Van den Broeck"
-      ],
+      "authors": ["Guy Van den Broeck"],
       "category": "Tutorial"
     },
     {
       "id": "4370f5d9-1f5a-460e-8776-405f49ef126f",
       "title": "Neuro-Symbolic AI in the Era of Large Foundation Models",
       "description": "This presentation, titled 'Neuro-Symbolic AI in the Era of Large Foundation Models', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/4370f5d9-1f5a-460e-8776-405f49ef126f_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/4370f5d9-1f5a-460e-8776-405f49ef126f.mp4",
       "duration": "31:45",
       "views": 669,
@@ -3386,21 +2932,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-11-26T20:52:00Z",
-      "tags": [
-        "safety",
-        "applications"
-      ],
+      "tags": ["safety", "applications"],
       "event": "SS2024",
-      "authors": [
-        "Alvaro Velasquez"
-      ],
+      "authors": ["Alvaro Velasquez"],
       "category": "Talk"
     },
     {
       "id": "f7d8c50f-1888-429b-864b-f1986b6b4a86",
       "title": "Can LLMs Really Understand?: A Study of Human Conversations (Symbl.ai)",
       "description": "This presentation, titled 'Can LLMs Really Understand?: A Study of Human Conversations (Symbl.ai)', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/f7d8c50f-1888-429b-864b-f1986b6b4a86_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/f7d8c50f-1888-429b-864b-f1986b6b4a86.mp4",
       "duration": "31:55",
       "views": 1530,
@@ -3409,22 +2950,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-10-26T02:30:00Z",
-      "tags": [
-        "applications",
-        "nlp",
-        "startup"
-      ],
+      "tags": ["applications", "nlp", "startup"],
       "event": "SS2024",
-      "authors": [
-        "Kartik Talamadupula"
-      ],
+      "authors": ["Kartik Talamadupula"],
       "category": "Talk"
     },
     {
       "id": "67fbeb96-7d30-4908-93ec-a428062cab48",
       "title": "Building Durable Software with Words (Durable AI)",
       "description": "This presentation, titled 'Building Durable Software with Words (Durable AI)', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/67fbeb96-7d30-4908-93ec-a428062cab48_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/67fbeb96-7d30-4908-93ec-a428062cab48.mp4",
       "duration": "38:13",
       "views": 132,
@@ -3433,22 +2968,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-09-16T22:12:00Z",
-      "tags": [
-        "applications",
-        "code_generation",
-        "startup"
-      ],
+      "tags": ["applications", "code_generation", "startup"],
       "event": "SS2024",
-      "authors": [
-        "Fernando Nobre"
-      ],
+      "authors": ["Fernando Nobre"],
       "category": "Talk"
     },
     {
       "id": "c21698bb-fe16-4b27-a777-8a4304f6f5d3",
       "title": "Decision Intelligence & Trustworthy AI (Rainbird AI)",
       "description": "This presentation, titled 'Decision Intelligence & Trustworthy AI (Rainbird AI)', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/c21698bb-fe16-4b27-a777-8a4304f6f5d3_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/c21698bb-fe16-4b27-a777-8a4304f6f5d3.mp4",
       "duration": "30:03",
       "views": 1035,
@@ -3457,22 +2986,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-08-03T14:16:00Z",
-      "tags": [
-        "knowledge_graphs",
-        "nlp",
-        "startup"
-      ],
+      "tags": ["knowledge_graphs", "nlp", "startup"],
       "event": "SS2024",
-      "authors": [
-        "Ben Taylor"
-      ],
+      "authors": ["Ben Taylor"],
       "category": "Talk"
     },
     {
       "id": "919ce72b-32d1-497d-8c95-7f9535cbd38d",
       "title": "Neuro-Symbolic Theorem Proving with Lean",
       "description": "This presentation, titled 'Neuro-Symbolic Theorem Proving with Lean', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/919ce72b-32d1-497d-8c95-7f9535cbd38d_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/919ce72b-32d1-497d-8c95-7f9535cbd38d.mp4",
       "duration": "20:37",
       "views": 1144,
@@ -3481,21 +3004,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-07-11T00:07:00Z",
-      "tags": [
-        "atp",
-        "formal_verification"
-      ],
+      "tags": ["atp", "formal_verification"],
       "event": "SS2024",
-      "authors": [
-        "Peiyang Song"
-      ],
+      "authors": ["Peiyang Song"],
       "category": "Tutorial"
     },
     {
       "id": "975b052f-fefc-4d51-be54-f13e11902c93",
       "title": "Automated Fact-Checking",
       "description": "This presentation, titled 'Automated Fact-Checking', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/975b052f-fefc-4d51-be54-f13e11902c93_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/975b052f-fefc-4d51-be54-f13e11902c93.mp4",
       "duration": "19:50",
       "views": 1344,
@@ -3504,20 +3022,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-08-08T18:46:00Z",
-      "tags": [
-        "hallucinations_factuality"
-      ],
+      "tags": ["hallucinations_factuality"],
       "event": "SS2024",
-      "authors": [
-        "Andreas Vlachos"
-      ],
+      "authors": ["Andreas Vlachos"],
       "category": "Tutorial"
     },
     {
       "id": "1669d96c-98c6-4353-8efb-fdc6635ea4eb",
       "title": "Panel: Neuro-Symbolic AI as a Path to AI Safety and Regulation",
       "description": "This presentation, titled 'Panel: Neuro-Symbolic AI as a Path to AI Safety and Regulation', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/1669d96c-98c6-4353-8efb-fdc6635ea4eb_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/09847d65-35ba-4cdd-acf2-a795d7702e84.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/1669d96c-98c6-4353-8efb-fdc6635ea4eb.mp4",
       "duration": "43:53",
       "views": 655,
@@ -3526,11 +3040,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-11-12T00:35:00Z",
-      "tags": [
-        "safety",
-        "grand_challenges",
-        "general_audience"
-      ],
+      "tags": ["safety", "grand_challenges", "general_audience"],
       "event": "SS2024",
       "authors": [
         "Alexander Gray",
@@ -3544,7 +3054,7 @@
       "id": "a9fac4b7-7f0d-4687-9b4a-808a4c06e5e0",
       "title": "The Science of Causal Inference and the Challenge of LLMs",
       "description": "This presentation, titled 'The Science of Causal Inference and the Challenge of LLMs', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/a9fac4b7-7f0d-4687-9b4a-808a4c06e5e0_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/09847d65-35ba-4cdd-acf2-a795d7702e84.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/a9fac4b7-7f0d-4687-9b4a-808a4c06e5e0.mp4",
       "duration": "51:47",
       "views": 1900,
@@ -3553,13 +3063,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-11-06T07:16:00Z",
-      "tags": [
-        "limitations_of_llms"
-      ],
+      "tags": ["limitations_of_llms"],
       "event": "SS2024",
-      "authors": [
-        "Judea Pearl"
-      ],
+      "authors": ["Judea Pearl"],
       "category": "Talk"
     },
     {
@@ -3577,16 +3083,14 @@
       "uploadDate": "2024-08-28T14:48:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
       "id": "6542b9ef-4881-4cfb-aaf6-5fd19571a6c9",
       "title": "No AGI without Neuro-Symbolic AI",
       "description": "This presentation, titled 'No AGI without Neuro-Symbolic AI', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/6542b9ef-4881-4cfb-aaf6-5fd19571a6c9_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/09847d65-35ba-4cdd-acf2-a795d7702e84.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/6542b9ef-4881-4cfb-aaf6-5fd19571a6c9.mp4",
       "duration": "31:03",
       "views": 1276,
@@ -3595,15 +3099,9 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2024-09-05T19:33:00Z",
-      "tags": [
-        "limitations_of_llms",
-        "agi",
-        "general_audience"
-      ],
+      "tags": ["limitations_of_llms", "agi", "general_audience"],
       "event": "WW2024",
-      "authors": [
-        "Gary Marcus"
-      ],
+      "authors": ["Gary Marcus"],
       "category": "Talk"
     },
     {
@@ -3621,16 +3119,14 @@
       "uploadDate": "2024-09-08T21:53:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Parisa Kordjamshidi"
-      ],
+      "authors": ["Parisa Kordjamshidi"],
       "category": "Talk"
     },
     {
       "id": "4508b754-5f53-4ea2-b48e-7734322b2469",
       "title": "Some Analysis of KRR Requirements and Directions for Neuro-Symbolic Decision Support",
       "description": "This presentation, titled 'Some Analysis of KRR Requirements and Directions for Neuro-Symbolic Decision Support', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/4508b754-5f53-4ea2-b48e-7734322b2469_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/09847d65-35ba-4cdd-acf2-a795d7702e84.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/4508b754-5f53-4ea2-b48e-7734322b2469.mp4",
       "duration": "16:00",
       "views": 780,
@@ -3641,9 +3137,7 @@
       "uploadDate": "2024-07-29T06:34:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Benjamin Grosof"
-      ],
+      "authors": ["Benjamin Grosof"],
       "category": "Talk"
     },
     {
@@ -3661,9 +3155,7 @@
       "uploadDate": "2024-09-27T16:12:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Fabio G. Cozman"
-      ],
+      "authors": ["Fabio G. Cozman"],
       "category": "Talk"
     },
     {
@@ -3681,9 +3173,7 @@
       "uploadDate": "2024-06-21T21:36:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Nitish Joshi"
-      ],
+      "authors": ["Nitish Joshi"],
       "category": "Talk"
     },
     {
@@ -3701,9 +3191,7 @@
       "uploadDate": "2024-06-30T07:03:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Navid Madani"
-      ],
+      "authors": ["Navid Madani"],
       "category": "Talk"
     },
     {
@@ -3721,9 +3209,7 @@
       "uploadDate": "2024-10-13T00:28:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Mohsen Pourvali"
-      ],
+      "authors": ["Mohsen Pourvali"],
       "category": "Talk"
     },
     {
@@ -3741,9 +3227,7 @@
       "uploadDate": "2024-07-19T20:56:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Shifat Hossain"
-      ],
+      "authors": ["Shifat Hossain"],
       "category": "Talk"
     },
     {
@@ -3761,9 +3245,7 @@
       "uploadDate": "2024-07-24T19:26:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Yunhao Yang"
-      ],
+      "authors": ["Yunhao Yang"],
       "category": "Talk"
     },
     {
@@ -3781,16 +3263,14 @@
       "uploadDate": "2024-08-25T21:41:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Tim Klinger"
-      ],
+      "authors": ["Tim Klinger"],
       "category": "Talk"
     },
     {
       "id": "ff9231d9-1ff8-4acc-bf3e-934675c9c377",
       "title": "Panel Discussion at NucLeaR Workshop @ AAAI 2024",
       "description": "This presentation, titled 'Panel Discussion at NucLeaR Workshop @ AAAI 2024', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/ff9231d9-1ff8-4acc-bf3e-934675c9c377_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/09847d65-35ba-4cdd-acf2-a795d7702e84.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/ff9231d9-1ff8-4acc-bf3e-934675c9c377.mp4",
       "duration": "24:57",
       "views": 1862,
@@ -3827,9 +3307,7 @@
       "uploadDate": "2024-10-19T14:48:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Luís C. Lamb"
-      ],
+      "authors": ["Luís C. Lamb"],
       "category": "Talk"
     },
     {
@@ -3847,9 +3325,7 @@
       "uploadDate": "2024-06-24T18:28:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Jennifer Chu-Carroll"
-      ],
+      "authors": ["Jennifer Chu-Carroll"],
       "category": "Talk"
     },
     {
@@ -3867,16 +3343,14 @@
       "uploadDate": "2024-09-20T11:12:00Z",
       "tags": [],
       "event": "WW2024",
-      "authors": [
-        "Tristan Bester"
-      ],
+      "authors": ["Tristan Bester"],
       "category": "Talk"
     },
     {
       "id": "55fe4853-fc15-4192-b2d9-6fbe4dccaf51",
       "title": "Neuro-Symbolic AI and NSSS25 Opening",
       "description": "This presentation, titled 'Neuro-Symbolic AI and NSSS25 Opening', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/55fe4853-fc15-4192-b2d9-6fbe4dccaf51_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/55fe4853-fc15-4192-b2d9-6fbe4dccaf51.mp4",
       "duration": "28:09",
       "views": 1248,
@@ -3885,22 +3359,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-09-03T20:35:00Z",
-      "tags": [
-        "general_overview",
-        "grand_challenges",
-        "limitations_of_llms"
-      ],
+      "tags": ["general_overview", "grand_challenges", "limitations_of_llms"],
       "event": "SS2025",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     },
     {
       "id": "6ec106dc-1689-476a-b201-15e082863fe4",
       "title": "AI, Science, and Progress",
       "description": "This presentation, titled 'AI, Science, and Progress', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/6ec106dc-1689-476a-b201-15e082863fe4_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/ba2f4cea-6c9a-4a21-81fd-4f69bb9d70ca.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/6ec106dc-1689-476a-b201-15e082863fe4.mp4",
       "duration": "51:41",
       "views": 1656,
@@ -3909,21 +3377,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-07-04T13:48:00Z",
-      "tags": [
-        "limitations_of_llms",
-        "general_audience"
-      ],
+      "tags": ["limitations_of_llms", "general_audience"],
       "event": "SS2025",
-      "authors": [
-        "Arvind Narayanan"
-      ],
+      "authors": ["Arvind Narayanan"],
       "category": "Talk"
     },
     {
       "id": "07652c70-844c-4fa2-a938-646eeaf87ada",
       "title": "Neuro-Symbolic AI for Safer, Explainable, Autonomous Vehicles",
       "description": "This presentation, titled 'Neuro-Symbolic AI for Safer, Explainable, Autonomous Vehicles', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/07652c70-844c-4fa2-a938-646eeaf87ada_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/07652c70-844c-4fa2-a938-646eeaf87ada.mp4",
       "duration": "21:20",
       "views": 1437,
@@ -3932,22 +3395,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-07-18T01:30:00Z",
-      "tags": [
-        "applications",
-        "self_driving_cars",
-        "safety"
-      ],
+      "tags": ["applications", "self_driving_cars", "safety"],
       "event": "SS2025",
-      "authors": [
-        "Leilani H. Gilpin"
-      ],
+      "authors": ["Leilani H. Gilpin"],
       "category": "Tutorial"
     },
     {
       "id": "455e3776-5ecb-4bac-9aba-b35c59adc7df",
       "title": "Foundations of Interpretable Models",
       "description": "This presentation, titled 'Foundations of Interpretable Models', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/455e3776-5ecb-4bac-9aba-b35c59adc7df_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/455e3776-5ecb-4bac-9aba-b35c59adc7df.mp4",
       "duration": "35:10",
       "views": 736,
@@ -3962,17 +3419,14 @@
         "math_foundations"
       ],
       "event": "SS2025",
-      "authors": [
-        "Pietro Barbiero",
-        "Mateo Espinosa Zarlenga"
-      ],
+      "authors": ["Pietro Barbiero", "Mateo Espinosa Zarlenga"],
       "category": "Tutorial"
     },
     {
       "id": "afdd8080-08fd-4036-92af-b51401f2a985",
       "title": "Compositional Learning in Vision and Language",
       "description": "This presentation, titled 'Compositional Learning in Vision and Language', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/afdd8080-08fd-4036-92af-b51401f2a985_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/afdd8080-08fd-4036-92af-b51401f2a985.mp4",
       "duration": "33:47",
       "views": 624,
@@ -3990,16 +3444,14 @@
         "learning_with_constraints"
       ],
       "event": "SS2025",
-      "authors": [
-        "Parisa Kordjamshidi"
-      ],
+      "authors": ["Parisa Kordjamshidi"],
       "category": "Tutorial"
     },
     {
       "id": "e0fa5f54-8fa9-4bfb-b52b-0ce4790ec9a7",
       "title": "How to Quantify Compositionality? And how can it help us?",
       "description": "This presentation, titled 'How to Quantify Compositionality? And how can it help us?', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/e0fa5f54-8fa9-4bfb-b52b-0ce4790ec9a7_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/e0fa5f54-8fa9-4bfb-b52b-0ce4790ec9a7.mp4",
       "duration": "50:23",
       "views": 343,
@@ -4008,21 +3460,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-09-30T10:10:00Z",
-      "tags": [
-        "compositionality",
-        "math_foundations"
-      ],
+      "tags": ["compositionality", "math_foundations"],
       "event": "SS2025",
-      "authors": [
-        "Parikshit Ram"
-      ],
+      "authors": ["Parikshit Ram"],
       "category": "Talk"
     },
     {
       "id": "bddb0d3f-b848-4ebc-965b-4b91f6154cd9",
       "title": "Why Neural Networks Can Discover Symbolic Structures with Gradient-based Training",
       "description": "This presentation, titled 'Why Neural Networks Can Discover Symbolic Structures with Gradient-based Training', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/bddb0d3f-b848-4ebc-965b-4b91f6154cd9_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/bddb0d3f-b848-4ebc-965b-4b91f6154cd9.mp4",
       "duration": "18:47",
       "views": 715,
@@ -4031,20 +3478,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-08-03T19:32:00Z",
-      "tags": [
-        "math_foundations"
-      ],
+      "tags": ["math_foundations"],
       "event": "SS2025",
-      "authors": [
-        "Peihao Wang"
-      ],
+      "authors": ["Peihao Wang"],
       "category": "Talk"
     },
     {
       "id": "1d22a400-d82c-4a1b-9fa6-baaf1995686d",
       "title": "Towards the Statistical Limits of Learning Non-Hallucinating Generative Models",
       "description": "This presentation, titled 'Towards the Statistical Limits of Learning Non-Hallucinating Generative Models', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/1d22a400-d82c-4a1b-9fa6-baaf1995686d_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/1d22a400-d82c-4a1b-9fa6-baaf1995686d.mp4",
       "duration": "27:28",
       "views": 1567,
@@ -4053,21 +3496,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-06-15T09:26:00Z",
-      "tags": [
-        "math_foundations",
-        "hallucinations_factuality"
-      ],
+      "tags": ["math_foundations", "hallucinations_factuality"],
       "event": "SS2025",
-      "authors": [
-        "Changlong Wu"
-      ],
+      "authors": ["Changlong Wu"],
       "category": "Talk"
     },
     {
       "id": "c059a543-5a2f-4ed5-9404-6cc9d519af98",
       "title": "Bilevel Learning for Bilevel Planning",
       "description": "This presentation, titled 'Bilevel Learning for Bilevel Planning', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/c059a543-5a2f-4ed5-9404-6cc9d519af98_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/c059a543-5a2f-4ed5-9404-6cc9d519af98.mp4",
       "duration": "20:38",
       "views": 1694,
@@ -4076,21 +3514,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-10-09T01:46:00Z",
-      "tags": [
-        "planning",
-        "open_source"
-      ],
+      "tags": ["planning", "open_source"],
       "event": "SS2025",
-      "authors": [
-        "Bowen Li"
-      ],
+      "authors": ["Bowen Li"],
       "category": "Talk"
     },
     {
       "id": "4ecd71c7-7d74-468d-833a-1fad72e9abcc",
       "title": "Explainability While Retaining Predictive Accuracy",
       "description": "This presentation, titled 'Explainability While Retaining Predictive Accuracy', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/4ecd71c7-7d74-468d-833a-1fad72e9abcc_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/4ecd71c7-7d74-468d-833a-1fad72e9abcc.mp4",
       "duration": "34:50",
       "views": 376,
@@ -4105,18 +3538,14 @@
         "open_source"
       ],
       "event": "SS2025",
-      "authors": [
-        "Stephen Carrow",
-        "Olga Vilenskaia",
-        "Kevin O'Connor"
-      ],
+      "authors": ["Stephen Carrow", "Olga Vilenskaia", "Kevin O'Connor"],
       "category": "Talk"
     },
     {
       "id": "50660e63-45b9-498a-a2b7-9898e511d9d1",
       "title": "Interpretable and Veridical Data Science towards Trustworthy AI",
       "description": "This presentation, titled 'Interpretable and Veridical Data Science towards Trustworthy AI', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/50660e63-45b9-498a-a2b7-9898e511d9d1_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/50660e63-45b9-498a-a2b7-9898e511d9d1.mp4",
       "duration": "23:44",
       "views": 1187,
@@ -4125,21 +3554,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-07-23T18:45:00Z",
-      "tags": [
-        "explainability_interpretability",
-        "applications"
-      ],
+      "tags": ["explainability_interpretability", "applications"],
       "event": "SS2025",
-      "authors": [
-        "Bin Yu"
-      ],
+      "authors": ["Bin Yu"],
       "category": "Talk"
     },
     {
       "id": "9b88fb90-9699-46e7-9fa8-ba80cd07f12c",
       "title": "Deep Differentiable Logic Gate Networks towards Hardware Foundation Models",
       "description": "This presentation, titled 'Deep Differentiable Logic Gate Networks towards Hardware Foundation Models', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/9b88fb90-9699-46e7-9fa8-ba80cd07f12c_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/9b88fb90-9699-46e7-9fa8-ba80cd07f12c.mp4",
       "duration": "18:38",
       "views": 737,
@@ -4148,20 +3572,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-06-26T08:36:00Z",
-      "tags": [
-        "explainability_interpretability"
-      ],
+      "tags": ["explainability_interpretability"],
       "event": "SS2025",
-      "authors": [
-        "Felix Petersen"
-      ],
+      "authors": ["Felix Petersen"],
       "category": "Talk"
     },
     {
       "id": "b68b58fb-b1ee-40ef-88e2-1665a581d66e",
       "title": "Neuro-Symbolic Agents: Reason, Act, and Learn Faithfully in the Complex World",
       "description": "This presentation, titled 'Neuro-Symbolic Agents: Reason, Act, and Learn Faithfully in the Complex World', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/b68b58fb-b1ee-40ef-88e2-1665a581d66e_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/b68b58fb-b1ee-40ef-88e2-1665a581d66e.mp4",
       "duration": "32:10",
       "views": 1948,
@@ -4170,21 +3590,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-10-08T05:22:00Z",
-      "tags": [
-        "planning",
-        "applications"
-      ],
+      "tags": ["planning", "applications"],
       "event": "SS2025",
-      "authors": [
-        "Hikaru Shindo"
-      ],
+      "authors": ["Hikaru Shindo"],
       "category": "Talk"
     },
     {
       "id": "3ac49c24-4621-4c93-85e4-e531fe253701",
       "title": "AI Centaur Systems",
       "description": "This presentation, titled 'AI Centaur Systems', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/3ac49c24-4621-4c93-85e4-e531fe253701_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/3ac49c24-4621-4c93-85e4-e531fe253701.mp4",
       "duration": "29:18",
       "views": 441,
@@ -4201,16 +3616,14 @@
         "general_audience"
       ],
       "event": "SS2025",
-      "authors": [
-        "Soroush Saghafian"
-      ],
+      "authors": ["Soroush Saghafian"],
       "category": "Talk"
     },
     {
       "id": "579fbee1-ec7e-4632-b739-6224ee5426b9",
       "title": "New Results in Controllable Text Generation",
       "description": "This presentation, titled 'New Results in Controllable Text Generation', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/579fbee1-ec7e-4632-b739-6224ee5426b9_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/579fbee1-ec7e-4632-b739-6224ee5426b9.mp4",
       "duration": "36:10",
       "views": 1487,
@@ -4227,16 +3640,14 @@
         "learning_with_constraints"
       ],
       "event": "SS2025",
-      "authors": [
-        "Pranava Madhyastha"
-      ],
+      "authors": ["Pranava Madhyastha"],
       "category": "Talk"
     },
     {
       "id": "3d34fcba-00fb-4a0b-9cde-95a13d0b8bca",
       "title": "Goedel-Prover-V2: The Strongest Open-Source Theorem Prover to Date",
       "description": "This presentation, titled 'Goedel-Prover-V2: The Strongest Open-Source Theorem Prover to Date', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/3d34fcba-00fb-4a0b-9cde-95a13d0b8bca_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/3d34fcba-00fb-4a0b-9cde-95a13d0b8bca.mp4",
       "duration": "29:34",
       "views": 1114,
@@ -4245,23 +3656,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-11-28T00:36:00Z",
-      "tags": [
-        "applications",
-        "atp",
-        "ai_for_math",
-        "neurally_guided_search"
-      ],
+      "tags": ["applications", "atp", "ai_for_math", "neurally_guided_search"],
       "event": "SS2025",
-      "authors": [
-        "Shange Tang"
-      ],
+      "authors": ["Shange Tang"],
       "category": "Talk"
     },
     {
       "id": "40359069-614b-446a-a48e-b0728b2eeaf5",
       "title": "A Curious Case of AI in Maths: From being proficient in advancing open conjectures in Maths yet having struggles in AI for Education",
       "description": "This presentation, titled 'A Curious Case of AI in Maths: From being proficient in advancing open conjectures in Maths yet having struggles in AI for Education', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/40359069-614b-446a-a48e-b0728b2eeaf5_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/40359069-614b-446a-a48e-b0728b2eeaf5.mp4",
       "duration": "17:37",
       "views": 537,
@@ -4270,23 +3674,16 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-11-28T02:31:00Z",
-      "tags": [
-        "applications",
-        "atp",
-        "ai_for_math",
-        "ai_for_edu"
-      ],
+      "tags": ["applications", "atp", "ai_for_math", "ai_for_edu"],
       "event": "SS2025",
-      "authors": [
-        "Ankit Anand"
-      ],
+      "authors": ["Ankit Anand"],
       "category": "Talk"
     },
     {
       "id": "106870fa-f351-4f1e-902c-5576ceddd590",
       "title": "Panel on The Future of AI and Discussion including open Q&A",
       "description": "This presentation, titled 'Panel on The Future of AI and Discussion including open Q&A', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/106870fa-f351-4f1e-902c-5576ceddd590_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/ba2f4cea-6c9a-4a21-81fd-4f69bb9d70ca.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/106870fa-f351-4f1e-902c-5576ceddd590.mp4",
       "duration": "56:04",
       "views": 849,
@@ -4295,11 +3692,7 @@
       "channelName": "Centaur AI Institute",
       "channelAvatar": "https://yt3.ggpht.com/D0y_UHqjtyCfASentvqAFpCLw3qkKNrIL7uVl5Q15VoFzPVI_aqECdeZKDzjuG7EKfnp3cwH=s88-c-k-c0x00ffffff-no-rj",
       "uploadDate": "2025-09-25T04:59:00Z",
-      "tags": [
-        "grand_challenges",
-        "future_of_AI",
-        "general_audience"
-      ],
+      "tags": ["grand_challenges", "future_of_AI", "general_audience"],
       "event": "SS2025",
       "authors": [
         "Rich Sutton",
@@ -4313,7 +3706,7 @@
       "id": "88741c44-e2aa-4b79-b4d0-4cf4e0ca4d57",
       "title": "What's Coming Next and How to Participate (Closing Remarks)",
       "description": "This presentation, titled 'What's Coming Next and How to Participate (Closing Remarks)', offers an in‑depth exploration of its central theme. It explains the core challenges, discusses current research directions, and highlights practical implications for real‑world applications. Through clear examples and expert insights, the talk aims to advance understanding and spark further inquiry within the field.",
-      "thumbnail": "https://cdn.centaurinstitute.org/media/88741c44-e2aa-4b79-b4d0-4cf4e0ca4d57_thumbnail.png",
+      "thumbnail": "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
       "videoUrl": "https://cdn.centaurinstitute.org/media/88741c44-e2aa-4b79-b4d0-4cf4e0ca4d57.mp4",
       "duration": "29:39",
       "views": 1138,
@@ -4324,9 +3717,7 @@
       "uploadDate": "2025-06-28T03:51:00Z",
       "tags": [],
       "event": "SS2025",
-      "authors": [
-        "Alexander Gray"
-      ],
+      "authors": ["Alexander Gray"],
       "category": "Talk"
     }
   ]
