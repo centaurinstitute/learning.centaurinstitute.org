@@ -55,7 +55,7 @@ body,
   background-color: var(--menu-hover-background);
 }
 
-.css-1ya2jbm-MuiTypography-root {
+.simplebar-wrapper .MuiTypography-root {
   color: var(--menu-color) !important;
   font-family: var(--title-font) !important;
 }
