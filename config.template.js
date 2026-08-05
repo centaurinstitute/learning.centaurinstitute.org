@@ -20,10 +20,10 @@ const templateConfig = {
   login: {
     variant: "special",
     image:
-      "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
-    icon: "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
+      "https://cdn.centaurinstitute.org/media/42f4004f-72b8-48cb-b41a-06335ee93cce.svg",
+    icon: "https://cdn.centaurinstitute.org/media/42f4004f-72b8-48cb-b41a-06335ee93cce.svg",
     largeIcon:
-      "https://cdn.centaurinstitute.org/media/6f804800-192b-4f0b-8a1f-fc062a7f23f3.png",
+      "https://cdn.centaurinstitute.org/media/42f4004f-72b8-48cb-b41a-06335ee93cce.svg",
   },
 };
 
