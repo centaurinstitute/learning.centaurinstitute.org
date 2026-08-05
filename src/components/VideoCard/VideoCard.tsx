@@ -8,7 +8,7 @@ import {
   Card,
   CardContent,
   CardMedia,
-  Chip,
+  Divider,
   Typography,
 } from "@mui/material";
 
@@ -27,6 +27,7 @@ const VideoCard = ({
     duration: string;
     category: string | null;
     event?: string | null;
+    authors?: string[];
   };
   videoClick: (videoId: string) => void;
 }) => {
@@ -125,29 +126,50 @@ const VideoCard = ({
             WebkitBoxOrient: "vertical",
             overflow: "hidden",
             lineHeight: 1.3,
-            color: "#ce4a25",
-            fontWeight: "400",
+            height: "calc(1.3em * 3)",
+            color: "#171619",
+            fontWeight: "700",
+            fontFamily: "var(--display-font)",
           }}
         >
-          {video.category && (
-            <Chip
-              label={video.category}
-              size="small"
-              sx={{
-                backgroundColor: "#ce4a25",
-                color: "#e7decb",
-                fontWeight: 400,
-                fontFamily: "var(--title-font)",
-                mr: 1,
-                "&:hover": {
-                  backgroundColor: "#ce4a25",
-                  cursor: "default",
-                },
-              }}
-            />
-          )}
           {video.title}
         </Typography>
+
+        <Divider sx={{ my: 1, borderColor: "#585656", opacity: 0.4 }} />
+
+        {video.authors && video.authors.length > 0 && (
+          <>
+            <Typography
+              component="div"
+              sx={{
+                fontSize: "0.7rem",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                fontFamily: "var(--title-font)",
+                color: "#ce4a25",
+                mb: 0.25,
+              }}
+            >
+              Speakers
+            </Typography>
+            <Typography
+              component="div"
+              sx={{
+                fontSize: "0.95rem",
+                color: "#ce4a25",
+                fontFamily: "var(--title-font)",
+                display: "-webkit-box",
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: "vertical",
+                overflow: "hidden",
+                lineHeight: 1,
+                height: "calc(1em * 2)",
+              }}
+            >
+              {video.authors.join(", ")}
+            </Typography>
+          </>
+        )}
       </CardContent>
     </Card>
   );

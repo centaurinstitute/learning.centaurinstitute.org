@@ -1,7 +1,15 @@
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import useVideos from "../../hooks/useVideos";
 
-import { Box, Card, Grid, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Divider,
+  Grid,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React, { useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -10,6 +18,7 @@ type Video = {
   title: string;
   thumbnail: string;
   event?: string | null;
+  authors?: string[];
 };
 
 const columnTitles = [
@@ -177,12 +186,16 @@ const HomeLayout = () => {
                 position: "sticky",
                 top: 55,
                 zIndex: 1,
-                bgcolor: "#ce4a25",
+                bgcolor: "#012b54",
                 color: "#e7decb",
                 borderRadius: 2,
                 fontWeight: "700",
-                fontFamily: "var(--display-font)",
+                fontFamily: "var(--title-font)",
                 py: 1,
+                height: 60,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               {column.title}
@@ -215,24 +228,64 @@ const HomeLayout = () => {
                 >
                   <VideoThumbnail video={video} />
                 </Box>
-                <Typography
-                  variant="body2"
-                  fontWeight="600"
-                  sx={{
-                    mt: 1.5,
-                    lineHeight: 1.4,
-                    height: "2.8em",
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                    overflow: "hidden",
-                    color: "#ce4a25",
-                    fontWeight: "400",
-                    fontFamily: "var(--title-font)",
-                  }}
-                >
-                  {video.title}
-                </Typography>
+                <CardContent sx={{ flexGrow: 1, p: 2 }}>
+                  <Typography
+                    variant="subtitle1"
+                    component="div"
+                    fontWeight="600"
+                    sx={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                      lineHeight: 1.3,
+                      height: "calc(1.3em * 3)",
+                      color: "#171619",
+                      fontWeight: "700",
+                      fontFamily: "var(--display-font)",
+                    }}
+                  >
+                    {video.title}
+                  </Typography>
+
+                  <Divider
+                    sx={{ my: 1, borderColor: "#585656", opacity: 0.4 }}
+                  />
+
+                  {video.authors && video.authors.length > 0 && (
+                    <>
+                      <Typography
+                        component="div"
+                        sx={{
+                          fontSize: "0.7rem",
+                          letterSpacing: "0.12em",
+                          textTransform: "uppercase",
+                          fontFamily: "var(--title-font)",
+                          color: "#ce4a25",
+                          mb: 0.25,
+                        }}
+                      >
+                        Speakers
+                      </Typography>
+                      <Typography
+                        component="div"
+                        sx={{
+                          fontSize: "0.95rem",
+                          color: "#ce4a25",
+                          fontFamily: "var(--title-font)",
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                          lineHeight: 1,
+                          height: "calc(1em * 2)",
+                        }}
+                      >
+                        {video.authors.join(", ")}
+                      </Typography>
+                    </>
+                  )}
+                </CardContent>
               </Card>
             ))}
           </Stack>
