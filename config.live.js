@@ -1,6 +1,5 @@
 const config = {
   appId: "10b7bc8c-a49c-4002-b0ec-63599e4b5210",
-  name: "Centaur Learning",
   base: "/learning",
   api: "https://api.centaurinstitute.org",
   socket: {
@@ -18,7 +17,7 @@ const config = {
     github: {
       authUrl: "https://github.com/login/oauth/authorize",
       clientId: "Ov23liiZwoMoHLSbtIS3",
-      redirectUri: "https://test.centaurinstitute.org/learning/callback",
+      redirectUri: "https://centaurinstitute.org/learning/callback",
       userUrl: "https://api.github.com/user",
       scope: "user",
       response_type: "code",
@@ -26,7 +25,7 @@ const config = {
     linkedin: {
       authUrl: "https://www.linkedin.com/oauth/v2/authorization",
       clientId: "77squyqj8fw5zu",
-      redirectUri: "https://test.centaurinstitute.org/learning/callback",
+      redirectUri: "https://centaurinstitute.org/learning/callback",
       userUrl: "https://api.linkedin.com/v2/userinfo",
       scope: "openid profile email",
       response_type: "code",
