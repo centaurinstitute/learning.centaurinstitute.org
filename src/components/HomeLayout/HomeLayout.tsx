@@ -178,13 +178,14 @@ const HomeLayout = () => {
         <Grid key={column.title} size={1}>
           <Stack spacing={{ xs: 1, md: 2 }}>
             <Typography
-              variant="body2"
+              data-cy="home-column-title"
+              variant="subtitle1"
               align="center"
               sx={{
                 minHeight: { lg: 40 },
                 whiteSpace: "pre-line",
                 position: "sticky",
-                top: 55,
+                top: 65,
                 zIndex: 1,
                 bgcolor: "#012b54",
                 color: "#e7decb",
@@ -196,6 +197,7 @@ const HomeLayout = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                fontSize: ".9rem",
               }}
             >
               {column.title}

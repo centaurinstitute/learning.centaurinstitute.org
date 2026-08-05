@@ -55,6 +55,21 @@ body,
   color: var(--menu-color) !important;
   font-family: var(--title-font) !important;
 }
+
+.MuiListItem-root {
+  background-color: var(--app-background) !important;
+}
+.MuiButton-disableElevation,
+.MuiButton-contained {
+  background-color: var(--menu-color) !important;
+  color: var(--app-background) !important;
+}
+
+.MuiButton-fullWidth {
+  background-color: var(--app-background) !important;
+  color: var(--menu-color) !important;
+}
+
 .MuiIconButton-root.MuiIconButton-sizeSmall {
   background-color: var(--menu-background) !important;
   color: var(--menu-color) !important;
@@ -117,4 +132,22 @@ body,
 .MuiFormLabel-root.MuiInputLabel-shrink.Mui-focused {
   font-family: var(--title-font) !important;
   color: var(--menu-color) !important;
+}
+
+.MuiBox-root:not(
+  #nav-section-vertical *,
+  #nav-section-mini *,
+  #nav-section-vertical,
+  #nav-section-mini
+) {
+  background-color: var(--app-background) !important;
+}
+
+.MuiTab-root,
+.MuiTypography-h5,
+.MuiTypography-h6,
+.MuiTypography-body1,
+.MuiTypography-body2 {
+  color: var(--menu-color) !important;
+  font-family: var(--title-font) !important;
 }
