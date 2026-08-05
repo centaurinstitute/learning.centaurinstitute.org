@@ -25,10 +25,6 @@ body,
   background-color: var(--app-background);
 }
 
-.css-bpj6gj-MuiPaper-root-MuiDrawer-paper {
-  background-color: var(--app-background) !important;
-}
-
 .MuiDrawer-root .MuiDrawer-paper {
   background-color: var(--menu-background);
 }
@@ -59,12 +55,6 @@ body,
   color: var(--menu-color) !important;
   font-family: var(--title-font) !important;
 }
-
-.css-kun65z-MuiTypography-root {
-  color: var(--menu-color) !important;
-  font-family: var(--title-font) !important;
-}
-
 .MuiIconButton-root.MuiIconButton-sizeSmall {
   background-color: var(--menu-background) !important;
   color: var(--menu-color) !important;
@@ -73,10 +63,6 @@ body,
 .MuiIconButton-root .component-iconify,
 .MuiIconButton-root svg {
   color: var(--menu-color) !important;
-}
-
-.css-gs0cb3-MuiPaper-root-MuiDialog-paper {
-  background-color: var(--app-background) !important;
 }
 
 #nav-section-vertical .MuiListItemButton-root.active,
@@ -94,6 +80,41 @@ body,
 }
 
 .MuiTypography-subtitle2 {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiAlert-message,
+.MuiAlert-icon {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiInputBase-input {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiInputBase-input:-webkit-autofill,
+.MuiInputBase-input:-webkit-autofill:hover,
+.MuiInputBase-input:-webkit-autofill:focus,
+.MuiInputBase-input:-webkit-autofill:active,
+.MuiInputBase-input:autofill,
+.MuiFilledInput-root:has(:-webkit-autofill),
+.MuiOutlinedInput-root:has(:-webkit-autofill) {
+  -webkit-box-shadow: 0 0 0 100px var(--app-background) inset !important;
+  box-shadow: 0 0 0 100px var(--app-background) inset !important;
+  -webkit-text-fill-color: var(--menu-color) !important;
+  caret-color: var(--menu-color) !important;
+  background-color: transparent !important;
+  background-clip: content-box !important;
+  border-radius: inherit;
+}
+
+.MuiFormLabel-root,
+.MuiFormLabel-root.MuiInputLabel-shrink,
+.MuiFormLabel-root.Mui-focused,
+.MuiFormLabel-root.MuiInputLabel-shrink.Mui-focused {
   font-family: var(--title-font) !important;
   color: var(--menu-color) !important;
 }
