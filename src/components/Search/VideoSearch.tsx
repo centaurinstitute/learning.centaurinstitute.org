@@ -133,12 +133,28 @@ const VideoSearch = ({
     <Box ref={anchorRef} sx={{ width: "100%" }}>
       <TextField
         fullWidth
+        variant="outlined"
         value={query}
         placeholder={loading ? "Loading..." : placeholder}
         onChange={(e) => setQuery(e.target.value)}
         size="medium"
         disabled={loading}
         sx={{
+          "& .MuiOutlinedInput-root": {
+            backgroundColor: "#e7decb",
+            borderRadius: 2,
+            "& .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#ce4a25",
+              borderWidth: 2,
+            },
+            "&:hover .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#ce4a25",
+            },
+            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#ce4a25",
+              borderWidth: 2,
+            },
+          },
           "& .MuiInputBase-input": {
             color: "#ce4a25",
             fontFamily: "var(--title-font)",
@@ -278,10 +294,10 @@ const VideoSearch = ({
                                       size="small"
                                       label={tag}
                                       sx={{
-                                        backgroundColor: "#ce4a25",
-                                        color: "#e7decb",
+                                        backgroundColor: "#fdd524",
+                                        color: "#323232",
                                         "&:hover": {
-                                          backgroundColor: "#ce4a25",
+                                          backgroundColor: "#fdd524",
                                           cursor: "pointer",
                                         },
                                         cursor: "pointer",

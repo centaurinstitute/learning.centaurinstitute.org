@@ -298,15 +298,15 @@ const VideoDetail = () => {
                     label={`${tag}`}
                     size="small"
                     sx={{
-                      backgroundColor: "#ce4a25",
-                      color: "#e7decb",
-                      fontWeight: 400,
-                      fontFamily: "var(--title-font)",
+                      backgroundColor: "#fdd524",
+                      color: "#323232",
                       "&:hover": {
-                        backgroundColor: "#ce4a25",
+                        backgroundColor: "#fdd524",
                         cursor: "pointer",
                       },
                       cursor: "pointer",
+                      fontWeight: "400",
+                      fontFamily: "var(--title-font)",
                     }}
                   />
                 ))}
@@ -418,15 +418,15 @@ const VideoDetail = () => {
                       label={author}
                       size="small"
                       sx={{
-                        backgroundColor: "#ce4a25",
-                        color: "#e7decb",
+                        backgroundColor: "#d88d06",
+                        color: "#323232",
                         "&:hover": {
-                          backgroundColor: "#ce4a25",
+                          backgroundColor: "#d88d06",
                           cursor: "pointer",
                         },
                         cursor: "pointer",
-                        fontWeight: "700",
-                        fontFamily: "var(--display-font)",
+                        fontWeight: "400",
+                        fontFamily: "var(--title-font)",
                       }}
                     />
                   ))}
