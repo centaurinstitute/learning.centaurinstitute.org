@@ -21,7 +21,8 @@ body,
 
 .MuiPaper-root.MuiPaper-elevation,
 .MuiAppBar-root .MuiButtonBase-root,
-.MuiCollapse-wrapperInner {
+.MuiCollapse-wrapperInner,
+.MuiTabs-root {
   background-color: var(--app-background);
 }
 
@@ -59,15 +60,9 @@ body,
 .MuiListItem-root {
   background-color: var(--app-background) !important;
 }
-.MuiButton-disableElevation,
-.MuiButton-contained {
+.MuiButton-containedInherit {
   background-color: var(--menu-color) !important;
   color: var(--app-background) !important;
-}
-
-.MuiButton-fullWidth {
-  background-color: var(--app-background) !important;
-  color: var(--menu-color) !important;
 }
 
 .MuiIconButton-root.MuiIconButton-sizeSmall {
