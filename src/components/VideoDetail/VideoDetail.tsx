@@ -50,8 +50,9 @@ const RelatedVideoThumbnail = ({
         }
       }}
       sx={{
-        width: 50,
-        height: 50,
+        width: 96,
+        height: 54,
+        flexShrink: 0,
         objectFit: "cover",
         borderRadius: 1,
         mr: 1,
