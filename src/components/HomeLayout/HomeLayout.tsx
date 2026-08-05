@@ -45,11 +45,6 @@ const LUMINARY_VIDEO_IDS = new Set([
   "fc9f0f21-6227-47ba-a58a-4df1096c93f0",
   "6542b9ef-4881-4cfb-aaf6-5fd19571a6c9",
   "7642f72a-64d3-4857-9f8c-d03747bfa4c7",
-  "dfe2fa23-d83a-4d0e-aa76-f665e84e9439",
-  "26faff14-7f40-40e7-a5b7-f53f935670fc",
-  "1669d96c-98c6-4353-8efb-fdc6635ea4eb",
-  "4508b754-5f53-4ea2-b48e-7734322b2469",
-  "ff9231d9-1ff8-4acc-bf3e-934675c9c377",
   "6ec106dc-1689-476a-b201-15e082863fe4",
 ]);
 
