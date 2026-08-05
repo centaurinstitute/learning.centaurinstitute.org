@@ -1,7 +1,7 @@
 const config = {
   appId: "10b7bc8c-a49c-4002-b0ec-63599e4b5210",
   name: "Centaur Learning",
-  base: "/",
+  base: "/learning",
   api: "http://localhost:3000",
   socket: {
     host: "http://localhost:3003",
