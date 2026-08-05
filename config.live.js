@@ -17,7 +17,7 @@ const config = {
     github: {
       authUrl: "https://github.com/login/oauth/authorize",
       clientId: "Ov23liiZwoMoHLSbtIS3",
-      redirectUri: "https://centaurinstitute.org/learning/callback",
+      redirectUri: "https://www.centaurinstitute.org/learning/callback",
       userUrl: "https://api.github.com/user",
       scope: "user",
       response_type: "code",
@@ -25,7 +25,7 @@ const config = {
     linkedin: {
       authUrl: "https://www.linkedin.com/oauth/v2/authorization",
       clientId: "77squyqj8fw5zu",
-      redirectUri: "https://centaurinstitute.org/learning/callback",
+      redirectUri: "https://www.centaurinstitute.org/learning/callback",
       userUrl: "https://api.linkedin.com/v2/userinfo",
       scope: "openid profile email",
       response_type: "code",
