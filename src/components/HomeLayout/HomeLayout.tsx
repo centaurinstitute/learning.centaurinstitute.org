@@ -229,7 +229,6 @@ const HomeLayout = () => {
                   <Typography
                     variant="subtitle1"
                     component="div"
-                    fontWeight="600"
                     sx={{
                       display: "-webkit-box",
                       WebkitLineClamp: 3,
