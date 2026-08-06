@@ -194,7 +194,7 @@ const VideoDetail = () => {
           Back to Learning Hub
         </Button>
         <Typography
-          sx={{ color: "#e7decb" }}
+          sx={{ color: "#ce4a25" }}
           variant="h6"
           fontWeight="400"
           fontFamily="var(--title-font)"
