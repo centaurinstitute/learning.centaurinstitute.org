@@ -128,7 +128,6 @@ const VideoCard = ({
             lineHeight: 1.3,
             height: "calc(1.3em * 3)",
             color: "#171619",
-            fontWeight: "700",
             fontFamily: "var(--display-font)",
           }}
         >
