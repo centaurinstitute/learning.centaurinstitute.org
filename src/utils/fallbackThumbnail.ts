@@ -1,21 +1,21 @@
 const DEFAULT_FALLBACK_THUMBNAIL =
-  "https://cdn.centaurinstitute.org/media/8db68051-0b75-4bde-8924-b0781620a646.png";
+  "https://cdn.centaurinstitute.org/media/f6b27457-a272-4fe9-9b82-eca1cb42d677.jpg";
 
 const eventFallbackThumbnails: Record<string, string> = {
   SS2025:
-    "https://cdn.centaurinstitute.org/media/cf5b23d7-db16-4313-9445-4495e00ee659.png",
+    "https://cdn.centaurinstitute.org/media/b6d09a50-48ee-42bd-9ffa-18329799053d.jpg",
   SS2024:
-    "https://cdn.centaurinstitute.org/media/71b6cbda-d87b-4078-8e77-fe65f663b5b4.png",
+    "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
   SS2023:
-    "https://cdn.centaurinstitute.org/media/cb4a3e75-18e4-4d7b-82cc-2bb40ab084da.png",
+    "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
   SS2022:
-    "https://cdn.centaurinstitute.org/media/ef586f8a-e8fd-47b5-bf6e-4efe1f040b16.png",
+    "https://cdn.centaurinstitute.org/media/f6b27457-a272-4fe9-9b82-eca1cb42d677.jpg",
   WW2022:
-    "https://cdn.centaurinstitute.org/media/31c688e9-5e8f-45ec-bf7f-2612bbbf1fc0.png",
+    "https://cdn.centaurinstitute.org/media/f6b27457-a272-4fe9-9b82-eca1cb42d677.jpg",
   WW2023:
-    "https://cdn.centaurinstitute.org/media/b317f08b-cda8-40fb-be5e-9fa44ba30a22.png",
+    "https://cdn.centaurinstitute.org/media/68c2c637-28b9-4d4f-b948-7dfea547b5ab.jpg",
   WW2024:
-    "https://cdn.centaurinstitute.org/media/33414f45-f1b3-4da4-a919-c99dedc3ff41.png",
+    "https://cdn.centaurinstitute.org/media/3186fea2-85d2-4674-90af-26fcd44d67ec.jpg",
 };
 
 const getFallbackThumbnail = (event?: string | null): string =>

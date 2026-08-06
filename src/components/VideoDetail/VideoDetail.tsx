@@ -24,6 +24,9 @@ type VideoDetailLocationState = {
   from?: string;
 };
 
+const isDirectMediaUrl = (url: string) =>
+  /\.(mp4|webm|ogg|ogv|mov|m4v)(\?|#|$)/i.test(url);
+
 const RelatedVideoThumbnail = ({
   thumbnail,
   title,
@@ -47,8 +50,9 @@ const RelatedVideoThumbnail = ({
         }
       }}
       sx={{
-        width: 50,
-        height: 50,
+        width: 96,
+        height: 54,
+        flexShrink: 0,
         objectFit: "cover",
         borderRadius: 1,
         mr: 1,
@@ -178,11 +182,25 @@ const VideoDetail = () => {
           startIcon={<ArrowBack />}
           onClick={handleBack}
           variant="outlined"
-          sx={{ mb: 2 }}
+          sx={{
+            fontWeight: "400",
+            fontFamily: "var(--title-font)",
+            mb: 3,
+            borderRadius: 2,
+            backgroundColor: "#ce4a25",
+            color: "#e7decb",
+          }}
         >
           Back to Learning Hub
         </Button>
-        <Typography variant="h6">Video not found</Typography>
+        <Typography
+          sx={{ color: "#ce4a25" }}
+          variant="h6"
+          fontWeight="400"
+          fontFamily="var(--title-font)"
+        >
+          Video not found
+        </Typography>
       </Container>
     );
   }
@@ -194,7 +212,14 @@ const VideoDetail = () => {
           startIcon={<ArrowBack />}
           onClick={handleBack}
           variant="outlined"
-          sx={{ mb: 3, borderRadius: 2 }}
+          sx={{
+            fontWeight: "400",
+            fontFamily: "var(--title-font)",
+            mb: 3,
+            borderRadius: 2,
+            backgroundColor: "#ce4a25",
+            color: "#e7decb",
+          }}
         >
           Back to Learning Hub
         </Button>
@@ -215,28 +240,50 @@ const VideoDetail = () => {
                   height: 0,
                 }}
               >
-                <iframe
-                  src={`${video.videoUrl}${
-                    video.videoUrl.includes("?") ? "&" : "?"
-                  }autoplay=1&muted=1`}
-                  title={video.title}
-                  frameBorder="0"
-                  allowFullScreen
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
+                {isDirectMediaUrl(video.videoUrl) ? (
+                  <video
+                    src={video.videoUrl}
+                    title={video.title}
+                    controls
+                    autoPlay={false}
+                    preload="metadata"
+                    poster={video.thumbnail}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                ) : (
+                  <iframe
+                    src={video.videoUrl}
+                    title={video.title}
+                    frameBorder="0"
+                    allowFullScreen
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                )}
               </Box>
             </Card>
 
             <Card sx={{ borderRadius: 3, p: 2 }}>
               <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
                 <Box>
-                  <Typography variant="h6" fontWeight="600">
+                  <Typography
+                    variant="h6"
+                    fontWeight="400"
+                    sx={{
+                      color: "#ce4a25",
+                    }}
+                  >
                     {video.title}
                   </Typography>
                 </Box>
@@ -252,10 +299,15 @@ const VideoDetail = () => {
                     label={`${tag}`}
                     size="small"
                     sx={{
-                      backgroundColor: "primary.main",
-                      color: "white",
-                      fontWeight: 500,
-                      "&:hover": { backgroundColor: "primary.dark" },
+                      backgroundColor: "#fdd524",
+                      color: "#323232",
+                      "&:hover": {
+                        backgroundColor: "#fdd524",
+                        cursor: "pointer",
+                      },
+                      cursor: "pointer",
+                      fontWeight: "400",
+                      fontFamily: "var(--title-font)",
                     }}
                   />
                 ))}
@@ -264,11 +316,12 @@ const VideoDetail = () => {
                     label={video.category}
                     size="small"
                     sx={{
-                      backgroundColor: "text.secondary",
-                      color: "white",
-                      fontWeight: 500,
+                      backgroundColor: "#ce4a25",
+                      color: "#e7decb",
+                      fontWeight: 400,
+                      fontFamily: "var(--title-font)",
                       "&:hover": {
-                        backgroundColor: "text.secondary",
+                        backgroundColor: "#ce4a25",
                         cursor: "default",
                       },
                     }}
@@ -281,6 +334,16 @@ const VideoDetail = () => {
                     size="small"
                     variant="outlined"
                     onClick={() => setSuggestInputOpen(true)}
+                    sx={{
+                      backgroundColor: "#ce4a25",
+                      color: "#e7decb",
+                      fontWeight: 400,
+                      fontFamily: "var(--title-font)",
+                      "&:hover": {
+                        backgroundColor: "#ce4a25",
+                        cursor: "default",
+                      },
+                    }}
                   />
                 )}
 
@@ -303,10 +366,15 @@ const VideoDetail = () => {
                       }}
                       sx={{
                         width: 160,
-                        "& .MuiOutlinedInput-root": {
-                          borderRadius: "16px",
-                          height: 32,
-                          fontSize: "0.8125rem",
+                        "& .MuiInputBase-input": {
+                          color: "#ce4a25",
+                          fontFamily: "var(--title-font)",
+                          fontWeight: 400,
+                        },
+                        "& .MuiInputBase-input::placeholder": {
+                          color: "#ce4a25",
+                          fontFamily: "var(--title-font)",
+                          fontWeight: 400,
                         },
                       }}
                     />
@@ -346,7 +414,22 @@ const VideoDetail = () => {
               {video.authors && video.authors.length > 0 && (
                 <Box sx={{ mt: 1, display: "flex", flexWrap: "wrap", gap: 1 }}>
                   {video.authors.map((author: string) => (
-                    <Chip key={author} label={author} size="small" />
+                    <Chip
+                      key={author}
+                      label={author}
+                      size="small"
+                      sx={{
+                        backgroundColor: "#d88d06",
+                        color: "#323232",
+                        "&:hover": {
+                          backgroundColor: "#d88d06",
+                          cursor: "pointer",
+                        },
+                        cursor: "pointer",
+                        fontWeight: "400",
+                        fontFamily: "var(--title-font)",
+                      }}
+                    />
                   ))}
                 </Box>
               )}
@@ -354,7 +437,11 @@ const VideoDetail = () => {
           </Box>
 
           <Box sx={{ width: { xs: "100%", lg: 400 } }}>
-            <Typography variant="h6" fontWeight="600" sx={{ mb: 2 }}>
+            <Typography
+              variant="h6"
+              fontWeight="400"
+              sx={{ mb: 2, color: "#ce4a25" }}
+            >
               More Videos
             </Typography>
             <Stack spacing={2}>
@@ -391,6 +478,8 @@ const VideoDetail = () => {
                           WebkitLineClamp: 3,
                           WebkitBoxOrient: "vertical",
                           overflow: "hidden",
+                          fontWeight: "400",
+                          color: "#ce4a25",
                         }}
                       >
                         {relatedVideo.title}

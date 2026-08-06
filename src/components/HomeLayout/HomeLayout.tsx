@@ -1,7 +1,15 @@
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import useVideos from "../../hooks/useVideos";
 
-import { Box, Card, Grid, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Divider,
+  Grid,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React, { useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -10,6 +18,7 @@ type Video = {
   title: string;
   thumbnail: string;
   event?: string | null;
+  authors?: string[];
 };
 
 const columnTitles = [
@@ -36,11 +45,6 @@ const LUMINARY_VIDEO_IDS = new Set([
   "fc9f0f21-6227-47ba-a58a-4df1096c93f0",
   "6542b9ef-4881-4cfb-aaf6-5fd19571a6c9",
   "7642f72a-64d3-4857-9f8c-d03747bfa4c7",
-  "dfe2fa23-d83a-4d0e-aa76-f665e84e9439",
-  "26faff14-7f40-40e7-a5b7-f53f935670fc",
-  "1669d96c-98c6-4353-8efb-fdc6635ea4eb",
-  "4508b754-5f53-4ea2-b48e-7734322b2469",
-  "ff9231d9-1ff8-4acc-bf3e-934675c9c377",
   "6ec106dc-1689-476a-b201-15e082863fe4",
 ]);
 
@@ -97,10 +101,13 @@ const shuffle = <T,>(items: T[]): T[] => {
 };
 
 const cardImageStyles = {
+  position: "absolute" as const,
+  top: 0,
+  left: 0,
   width: "100%",
   height: "100%",
   objectFit: "cover" as const,
-  borderRadius: 3,
+  borderRadius: 12,
 };
 
 const VideoThumbnail = ({ video }: { video: Video }) => {
@@ -166,16 +173,26 @@ const HomeLayout = () => {
         <Grid key={column.title} size={1}>
           <Stack spacing={{ xs: 1, md: 2 }}>
             <Typography
-              variant="subtitle2"
+              data-cy="home-column-title"
+              variant="subtitle1"
               align="center"
               sx={{
                 minHeight: { lg: 40 },
                 whiteSpace: "pre-line",
                 position: "sticky",
-                top: 55,
+                top: 65,
                 zIndex: 1,
-                bgcolor: "background.default",
+                bgcolor: "#012b54",
+                color: "#e7decb",
+                borderRadius: 2,
+                fontWeight: "700",
+                fontFamily: "var(--title-font)",
                 py: 1,
+                height: 60,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: ".9rem",
               }}
             >
               {column.title}
@@ -198,24 +215,73 @@ const HomeLayout = () => {
                   p: 2,
                 }}
               >
-                <Box sx={{ height: { xs: 220, sm: 240, md: 250 } }}>
-                  <VideoThumbnail video={video} />
-                </Box>
-                <Typography
-                  variant="body2"
-                  fontWeight="600"
+                <Box
                   sx={{
-                    mt: 1.5,
-                    lineHeight: 1.4,
-                    height: "2.8em",
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
+                    position: "relative",
+                    width: "100%",
+                    paddingTop: "66.6667%",
                     overflow: "hidden",
                   }}
                 >
-                  {video.title}
-                </Typography>
+                  <VideoThumbnail video={video} />
+                </Box>
+                <CardContent sx={{ flexGrow: 1, p: 2 }}>
+                  <Typography
+                    variant="subtitle1"
+                    component="div"
+                    sx={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                      lineHeight: 1.3,
+                      height: "calc(1.3em * 3)",
+                      color: "#171619",
+                      fontWeight: "700",
+                      fontFamily: "var(--display-font)",
+                    }}
+                  >
+                    {video.title}
+                  </Typography>
+
+                  <Divider
+                    sx={{ my: 1, borderColor: "#585656", opacity: 0.4 }}
+                  />
+
+                  {video.authors && video.authors.length > 0 && (
+                    <>
+                      <Typography
+                        component="div"
+                        sx={{
+                          fontSize: "0.7rem",
+                          letterSpacing: "0.12em",
+                          textTransform: "uppercase",
+                          fontFamily: "var(--title-font)",
+                          color: "#ce4a25",
+                          mb: 0.25,
+                        }}
+                      >
+                        Speakers
+                      </Typography>
+                      <Typography
+                        component="div"
+                        sx={{
+                          fontSize: "0.95rem",
+                          color: "#ce4a25",
+                          fontFamily: "var(--title-font)",
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                          lineHeight: 1,
+                          height: "calc(1em * 2)",
+                        }}
+                      >
+                        {video.authors.join(", ")}
+                      </Typography>
+                    </>
+                  )}
+                </CardContent>
               </Card>
             ))}
           </Stack>

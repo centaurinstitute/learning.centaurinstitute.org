@@ -133,11 +133,40 @@ const VideoSearch = ({
     <Box ref={anchorRef} sx={{ width: "100%" }}>
       <TextField
         fullWidth
+        variant="outlined"
         value={query}
         placeholder={loading ? "Loading..." : placeholder}
         onChange={(e) => setQuery(e.target.value)}
         size="medium"
         disabled={loading}
+        sx={{
+          "& .MuiOutlinedInput-root": {
+            backgroundColor: "#e7decb",
+            borderRadius: 2,
+            "& .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#ce4a25",
+              borderWidth: 2,
+            },
+            "&:hover .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#ce4a25",
+            },
+            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#ce4a25",
+              borderWidth: 2,
+            },
+          },
+          "& .MuiInputBase-input": {
+            color: "#ce4a25",
+            fontFamily: "var(--title-font)",
+            fontWeight: 400,
+          },
+          "& .MuiInputBase-input::placeholder": {
+            color: "#ce4a25",
+            opacity: 0.6,
+            fontFamily: "var(--title-font)",
+            fontWeight: 400,
+          },
+        }}
       />
 
       {!!query && rect && (
@@ -158,7 +187,12 @@ const VideoSearch = ({
           >
             {results.length === 0 ? (
               <Box sx={{ p: 2 }}>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="#ce4a25"
+                  fontWeight={400}
+                  fontFamily="var(--title-font)"
+                >
                   No results for {query}
                 </Typography>
               </Box>
@@ -195,7 +229,12 @@ const VideoSearch = ({
                         </ListItemAvatar>
                         <ListItemText
                           primary={
-                            <Typography variant="subtitle2" fontWeight={600}>
+                            <Typography
+                              variant="subtitle2"
+                              fontWeight={400}
+                              fontFamily="var(--title-font)"
+                              color="#ce4a25"
+                            >
                               {video.title}
                             </Typography>
                           }
@@ -211,6 +250,8 @@ const VideoSearch = ({
                                 variant="caption"
                                 color="text.secondary"
                                 display="block"
+                                fontFamily="var(--title-font)"
+                                fontWeight={400}
                               >
                                 {video.channelName} • {video.duration}
                               </Typography>
@@ -231,6 +272,8 @@ const VideoSearch = ({
                                   WebkitLineClamp: 2,
                                   WebkitBoxOrient: "vertical",
                                   overflow: "hidden",
+                                  fontWeight: 400,
+                                  fontFamily: "var(--title-font)",
                                 }}
                               >
                                 {video.description}
@@ -250,6 +293,17 @@ const VideoSearch = ({
                                       key={index}
                                       size="small"
                                       label={tag}
+                                      sx={{
+                                        backgroundColor: "#fdd524",
+                                        color: "#323232",
+                                        "&:hover": {
+                                          backgroundColor: "#fdd524",
+                                          cursor: "pointer",
+                                        },
+                                        cursor: "pointer",
+                                        fontWeight: "400",
+                                        fontFamily: "var(--title-font)",
+                                      }}
                                     />
                                   ))}
                                 </Box>

@@ -18,11 +18,12 @@ const templateConfig = {
     colorPresets: "cyan",
   },
   login: {
-    variant: "modern",
+    variant: "special",
     image:
-      "https://cdn.nucleoid.com/media/3b7f96ee-c245-4c93-97b8-d5503340f262.png",
-    icon: "/logo.png",
-    largeIcon: "/logo.png",
+      "https://cdn.centaurinstitute.org/media/42f4004f-72b8-48cb-b41a-06335ee93cce.svg",
+    icon: "https://cdn.centaurinstitute.org/media/42f4004f-72b8-48cb-b41a-06335ee93cce.svg",
+    largeIcon:
+      "https://cdn.centaurinstitute.org/media/42f4004f-72b8-48cb-b41a-06335ee93cce.svg",
   },
 };
 

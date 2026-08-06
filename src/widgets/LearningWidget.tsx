@@ -75,7 +75,14 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
     <>
       <Box sx={{ width: "100%", padding: { xs: 2, md: 3 } }}>
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h3" fontWeight="800">
+          <Typography
+            sx={{
+              color: "#ce4a25",
+              fontWeight: "400",
+              fontFamily: "var(--title-font)",
+            }}
+            variant="h3"
+          >
             {tagQuery
               ? `"${tagQuery.slice(0)}" related videos`
               : event
@@ -119,6 +126,7 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
                   views: number;
                   uploadDate: string;
                   category: string | null;
+                  authors?: string[];
                 }) => (
                   <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={video.id}>
                     <VideoCard

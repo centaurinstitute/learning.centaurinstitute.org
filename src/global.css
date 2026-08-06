@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poiret+One&display=swap");
+
+:root {
+  --app-background: #e7decb;
+  --display-font: "Poiret One", cursive;
+  --title-font: "DM Mono", monospace;
+
+  --menu-color: #ce4a25;
+  --menu-background: var(--app-background);
+  --menu-active-color: #8c2f14;
+  --menu-active-background: rgba(206, 74, 37, 0.12);
+  --menu-hover-background: rgba(206, 74, 37, 0.08);
+  --menu-subheader-color: rgba(206, 74, 37, 0.6);
+}
+
+html,
+body,
+#root {
+  background-color: var(--app-background) !important;
+}
+
+.MuiPaper-root.MuiPaper-elevation,
+.MuiAppBar-root .MuiButtonBase-root,
+.MuiCollapse-wrapperInner,
+.MuiTabs-root {
+  background-color: var(--app-background);
+}
+
+.MuiDrawer-root .MuiDrawer-paper {
+  background-color: var(--menu-background);
+}
+
+#nav-section-vertical .MuiListSubheader-root,
+#nav-section-mini .MuiListSubheader-root {
+  font-family: var(--title-font) !important;
+  color: var(--menu-subheader-color);
+}
+
+#nav-section-vertical .MuiListItemButton-root,
+#nav-section-mini .MuiListItemButton-root {
+  color: var(--menu-color);
+  background-color: transparent;
+}
+
+#nav-section-vertical .MuiListItemButton-root .label,
+#nav-section-mini .MuiListItemButton-root .label {
+  font-family: var(--title-font);
+}
+
+#nav-section-vertical .MuiListItemButton-root:hover,
+#nav-section-mini .MuiListItemButton-root:hover {
+  background-color: var(--menu-hover-background);
+}
+
+.simplebar-wrapper .MuiTypography-root {
+  color: var(--menu-color) !important;
+  font-family: var(--title-font) !important;
+}
+
+.MuiListItem-root {
+  background-color: var(--app-background) !important;
+}
+.MuiButton-containedInherit {
+  background-color: var(--menu-color) !important;
+  color: var(--app-background) !important;
+}
+
+.MuiIconButton-root.MuiIconButton-sizeSmall {
+  background-color: var(--menu-background) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiIconButton-root .component-iconify,
+.MuiIconButton-root svg {
+  color: var(--menu-color) !important;
+}
+
+#nav-section-vertical .MuiListItemButton-root.active,
+#nav-section-vertical .MuiListItemButton-root.active:hover,
+#nav-section-mini .MuiListItemButton-root.active,
+#nav-section-mini .MuiListItemButton-root.active:hover {
+  color: var(--menu-active-color);
+  background-color: var(--menu-active-background);
+}
+
+.MuiMenuItem-root {
+  color: var(--menu-color) !important;
+  font-family: var(--title-font) !important;
+  font-weight: 800 !important;
+}
+
+.MuiTypography-subtitle2 {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiAlert-message,
+.MuiAlert-icon {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiInputBase-input {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiInputBase-input:-webkit-autofill,
+.MuiInputBase-input:-webkit-autofill:hover,
+.MuiInputBase-input:-webkit-autofill:focus,
+.MuiInputBase-input:-webkit-autofill:active,
+.MuiInputBase-input:autofill,
+.MuiFilledInput-root:has(:-webkit-autofill),
+.MuiOutlinedInput-root:has(:-webkit-autofill) {
+  -webkit-box-shadow: 0 0 0 100px var(--app-background) inset !important;
+  box-shadow: 0 0 0 100px var(--app-background) inset !important;
+  -webkit-text-fill-color: var(--menu-color) !important;
+  caret-color: var(--menu-color) !important;
+  background-color: transparent !important;
+  background-clip: content-box !important;
+  border-radius: inherit;
+}
+
+.MuiFormLabel-root,
+.MuiFormLabel-root.MuiInputLabel-shrink,
+.MuiFormLabel-root.Mui-focused,
+.MuiFormLabel-root.MuiInputLabel-shrink.Mui-focused {
+  font-family: var(--title-font) !important;
+  color: var(--menu-color) !important;
+}
+
+.MuiBox-root:not(
+  #nav-section-vertical *,
+  #nav-section-mini *,
+  #nav-section-vertical,
+  #nav-section-mini
+) {
+  background-color: var(--app-background) !important;
+}
+
+.MuiTab-root,
+.MuiTypography-h5,
+.MuiTypography-h6,
+.MuiTypography-body1,
+.MuiTypography-body2 {
+  color: var(--menu-color) !important;
+  font-family: var(--title-font) !important;
+}
