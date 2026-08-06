@@ -1,4 +1,3 @@
-import { PlayArrow } from "@mui/icons-material";
 import React from "react";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import { useState } from "react";
@@ -96,23 +95,6 @@ const VideoCard = ({
           }}
         >
           {video.duration}
-        </Box>
-        <Box
-          sx={{
-            position: "absolute",
-            inset: 0,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "rgba(0,0,0,0.35)",
-            opacity: 0,
-            transition: "opacity 0.3s ease",
-            ".MuiCard-root:hover &": {
-              opacity: 1,
-            },
-          }}
-        >
-          <PlayArrow sx={{ color: "white", fontSize: 40 }} />
         </Box>
       </Box>
       <CardContent sx={{ flexGrow: 1, p: 2 }}>
