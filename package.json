@@ -43,5 +43,8 @@
     "vite": "^4.5.5",
     "vite-plugin-checker": "^0.5.1",
     "vite-plugin-svgr": "^3.0.0"
+  },
+  "patchedDependencies": {
+    "@canmingir/link@1.2.59": "patches/@canmingir%2Flink@1.2.59.patch"
   }
 }
