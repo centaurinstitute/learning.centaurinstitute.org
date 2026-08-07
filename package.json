@@ -13,7 +13,7 @@
     "serve": "bunx @nucleoidai/http-server start --port 5173"
   },
   "dependencies": {
-    "@canmingir/link": "^1.2.59",
+    "@canmingir/link": "^1.2.61",
     "@mui/icons-material": "^7.3.9",
     "@mui/material": "^7.3.9",
     "@nucleoidai/react-event": "^1.1.7",
@@ -43,8 +43,5 @@
     "vite": "^4.5.5",
     "vite-plugin-checker": "^0.5.1",
     "vite-plugin-svgr": "^3.0.0"
-  },
-  "patchedDependencies": {
-    "@canmingir/link@1.2.59": "patches/@canmingir%2Flink@1.2.59.patch"
   }
 }
