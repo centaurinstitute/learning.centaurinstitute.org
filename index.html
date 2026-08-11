@@ -8,6 +8,12 @@
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFRJCEJSJQ"></script>
     <script>
+      const params = new URLSearchParams(window.location.search);
+
+      if (window.location.hostname !== "learning.centaurinstitute.org" || params.get("gtag") === "false") {
+        window["ga-disable-G-QFRJCEJSJQ"] = true;
+      }
+
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
