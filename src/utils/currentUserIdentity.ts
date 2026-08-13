@@ -11,7 +11,7 @@ export type CurrentUserIdentity = {
 
 async function getGithubIdentity(): Promise<CurrentUserIdentity> {
   const identityProvider = "GITHUB";
-  const token = await storage.get("link", "refreshToken");
+  const token = await storage.get("link", "refreshtoken");
   return {
     name: null,
     email: null,
@@ -42,7 +42,7 @@ function getCognitoIdentity(): CurrentUserIdentity {
 }
 
 export async function getCurrentUserIdentity(): Promise<CurrentUserIdentity> {
-  const identityProvider = await storage.get("link", "identityProvider");
+  const identityProvider = await storage.get("link", "identityprovider");
 
   switch ((identityProvider || "").toUpperCase()) {
     case "GITHUB":

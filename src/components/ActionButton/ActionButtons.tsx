@@ -9,7 +9,7 @@ type Video = { tags?: string[] };
 const TOP_TAGS_COUNT = 20;
 const COLLAPSED_TAGS_COUNT = 5;
 
-const SETTINGS_STORAGE_KEY = "settings";
+const SETTINGS_STORAGE_KEY = "link.settings";
 
 const isNavCollapsed = (): boolean => {
   try {
