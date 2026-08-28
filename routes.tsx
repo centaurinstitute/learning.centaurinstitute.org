@@ -1,4 +1,5 @@
 import Container from "./src/Container";
+import { DashboardLayout } from "@canmingir/link/layouts";
 import Home from "./src/pages/home";
 import Index from "./src/pages/Index";
 import React from "react";
@@ -12,7 +13,6 @@ import WW2022 from "./src/pages/ww2022";
 import WW2023 from "./src/pages/ww2023";
 import WW2024 from "./src/pages/ww2024";
 
-import { DashboardLayout, FullScreenLayout } from "@canmingir/link/layouts";
 const routes = [
   {
     container: <Container />,
