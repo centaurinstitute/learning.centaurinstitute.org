@@ -1,8 +1,8 @@
 import Container from "./src/Container";
-import { DashboardLayout } from "@canmingir/link/layouts";
 import Home from "./src/pages/home";
 import Index from "./src/pages/Index";
 import React from "react";
+import RequestCertificate from "./src/pages/requestCertificate";
 import SS2022 from "./src/pages/ss2022";
 import SS2023 from "./src/pages/ss2023";
 import SS2024 from "./src/pages/ss2024";
@@ -12,6 +12,7 @@ import WW2022 from "./src/pages/ww2022";
 import WW2023 from "./src/pages/ww2023";
 import WW2024 from "./src/pages/ww2024";
 
+import { DashboardLayout, FullScreenLayout } from "@canmingir/link/layouts";
 const routes = [
   {
     container: <Container />,
@@ -58,6 +59,10 @@ const routes = [
           {
             path: "/",
             element: <Home />,
+          },
+          {
+            path: "/request-certificate",
+            element: <RequestCertificate />,
           },
         ],
       },
