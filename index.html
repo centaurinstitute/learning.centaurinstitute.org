@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centaur Learning</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFRJCEJSJQ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QFRJCEJSJQ"
+    ></script>
     <script>
       const params = new URLSearchParams(window.location.search);
 
-      // if (window.location.hostname !== "centaurinstitute.org" || window.location.hostname !== "www.centaurinstitute.org" || params.get("gtag") === "false") {
-      //  window["ga-disable-G-QFRJCEJSJQ"] = true;
-      // }
+      if (
+        window.location.hostname !== "centaurinstitute.org" ||
+        window.location.hostname !== "www.centaurinstitute.org" ||
+        params.get("gtag") === "false"
+      ) {
+        window["ga-disable-G-QFRJCEJSJQ"] = true;
+      }
 
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-QFRJCEJSJQ');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-QFRJCEJSJQ");
     </script>
   </head>
   <body>
