@@ -9,9 +9,7 @@ const RequestCertificate = () => {
   return (
     <Box
       sx={{
-        height: "100%",
         display: "flex",
-        overflow: "hidden",
         flexDirection: "column",
         alignItems: "center",
       }}
@@ -34,10 +32,9 @@ const RequestCertificate = () => {
         title="Certificate request form"
         src={GOOGLE_FORM_URL}
         sx={{
-          flex: 1,
           border: 0,
-          display: "block",
           width: "100%",
+          height: "4270px",
         }}
       />
     </Box>
