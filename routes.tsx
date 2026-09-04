@@ -8,6 +8,7 @@ import SS2022 from "./src/pages/ss2022";
 import SS2023 from "./src/pages/ss2023";
 import SS2024 from "./src/pages/ss2024";
 import SS2025 from "./src/pages/ss2025";
+import SS2026 from "./src/pages/ss2026";
 import VideoDetail from "./src/components/VideoDetail/VideoDetail";
 import WW2022 from "./src/pages/ww2022";
 import WW2023 from "./src/pages/ww2023";
@@ -23,6 +24,10 @@ const routes = [
           {
             path: "/learning",
             element: <Index />,
+          },
+          {
+            path: "/learning/2026",
+            element: <SS2026 />,
           },
           {
             path: "/learning/2025",
