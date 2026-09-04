@@ -3,6 +3,7 @@ import { DashboardLayout } from "@canmingir/link/layouts";
 import Home from "./src/pages/home";
 import Index from "./src/pages/Index";
 import React from "react";
+import RequestCertificate from "./src/pages/requestCertificate";
 import SS2022 from "./src/pages/ss2022";
 import SS2023 from "./src/pages/ss2023";
 import SS2024 from "./src/pages/ss2024";
@@ -58,6 +59,10 @@ const routes = [
           {
             path: "/",
             element: <Home />,
+          },
+          {
+            path: "/request-certificate",
+            element: <RequestCertificate />,
           },
         ],
       },
