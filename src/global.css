@@ -22,8 +22,11 @@ body,
 .MuiPaper-root.MuiPaper-elevation,
 .MuiAppBar-root .MuiButtonBase-root,
 .MuiCollapse-wrapperInner,
-.MuiTabs-root {
-  background-color: var(--app-background);
+.MuiTabs-root,
+.simplebar-wrapper,
+.MuiStack-root,
+.MuiPaper-root {
+  background-color: var(--app-background) !important;
 }
 
 .MuiDrawer-root .MuiDrawer-paper {
