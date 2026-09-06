@@ -6,7 +6,7 @@
       "name": "api.learning.ai",
       "dependencies": {
         "@anthropic-ai/sdk": "^0.35.0",
-        "@canmingir/link-express": "^1.7.24",
+        "@canmingir/link-express": "^1.7.28",
         "googleapis": "^148.0.0",
         "jsonwebtoken": "^9.0.2",
         "openai": "^4.79.4",
@@ -106,7 +106,7 @@
 
     "@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.27.1", "", {}, "sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow=="],
 
-    "@canmingir/link-express": ["@canmingir/link-express@1.7.24", "", { "dependencies": { "@aws-sdk/client-dynamodb": "^3.614.0", "@aws-sdk/lib-dynamodb": "^3.614.0", "@elastic/ecs-pino-format": "^1.5.0", "aws-jwt-verify": "^5.1.1", "axios": "^1.7.2", "cors": "^2.8.5", "dotenv": "^16.4.5", "express": "^4.19.2", "express-async-errors": "^3.1.1", "helmet": "^7.1.0", "joi": "^17.13.3", "joi-to-swagger": "^6.2.0", "jsonwebtoken": "^9.0.2", "kafkajs": "^2.2.4", "lodash": "^4.17.21", "morgan": "^1.10.0", "pg": "^8.12.0", "pino": "^10.1.0", "pino-elasticsearch": "^8.1.0", "prom-client": "^15.1.3", "sequelize": "^6.37.7", "sequelize-typescript": "^2.1.6", "socket.io": "^4.8.1", "socket.io-client": "^4.8.1", "swagger-jsdoc": "^6.2.8", "uuid": "^10.0.0" }, "bin": { "event-listener": "bin/event-listener.ts" } }, "sha512-3dYDdGJxg6nIwxxly7pES0knQp5EeM9ZTpzhJcVvGCZKkv2uxPRPikDDpJQhw0qirYOBB8C08VjTHEumJJAgjg=="],
+    "@canmingir/link-express": ["@canmingir/link-express@1.7.28", "", { "dependencies": { "@aws-sdk/client-dynamodb": "^3.614.0", "@aws-sdk/lib-dynamodb": "^3.614.0", "@elastic/ecs-pino-format": "^1.5.0", "aws-jwt-verify": "^5.1.1", "axios": "^1.7.2", "cors": "^2.8.5", "dotenv": "^16.4.5", "express": "^4.19.2", "express-async-errors": "^3.1.1", "helmet": "^7.1.0", "joi": "^17.13.3", "joi-to-swagger": "^6.2.0", "jsonwebtoken": "^9.0.2", "kafkajs": "^2.2.4", "lodash": "^4.17.21", "morgan": "^1.10.0", "pg": "^8.12.0", "pino": "^10.1.0", "pino-elasticsearch": "^8.1.0", "prom-client": "^15.1.3", "sequelize": "^6.37.7", "sequelize-typescript": "^2.1.6", "socket.io": "^4.8.1", "socket.io-client": "^4.8.1", "swagger-jsdoc": "^6.2.8", "uuid": "^10.0.0" }, "bin": { "event-listener": "bin/event-listener.ts" } }, "sha512-aKKjtj8uhUt+kWC9DHA4JMS5VpsHPBuWtPARUKoZYjJD1lETXVFLXGErC4YiOTxiK+diOZ8U2/T7QfeESJxB3w=="],
 
     "@elastic/ecs-helpers": ["@elastic/ecs-helpers@2.1.1", "", {}, "sha512-ItoNazMnYdlUCmkBYTXc3SG6PF7UlVTbvMdHPvXkfTMPdwGv2G1Xtp5CjDHaGHGOZSwaDrW4RSCXvA/lMSU+rg=="],
 

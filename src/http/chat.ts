@@ -6,7 +6,7 @@ const instance = axios.create({
     common: {
       "Content-Type": "application/json",
     },
-    Authorization: `Bearer ${storage.get("link", "accessToken")}`,
+    Authorization: `Bearer ${storage.get("link", "accesstoken")}`,
   },
 });
 
