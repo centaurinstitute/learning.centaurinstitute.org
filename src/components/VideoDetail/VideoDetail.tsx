@@ -65,7 +65,9 @@ const VideoDetail = () => {
   const location = useLocation();
   const from = (location.state as { from?: string } | null)?.from;
   const eventByRoute: Record<string, string> = {
-    "/learning": "SS2025",
+    "/learning": "SS2026",
+    "/learning/2026": "SS2026",
+    "/learning/2025": "SS2025",
     "/learning/2024": "SS2024",
     "/learning/2023": "SS2023",
     "/learning/2022": "SS2022",

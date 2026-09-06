@@ -13,6 +13,12 @@ const menuConfig = {
           path: "/",
         },
         {
+          title: "Summer School 2026",
+          compactTitle: "Summer '26",
+          icon: "tabler:sun-filled",
+          path: "/learning/2026",
+        },
+        {
           title: "Summer School 2025",
           compactTitle: "Summer '25",
           icon: "tabler:sun-filled",
