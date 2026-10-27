@@ -1,5 +1,6 @@
 import VideoCard from "../components/VideoCard/VideoCard";
 import { getEventLabel } from "../utils/eventLabel";
+import { getTagLabel } from "../utils/tagLabels"; // import tag map utility function
 import useVideos from "../hooks/useVideos";
 
 import {
@@ -60,7 +61,11 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
 
       const inTags =
         Array.isArray(video.tags) &&
-        video.tags.some((tag: string) => tag.toLowerCase().includes(q));
+        video.tags.some(
+          (tag: string) =>
+            tag.toLowerCase().includes(q) ||
+            getTagLabel(tag).toLowerCase().includes(q),
+        );
 
       const inCategory = String(video.category || "")
         .toLowerCase()
@@ -85,7 +90,9 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
   const filterTitle = [
     categoryQuery ? "Category: " + categoryQuery : undefined,
     speakerQuery ? "Speaker: " + speakerQuery : undefined,
-    tagQuery ? '"' + tagQuery + '" related videos' : undefined,
+    tagQuery
+      ? '"' + getTagLabel(tagQuery) + '" related videos'
+      : undefined,
   ]
     .filter(Boolean)
     .join(" · ");

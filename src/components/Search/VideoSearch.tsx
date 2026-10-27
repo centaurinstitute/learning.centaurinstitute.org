@@ -1,4 +1,5 @@
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
+import { getTagLabel } from "../../utils/tagLabels";
 import useVideos from "../../hooks/useVideos";
 
 import {
@@ -40,13 +41,21 @@ type Video = {
   category?: string | null;
 };
 
+type SearchableVideo = Video & {
+  tagLabels: string[];
+};
+
 const getRelatedTags = (video: Video, query: string): string[] => {
   if (!video.tags || video.tags.length === 0) return [];
 
   const q = query.toLowerCase().trim();
   if (!q) return video.tags.slice(0, 3);
 
-  const matched = video.tags.filter((t) => t.toLowerCase().includes(q));
+  const matched = video.tags.filter(
+    (tag) =>
+      tag.toLowerCase().includes(q) ||
+      getTagLabel(tag).toLowerCase().includes(q),
+  );
 
   const base = matched.length > 0 ? matched : video.tags;
   return base.slice(0, 3);
@@ -117,12 +126,27 @@ const VideoSearch = ({
   }, [anchorEl]);
 
   const fuse = useMemo(() => {
-    const options: IFuseOptions<Video> = {
-      keys: ["title", "description", "tags", "authors", "category"],
+    const searchableVideos: SearchableVideo[] = (videos ?? []).map(
+      (video: Video) => ({
+        ...video,
+        tagLabels: (video.tags ?? []).map(getTagLabel),
+      }),
+    );
+
+    const options: IFuseOptions<SearchableVideo> = {
+      keys: [
+        "title",
+        "description",
+        "tags",
+        "tagLabels",
+        "authors",
+        "category",
+      ],
       threshold: 0.35,
       ignoreLocation: true,
     };
-    return new Fuse(videos ?? [], options);
+
+    return new Fuse(searchableVideos, options);
   }, [videos]);
 
   const results: Video[] = useMemo(() => {
@@ -309,7 +333,7 @@ const VideoSearch = ({
                                     <Chip
                                       key={index}
                                       size="small"
-                                      label={tag}
+                                      label={getTagLabel(tag)}
                                       sx={{
                                         backgroundColor: "#fdd524",
                                         color: "#323232",

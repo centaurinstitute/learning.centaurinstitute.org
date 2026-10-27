@@ -1,5 +1,6 @@
 import { getCurrentUserIdentity } from "../../utils/currentUserIdentity";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
+import { getTagLabel } from "../../utils/tagLabels"; // import tag map utility function
 import http from "@canmingir/link/platform/http";
 import { publish } from "@nucleoidai/react-event";
 import useVideos from "../../hooks/useVideos";
@@ -298,7 +299,7 @@ const VideoDetail = () => {
                       navigate(`/learning?tag=${encodeURIComponent(tag)}`);
                     }}
                     key={tag}
-                    label={`${tag}`}
+                    label={getTagLabel(tag)} // use tag map fn; returns String
                     size="small"
                     sx={{
                       backgroundColor: "#fdd524",

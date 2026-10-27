@@ -1,3 +1,4 @@
+import { getTagLabel } from "../../utils/tagLabels"; // import tag map utility function
 import { useNavigate } from "react-router-dom";
 import useVideos from "../../hooks/useVideos";
 
@@ -87,7 +88,7 @@ const ActionButtons = () => {
             navigate(`/learning?tag=${encodeURIComponent(tag)}`);
           }}
           key={tag}
-          label={`${tag}`}
+          label={getTagLabel(tag)} // use tag map fn; returns String
           size="small"
           sx={{
             backgroundColor: "#fdd524",
