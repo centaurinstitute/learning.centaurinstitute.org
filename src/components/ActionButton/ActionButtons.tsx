@@ -12,6 +12,14 @@ const COLLAPSED_TAGS_COUNT = 5;
 
 const SETTINGS_STORAGE_KEY = "link.settings";
 
+const VIDEO_CATEGORIES = [
+  "Talk",
+  "Tutorial",
+  "Panel",
+  "Fireside Chat",
+  "Sponsor Talk",
+];
+
 const isNavCollapsed = (): boolean => {
   try {
     const raw = window.localStorage.getItem(SETTINGS_STORAGE_KEY);
@@ -52,6 +60,28 @@ const ActionButtons = () => {
 
   return (
     <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, ml: 2, mb: -1 }}>
+      {VIDEO_CATEGORIES.map((category) => (
+        <Chip
+          key={category}
+          label={category}
+          size="small"
+          onClick={() => {
+            navigate(
+              "/learning?category=" + encodeURIComponent(category),
+            );
+          }}
+          sx={{
+            backgroundColor: "#ce4a25",
+            color: "#e7decb",
+            fontWeight: 400,
+            fontFamily: "var(--title-font)",
+            "&:hover": {
+              backgroundColor: "#ce4a25",
+              cursor: "pointer",
+            },
+          }}
+        />
+      ))}
       {visibleTags.map((tag) => (
         <Chip
           onClick={() => {

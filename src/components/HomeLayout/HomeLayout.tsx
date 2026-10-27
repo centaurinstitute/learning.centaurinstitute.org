@@ -1,3 +1,4 @@
+import SpeakerLinks from "../SpeakerLinks/SpeakerLinks";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import useVideos from "../../hooks/useVideos";
 
@@ -277,7 +278,7 @@ const HomeLayout = () => {
                           height: "calc(1em * 2)",
                         }}
                       >
-                        {video.authors.join(", ")}
+                        <SpeakerLinks authors={video.authors} />
                       </Typography>
                     </>
                   )}

@@ -325,8 +325,13 @@ const VideoDetail = () => {
                       fontFamily: "var(--title-font)",
                       "&:hover": {
                         backgroundColor: "#ce4a25",
-                        cursor: "default",
+                        cursor: "pointer",
                       },
+                    }}
+                    onClick={() => {
+                      navigate(
+                        "/learning?category=" + encodeURIComponent(video.category),
+                      );
                     }}
                   />
                 )}
@@ -431,6 +436,9 @@ const VideoDetail = () => {
                         cursor: "pointer",
                         fontWeight: "400",
                         fontFamily: "var(--title-font)",
+                      }}
+                      onClick={() => {
+                        navigate("/learning?speaker=" + encodeURIComponent(author));
                       }}
                     />
                   ))}

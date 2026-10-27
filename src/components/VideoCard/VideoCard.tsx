@@ -1,4 +1,5 @@
 import React from "react";
+import SpeakerLinks from "../SpeakerLinks/SpeakerLinks";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import { useState } from "react";
 
@@ -147,7 +148,7 @@ const VideoCard = ({
                 height: "calc(1em * 2)",
               }}
             >
-              {video.authors.join(", ")}
+              <SpeakerLinks authors={video.authors} />
             </Typography>
           </>
         )}

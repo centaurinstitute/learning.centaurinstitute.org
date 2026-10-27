@@ -23,65 +23,79 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const tagQuery = useMemo(() => {
-    const sp = new URLSearchParams(location.search);
-    return sp.get("tag") || undefined;
+  const { tagQuery, categoryQuery, speakerQuery, searchQuery } = useMemo(() => {
+    const params = new URLSearchParams(location.search);
+
+    return {
+      tagQuery: params.get("tag")?.trim() || undefined,
+      categoryQuery: params.get("category")?.trim() || undefined,
+      speakerQuery: params.get("speaker")?.trim() || undefined,
+      searchQuery: (params.get("q") || "").toLowerCase().trim(),
+    };
   }, [location.search]);
 
-  const { videos, loading } = getVideos(
-    tagQuery ? { tags: tagQuery } : { event },
+  const hasMetadataFilter = Boolean(
+    tagQuery || categoryQuery || speakerQuery,
   );
 
-  const searchQuery = useMemo(() => {
-    const sp = new URLSearchParams(location.search);
-    return (sp.get("q") || "").toLowerCase().trim();
-  }, [location.search]);
+  const { videos, loading } = getVideos({
+    tags: tagQuery,
+    category: categoryQuery,
+    speaker: speakerQuery,
+    event: hasMetadataFilter ? undefined : event,
+  });
 
-  const filteredVideos = useMemo(
-    () => {
-      const eventVideos =
-        !tagQuery && event
-          ? (videos || []).filter((v) => v.event === event)
-          : videos || [];
+  const filteredVideos = useMemo(() => {
+    const items = videos || [];
 
-      if (!searchQuery) return eventVideos;
+    if (!searchQuery) return items;
 
-      const q = searchQuery;
+    const q = searchQuery;
 
-      return eventVideos.filter((v) => {
-        const inTitle = String(v.title || "")
-          .toLowerCase()
-          .includes(q);
+    return items.filter((video) => {
+      const inTitle = String(video.title || "").toLowerCase().includes(q);
 
-        const inDesc = String(v.description || "")
-          .toLowerCase()
-          .includes(q);
+      const inDescription = String(video.description || "")
+        .toLowerCase()
+        .includes(q);
 
-        /* old inTags array
-        const inTags = Array.isArray(v.tags)
-          ? v.tags.some((t: string) =>
-              String(t || "")
-                .toLowerCase()
-                .includes(q),
-            )
-          : false;
-        */
+      const inTags =
+        Array.isArray(video.tags) &&
+        video.tags.some(
+          (tag: string) =>
+            tag.toLowerCase().includes(q) ||
+            getTagLabel(tag).toLowerCase().includes(q),
+        );
 
-        // new inTags array that uses tag map fn
-        const inTags = Array.isArray(v.tags)
-          ? v.tags.some(
-            (tag: string) =>
-              tag.toLowerCase().includes(q) ||
-              getTagLabel(tag).toLowerCase().includes(q),
-            )
-          : false;
+      const inCategory = String(video.category || "")
+        .toLowerCase()
+        .includes(q);
 
-        return inTitle || inDesc || inTags;
-      });
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [event, videos, searchQuery, tagQuery], // included tagQuery in dependencies to ensure filtering recalculates when the selected tag changes
-  );
+      const inSpeakers =
+        Array.isArray(video.authors) &&
+        video.authors.some((author: string) =>
+          author.toLowerCase().includes(q),
+        );
+
+      return (
+        inTitle ||
+        inDescription ||
+        inTags ||
+        inCategory ||
+        inSpeakers
+      );
+    });
+  }, [videos, searchQuery]);
+
+  const filterTitle = [
+    categoryQuery ? "Category: " + categoryQuery : undefined,
+    speakerQuery ? "Speaker: " + speakerQuery : undefined,
+    tagQuery
+      ? '"' + getTagLabel(tagQuery) + '" related videos'
+      : undefined,
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   const handleVideoClick = (videoId: string) => {
     navigate(`/learning/video/${videoId}`, {
@@ -101,11 +115,7 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
             }}
             variant="h3"
           >
-            {tagQuery
-              ? `"${getTagLabel(tagQuery)}" related videos` // use new tag map fn instead of first slice
-              : event
-                ? `${getEventLabel(event)}`
-                : "Learning Hub"}
+            {filterTitle || (event ? getEventLabel(event) : "Learning Hub")}
           </Typography>
         </Box>
 

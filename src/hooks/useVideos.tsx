@@ -6,6 +6,8 @@ type DependencyArray = object[];
 type GetVideosOptions = {
   tags?: string;
   event?: string;
+  category?: string;
+  speaker?: string;
   fetchState?: DependencyArray;
 };
 
@@ -18,16 +20,23 @@ function useVideos() {
   const getVideos = ({
     tags,
     event,
+    category,
+    speaker,
     fetchState = [],
   }: GetVideosOptions = {}) => {
-    const url = event
-      ? `/videos?event=${encodeURIComponent(event)}`
-      : tags
-        ? `/videos?tags=${encodeURIComponent(tags)}`
-        : "/videos";
+    const params = new URLSearchParams();
+
+    if (event) params.set("event", event);
+    if (tags) params.set("tags", tags);
+    if (category) params.set("category", category);
+    if (speaker) params.set("speaker", speaker);
+
+    const query = params.toString();
+    const url = query ? "/videos?" + query : "/videos";
+
     const { data, loading, error, fetch } = Api(
       async () => http.get(url),
-      [event, tags, ...fetchState],
+      [event, tags, category, speaker, ...fetchState],
     );
 
     if (data) {

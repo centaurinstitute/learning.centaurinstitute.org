@@ -1,5 +1,5 @@
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
-import { getTagLabel } from "../../utils/tagLabels"; // import tag map utility function
+import { getTagLabel } from "../../utils/tagLabels";
 import useVideos from "../../hooks/useVideos";
 
 import {
@@ -20,8 +20,7 @@ import {
 } from "@mui/material";
 import Fuse, { IFuseOptions } from "fuse.js";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom"; // \removed unused Search import
-
+import { useLocation, useNavigate } from "react-router-dom";
 
 type Video = {
   id: string;
@@ -39,9 +38,9 @@ type Video = {
   tags: string[];
   authors?: string[];
   event?: string | null;
+  category?: string | null;
 };
 
-// new searchable video type that includes tagLabels
 type SearchableVideo = Video & {
   tagLabels: string[];
 };
@@ -52,15 +51,10 @@ const getRelatedTags = (video: Video, query: string): string[] => {
   const q = query.toLowerCase().trim();
   if (!q) return video.tags.slice(0, 3);
 
-  /* old algo
-  const matched = video.tags.filter((t) => t.toLowerCase().includes(q));
-  */
-
-  // new tag filter algo (supports querying both ID & readable names); returns tag IDs
   const matched = video.tags.filter(
     (tag) =>
       tag.toLowerCase().includes(q) ||
-    getTagLabel(tag).toLowerCase().includes(q),
+      getTagLabel(tag).toLowerCase().includes(q),
   );
 
   const base = matched.length > 0 ? matched : video.tags;
@@ -131,18 +125,6 @@ const VideoSearch = ({
     };
   }, [anchorEl]);
 
-  /* old fuse var
-  const fuse = useMemo(() => {
-    const options: IFuseOptions<Video> = {
-      keys: ["title", "description", "tags", "authors"],
-      threshold: 0.35,
-      ignoreLocation: true,
-    };
-    return new Fuse(videos ?? [], options);
-  }, [videos]);
-  */
-
-  // new fuse var with SearchableVideo which adds lables to temporary search objects
   const fuse = useMemo(() => {
     const searchableVideos: SearchableVideo[] = (videos ?? []).map(
       (video: Video) => ({
@@ -152,7 +134,14 @@ const VideoSearch = ({
     );
 
     const options: IFuseOptions<SearchableVideo> = {
-      keys: ["title", "description", "tags", "tagLabels", "authors"],
+      keys: [
+        "title",
+        "description",
+        "tags",
+        "tagLabels",
+        "authors",
+        "category",
+      ],
       threshold: 0.35,
       ignoreLocation: true,
     };
@@ -315,7 +304,7 @@ const VideoSearch = ({
                                 {video.description}
                               </Typography>
 
-                              {relatedTags.length > 0 && (
+                              {(video.category || relatedTags.length > 0) && (
                                 <Box
                                   sx={{
                                     display: "flex",
@@ -324,11 +313,27 @@ const VideoSearch = ({
                                     mt: 0.5,
                                   }}
                                 >
+                                  {video.category && (
+                                    <Chip
+                                      size="small"
+                                      label={video.category}
+                                      sx={{
+                                        backgroundColor: "#ce4a25",
+                                        color: "#e7decb",
+                                        fontWeight: 400,
+                                        fontFamily: "var(--title-font)",
+                                        "&:hover": {
+                                          backgroundColor: "#ce4a25",
+                                        },
+                                      }}
+                                    />
+                                  )}
+
                                   {relatedTags.map((tag, index) => (
                                     <Chip
                                       key={index}
                                       size="small"
-                                      label={getTagLabel(tag)} // use tag map fn; returns String
+                                      label={getTagLabel(tag)}
                                       sx={{
                                         backgroundColor: "#fdd524",
                                         color: "#323232",
