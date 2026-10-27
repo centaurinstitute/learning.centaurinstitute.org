@@ -1,4 +1,5 @@
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
+import { getTagLabel } from "../../utils/tagLabels"; // import tag map utility function
 import useVideos from "../../hooks/useVideos";
 
 import {
@@ -19,7 +20,8 @@ import {
 } from "@mui/material";
 import Fuse, { IFuseOptions } from "fuse.js";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom"; // \removed unused Search import
+
 
 type Video = {
   id: string;
@@ -39,13 +41,27 @@ type Video = {
   event?: string | null;
 };
 
+// new searchable video type that includes tagLabels
+type SearchableVideo = Video & {
+  tagLabels: string[];
+};
+
 const getRelatedTags = (video: Video, query: string): string[] => {
   if (!video.tags || video.tags.length === 0) return [];
 
   const q = query.toLowerCase().trim();
   if (!q) return video.tags.slice(0, 3);
 
+  /* old algo
   const matched = video.tags.filter((t) => t.toLowerCase().includes(q));
+  */
+
+  // new tag filter algo (supports querying both ID & readable names); returns tag IDs
+  const matched = video.tags.filter(
+    (tag) =>
+      tag.toLowerCase().includes(q) ||
+    getTagLabel(tag).toLowerCase().includes(q),
+  );
 
   const base = matched.length > 0 ? matched : video.tags;
   return base.slice(0, 3);
@@ -115,6 +131,7 @@ const VideoSearch = ({
     };
   }, [anchorEl]);
 
+  /* old fuse var
   const fuse = useMemo(() => {
     const options: IFuseOptions<Video> = {
       keys: ["title", "description", "tags", "authors"],
@@ -122,6 +139,25 @@ const VideoSearch = ({
       ignoreLocation: true,
     };
     return new Fuse(videos ?? [], options);
+  }, [videos]);
+  */
+
+  // new fuse var with SearchableVideo which adds lables to temporary search objects
+  const fuse = useMemo(() => {
+    const searchableVideos: SearchableVideo[] = (videos ?? []).map(
+      (video: Video) => ({
+        ...video,
+        tagLabels: (video.tags ?? []).map(getTagLabel),
+      }),
+    );
+
+    const options: IFuseOptions<SearchableVideo> = {
+      keys: ["title", "description", "tags", "tagLabels", "authors"],
+      threshold: 0.35,
+      ignoreLocation: true,
+    };
+
+    return new Fuse(searchableVideos, options);
   }, [videos]);
 
   const results: Video[] = useMemo(() => {
@@ -292,7 +328,7 @@ const VideoSearch = ({
                                     <Chip
                                       key={index}
                                       size="small"
-                                      label={tag}
+                                      label={getTagLabel(tag)} // use tag map fn; returns String
                                       sx={{
                                         backgroundColor: "#fdd524",
                                         color: "#323232",

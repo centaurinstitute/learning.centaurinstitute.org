@@ -1,5 +1,6 @@
 import VideoCard from "../components/VideoCard/VideoCard";
 import { getEventLabel } from "../utils/eventLabel";
+import { getTagLabel } from "../utils/tagLabels"; // import tag map utility function
 import useVideos from "../hooks/useVideos";
 
 import {
@@ -42,15 +43,21 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
         !tagQuery && event
           ? (videos || []).filter((v) => v.event === event)
           : videos || [];
+
       if (!searchQuery) return eventVideos;
+
       const q = searchQuery;
+
       return eventVideos.filter((v) => {
         const inTitle = String(v.title || "")
           .toLowerCase()
           .includes(q);
+
         const inDesc = String(v.description || "")
           .toLowerCase()
           .includes(q);
+
+        /* old inTags array
         const inTags = Array.isArray(v.tags)
           ? v.tags.some((t: string) =>
               String(t || "")
@@ -58,11 +65,22 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
                 .includes(q),
             )
           : false;
+        */
+
+        // new inTags array that uses tag map fn
+        const inTags = Array.isArray(v.tags)
+          ? v.tags.some(
+            (tag: string) =>
+              tag.toLowerCase().includes(q) ||
+              getTagLabel(tag).toLowerCase().includes(q),
+            )
+          : false;
+
         return inTitle || inDesc || inTags;
       });
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [event, videos, searchQuery],
+    [event, videos, searchQuery, tagQuery], // included tagQuery in dependencies to ensure filtering recalculates when the selected tag changes
   );
 
   const handleVideoClick = (videoId: string) => {
@@ -84,7 +102,7 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
             variant="h3"
           >
             {tagQuery
-              ? `"${tagQuery.slice(0)}" related videos`
+              ? `"${getTagLabel(tagQuery)}" related videos` // use new tag map fn instead of first slice
               : event
                 ? `${getEventLabel(event)}`
                 : "Learning Hub"}
