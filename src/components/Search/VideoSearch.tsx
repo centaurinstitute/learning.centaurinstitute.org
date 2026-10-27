@@ -37,6 +37,7 @@ type Video = {
   tags: string[];
   authors?: string[];
   event?: string | null;
+  category?: string | null;
 };
 
 const getRelatedTags = (video: Video, query: string): string[] => {
@@ -117,7 +118,7 @@ const VideoSearch = ({
 
   const fuse = useMemo(() => {
     const options: IFuseOptions<Video> = {
-      keys: ["title", "description", "tags", "authors"],
+      keys: ["title", "description", "tags", "authors", "category"],
       threshold: 0.35,
       ignoreLocation: true,
     };
@@ -279,7 +280,7 @@ const VideoSearch = ({
                                 {video.description}
                               </Typography>
 
-                              {relatedTags.length > 0 && (
+                              {(video.category || relatedTags.length > 0) && (
                                 <Box
                                   sx={{
                                     display: "flex",
@@ -288,6 +289,22 @@ const VideoSearch = ({
                                     mt: 0.5,
                                   }}
                                 >
+                                  {video.category && (
+                                    <Chip
+                                      size="small"
+                                      label={video.category}
+                                      sx={{
+                                        backgroundColor: "#ce4a25",
+                                        color: "#e7decb",
+                                        fontWeight: 400,
+                                        fontFamily: "var(--title-font)",
+                                        "&:hover": {
+                                          backgroundColor: "#ce4a25",
+                                        },
+                                      }}
+                                    />
+                                  )}
+
                                   {relatedTags.map((tag, index) => (
                                     <Chip
                                       key={index}

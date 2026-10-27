@@ -7,20 +7,69 @@ import platform from "@canmingir/link-express";
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const { event, limit, tags } = req.query;
+  const { event, limit, tags, category, speaker } = req.query;
+
+  for (const [name, value] of Object.entries({
+    event,
+    limit,
+    tags,
+    category,
+    speaker,
+  })) {
+    if (value !== undefined && typeof value !== "string") {
+      return res.status(400).json({
+        message: `${name} must be a single string`,
+      });
+    }
+  }
+
+  const resultLimit = limit === undefined ? undefined : Number(limit);
+
+  if (
+    resultLimit !== undefined &&
+    (!Number.isSafeInteger(resultLimit) || resultLimit < 1)
+  ) {
+    return res.status(400).json({
+      message: "limit must be a positive integer",
+    });
+  }
 
   let videos = await Video.findAll({
     ...(event ? { where: { event } } : {}),
-    ...(limit ? { limit: parseInt(limit as string) } : {}),
   });
 
   if (tags) {
-    const tag = (tags as string).toLowerCase();
-    videos = videos.filter((v) =>
-      Array.isArray(v.tags)
-        ? v.tags.some((t: string) => t.toLowerCase() === tag)
-        : false,
+    const tag = (tags as string).trim().toLowerCase();
+
+    videos = videos.filter(
+      (video) =>
+        Array.isArray(video.tags) &&
+        video.tags.some((value: string) => value.toLowerCase() === tag),
     );
+  }
+
+  if (category) {
+    const categoryName = (category as string).trim().toLowerCase();
+
+    videos = videos.filter(
+      (video) => video.category?.trim().toLowerCase() === categoryName,
+    );
+  }
+
+  if (speaker) {
+    const speakerName = (speaker as string).trim().toLowerCase();
+
+    videos = videos.filter(
+      (video) =>
+        Array.isArray(video.authors) &&
+        video.authors.some(
+          (author: string) => author.trim().toLowerCase() === speakerName,
+        ),
+    );
+  }
+
+  if (resultLimit !== undefined) {
+    videos = videos.slice(0, resultLimit);
   }
 
   res.status(200).json(videos);
