@@ -61,6 +61,12 @@ const menuConfig = {
           path: "/learning/ww2022",
         },
         {
+          title: "Browse tags",
+          compactTitle: "Tags",
+          icon: "tabler:tags",
+          path: "/learning/tags",
+        },
+        {
           title: "Request Certificate",
           compactTitle: "Certificate",
           icon: "tabler:certificate",
