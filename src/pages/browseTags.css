@@ -1,0 +1,268 @@
+.tag-browser {
+  color: #012b54;
+  font-family: var(--title-font);
+}
+
+.tag-browser__title {
+  margin: 0 0 12px;
+  color: #012b54;
+  font-family: var(--display-font);
+  font-size: clamp(2.5rem, 3.8vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.tag-browser__intro {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tag-browser__controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 16px;
+  padding: 12px 16px;
+  border: 1px solid rgba(1, 43, 84, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.tag-browser__search-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.tag-browser__search-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag-browser__search {
+  flex: 1;
+  min-width: 0;
+}
+
+.tag-browser .tag-browser__search .MuiOutlinedInput-root {
+  box-sizing: border-box;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.tag-browser .tag-browser__search .MuiOutlinedInput-notchedOutline {
+  border-color: #012b54;
+  border-width: 2px;
+}
+
+.tag-browser
+  .tag-browser__search
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #ce4a25;
+}
+
+.tag-browser
+  .tag-browser__search
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #012b54;
+}
+
+.tag-browser .tag-browser__search .MuiInputBase-input {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px 12px;
+  font-size: 0.875rem;
+  /* The shared global input rule also uses !important. */
+  color: #012b54 !important;
+}
+
+.tag-browser .tag-browser__search .MuiInputBase-input::placeholder {
+  color: #52606b;
+  opacity: 1;
+}
+
+.tag-browser__clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #ce4a25;
+  border-radius: 8px;
+  background: #ce4a25;
+  color: #fff;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.tag-browser__clear:hover:not(:disabled) {
+  background: #a6381b;
+}
+
+.tag-browser__clear:disabled {
+  background: transparent;
+  color: #6d4d3b;
+  border-color: rgba(206, 74, 37, 0.4);
+  cursor: default;
+}
+
+.tag-browser__sort-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 4px;
+  font-size: 0.8rem;
+}
+
+.tag-browser .tag-browser__sort.MuiToggleButtonGroup-root {
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid rgba(1, 43, 84, 0.3);
+  border-radius: 8px;
+  background: var(--app-background);
+}
+
+.tag-browser
+  .tag-browser__sort.MuiToggleButtonGroup-root
+  .MuiToggleButton-root {
+  min-height: 32px;
+  margin: 0;
+  padding: 4px 10px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--app-background);
+  color: #012b54;
+  font-family: var(--title-font);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  box-shadow: none;
+  text-transform: none;
+}
+
+.tag-browser
+  .tag-browser__sort.MuiToggleButtonGroup-root
+  .MuiToggleButton-root:hover {
+  background: rgba(1, 43, 84, 0.08);
+}
+
+.tag-browser
+  .tag-browser__sort.MuiToggleButtonGroup-root
+  .MuiToggleButton-root.Mui-selected {
+  background: #012b54;
+  color: #e7decb;
+}
+
+.tag-browser
+  .tag-browser__sort.MuiToggleButtonGroup-root
+  .MuiToggleButton-root.Mui-selected:hover {
+  background: #014272;
+}
+
+.tag-browser__section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(1, 43, 84, 0.18);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.tag-browser__section-count {
+  padding: 2px 8px;
+  border: 1px solid rgba(1, 43, 84, 0.25);
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.tag-browser__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-browser__tags > li {
+  display: flex;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.tag-browser__tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid;
+  border-radius: 14px;
+  color: #323232;
+  text-decoration: none;
+}
+
+.tag-browser__tag--category {
+  border-color: #a6381b;
+  background: #ce4a25;
+  color: #fff;
+}
+
+.tag-browser__tag--topic {
+  border-color: #b69a14;
+  background: #fdd524;
+}
+
+.tag-browser__tag:hover {
+  border-color: #012b54;
+  box-shadow: 0 2px 6px rgba(1, 43, 84, 0.12);
+}
+
+.tag-browser__tag-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+}
+
+.tag-browser__video-count {
+  flex-shrink: 0;
+  padding: 3px 8px;
+  border: 1px solid rgba(1, 43, 84, 0.18);
+  border-radius: 999px;
+  background: #e7decb;
+  color: #012b54;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.tag-browser__tag:focus-visible,
+.tag-browser__clear:focus-visible,
+.tag-browser .MuiToggleButton-root:focus-visible {
+  outline: 3px solid #012b54;
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .tag-browser__controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .tag-browser__sort-row {
+    padding-bottom: 0;
+  }
+}
