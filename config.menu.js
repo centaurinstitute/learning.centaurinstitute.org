@@ -60,12 +60,14 @@ const menuConfig = {
           icon: "tabler:brand-snowflake",
           path: "/learning/ww2022",
         },
+        /* Temp disabled; kept for future use
         {
           title: "Request Certificate",
           compactTitle: "Certificate",
           icon: "tabler:certificate",
           path: "/request-certificate",
         },
+        */
       ],
     },
   ],
