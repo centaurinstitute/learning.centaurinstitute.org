@@ -1,4 +1,4 @@
-import SpeakerLinks from "../SpeakerLinks/SpeakerLinks";
+import ExpandableSpeakerList from "../SpeakerLinks/ExpandableSpeakerList";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import useVideos from "../../hooks/useVideos";
 
@@ -226,7 +226,15 @@ const HomeLayout = () => {
                 >
                   <VideoThumbnail video={video} />
                 </Box>
-                <CardContent sx={{ flexGrow: 1, p: 2 }}>
+                <CardContent
+                  sx={{
+                    flexGrow: 1,
+                    p: 2,
+                    "&:last-child": {
+                      pb: 1,
+                    },
+                  }}
+                >
                   <Typography
                     variant="subtitle1"
                     component="div"
@@ -264,22 +272,7 @@ const HomeLayout = () => {
                       >
                         Speakers
                       </Typography>
-                      <Typography
-                        component="div"
-                        sx={{
-                          fontSize: "0.95rem",
-                          color: "#ce4a25",
-                          fontFamily: "var(--title-font)",
-                          display: "-webkit-box",
-                          WebkitLineClamp: 2,
-                          WebkitBoxOrient: "vertical",
-                          overflow: "hidden",
-                          lineHeight: 1,
-                          height: "calc(1em * 2)",
-                        }}
-                      >
-                        <SpeakerLinks authors={video.authors} />
-                      </Typography>
+                      <ExpandableSpeakerList authors={video.authors} />
                     </>
                   )}
                 </CardContent>
