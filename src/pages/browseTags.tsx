@@ -76,7 +76,7 @@ const BrowseTags = () => {
   return (
     <Container
       className="tag-browser"
-      maxWidth="lg"
+      maxWidth="xl"
       sx={{ py: { xs: 3, md: 4 } }}
     >
       <h1 className="tag-browser__title">Browse tags</h1>
