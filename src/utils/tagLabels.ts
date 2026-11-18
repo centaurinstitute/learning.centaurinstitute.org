@@ -55,4 +55,4 @@ const getTagLabel = (tagId: string): string =>
     ? tagLabels[tagId]
     : tagId;
 
-export { getTagLabel };
+export { getTagLabel, tagLabels };

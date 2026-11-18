@@ -1,24 +1,14 @@
-import { getTagLabel } from "../../utils/tagLabels"; // import tag map utility function
-import { useNavigate } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { VIDEO_CATEGORIES } from "../../utils/tagCatalog";
+import { getTagLabel } from "../../utils/tagLabels";
 import useVideos from "../../hooks/useVideos";
 
 import { Box, Chip } from "@mui/material";
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 
 type Video = { tags?: string[] };
 
-const TOP_TAGS_COUNT = 20;
-const COLLAPSED_TAGS_COUNT = 5;
-
 const SETTINGS_STORAGE_KEY = "link.settings";
-
-const VIDEO_CATEGORIES = [
-  "Talk",
-  "Tutorial",
-  "Panel",
-  "Fireside Chat",
-  "Sponsor Talk",
-];
 
 const isNavCollapsed = (): boolean => {
   try {
@@ -29,8 +19,9 @@ const isNavCollapsed = (): boolean => {
   }
 };
 
-const getTopTags = (videos: Video[]): string[] => {
+const getRankedTags = (videos: Video[]): string[] => {
   const counts = new Map<string, number>();
+
   videos.forEach((video) => {
     (video.tags ?? []).forEach((tag) => {
       counts.set(tag, (counts.get(tag) ?? 0) + 1);
@@ -38,84 +29,130 @@ const getTopTags = (videos: Video[]): string[] => {
   });
 
   return [...counts.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, TOP_TAGS_COUNT)
+    .sort((first, second) => second[1] - first[1])
     .map(([tag]) => tag);
 };
 
 const ActionButtons = () => {
-  const navigate = useNavigate();
   const { getVideos } = useVideos();
   const { videos } = getVideos();
 
-  const [expanded, setExpanded] = useState(false);
-
-  const tags = useMemo(() => getTopTags(videos ?? []), [videos]);
-  const visibleTags = expanded ? tags : tags.slice(0, COLLAPSED_TAGS_COUNT);
-  const hiddenCount = tags.length - visibleTags.length;
+  const tags = useMemo(() => getRankedTags(videos ?? []), [videos]);
 
   if (isNavCollapsed()) {
     return null;
   }
 
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, ml: 2, mb: -1 }}>
+    <Box
+      sx={{
+        width: "100%",
+        px: 2,
+        display: "flex",
+        flexDirection: "column",
+        gap: 1,
+      }}
+    >
+      <Box
+        role="region"
+        aria-label="Video categories and topic tags"
+        tabIndex={0}
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          alignContent: "flex-start",
+          gap: 1,
+          maxHeight: {
+            xs: "min(22dvh, 180px)",
+            lg: "min(36dvh, 360px)",
+          },
+          overflowY: "auto",
+          overflowX: "hidden",
+          overscrollBehaviorY: "contain",
+          scrollbarGutter: "stable",
+
+          scrollbarWidth: "thin",
+          scrollbarColor: "#ce4a25 #e7decb",
+
+          "&::-webkit-scrollbar": {
+            width: "8px",
+          },
+          "&::-webkit-scrollbar-track": {
+            backgroundColor: "#e7decb",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "#ce4a25",
+            borderRadius: "8px",
+            border: "2px solid #e7decb",
+          },
+
+          "&:focus-visible": {
+            outline: "2px solid #012b54",
+            outlineOffset: 2,
+          },
+        }}
+      >
       {VIDEO_CATEGORIES.map((category) => (
         <Chip
+          component={RouterLink}
+          to={"/learning?category=" + encodeURIComponent(category)}
+          clickable
           key={category}
           label={category}
           size="small"
-          onClick={() => {
-            navigate(
-              "/learning?category=" + encodeURIComponent(category),
-            );
-          }}
           sx={{
             backgroundColor: "#ce4a25",
             color: "#e7decb",
             fontWeight: 400,
             fontFamily: "var(--title-font)",
+            textDecoration: "none",
             "&:hover": {
               backgroundColor: "#ce4a25",
-              cursor: "pointer",
             },
           }}
         />
       ))}
-      {visibleTags.map((tag) => (
+
+      {tags.map((tag) => (
         <Chip
-          onClick={() => {
-            navigate(`/learning?tag=${encodeURIComponent(tag)}`);
-          }}
+          component={RouterLink}
+          to={"/learning?tag=" + encodeURIComponent(tag)}
+          clickable
           key={tag}
-          label={getTagLabel(tag)} // use tag map fn; returns String
+          label={getTagLabel(tag)}
           size="small"
           sx={{
             backgroundColor: "#fdd524",
             color: "#323232",
-            "&:hover": { backgroundColor: "#fdd524", cursor: "pointer" },
-            cursor: "pointer",
-            fontWeight: "400",
+            fontWeight: 400,
             fontFamily: "var(--title-font)",
+            textDecoration: "none",
+            "&:hover": {
+              backgroundColor: "#fdd524",
+            },
           }}
         />
       ))}
-      {(hiddenCount > 0 || expanded) && (
-        <Chip
-          onClick={() => setExpanded((prev) => !prev)}
-          label={expanded ? "Show less" : `+${hiddenCount} more`}
-          size="small"
-          variant="outlined"
-          sx={{
-            color: "#323232",
-            borderColor: "#fdd524",
-            "&:hover": { backgroundColor: "#fdd52433", cursor: "pointer" },
-            cursor: "pointer",
-            fontWeight: "400",
-            fontFamily: "var(--title-font)",
-          }}
-        />
-      )}
+      </Box>
+
+      <Chip
+        component={RouterLink}
+        to="/learning/tags"
+        clickable
+        label="Browse all tags"
+        size="small"
+        variant="outlined"
+        sx={{
+          color: "#012b54",
+          borderColor: "#012b54",
+          fontWeight: 400,
+          fontFamily: "var(--title-font)",
+          textDecoration: "none",
+          "&:hover": {
+            backgroundColor: "rgba(1, 43, 84, 0.08)",
+          },
+        }}
+      />
     </Box>
   );
 };

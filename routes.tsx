@@ -1,3 +1,4 @@
+import BrowseTags from "./src/pages/browseTags";
 import Container from "./src/Container";
 import { DashboardLayout } from "@canmingir/link/layouts";
 import Home from "./src/pages/home";
@@ -24,6 +25,10 @@ const routes = [
           {
             path: "/learning",
             element: <Index />,
+          },
+          {
+            path: "/learning/tags",
+            element: <BrowseTags />,
           },
           {
             path: "/learning/2026",

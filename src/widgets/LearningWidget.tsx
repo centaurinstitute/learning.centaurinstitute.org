@@ -11,8 +11,8 @@ import {
   Skeleton,
   Typography,
 } from "@mui/material";
-import React, { useMemo } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import React, { useLayoutEffect, useMemo, useRef } from "react";
+import { useLocation, useNavigate, useNavigationType } from "react-router-dom";
 
 type LearningWidgetProps = {
   event?: string;
@@ -22,6 +22,7 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
   const { getVideos } = useVideos();
   const navigate = useNavigate();
   const location = useLocation();
+  const navigationType = useNavigationType();
 
   const { tagQuery, categoryQuery, speakerQuery, searchQuery } = useMemo(() => {
     const params = new URLSearchParams(location.search);
@@ -33,6 +34,20 @@ const LearningWidget = ({ event }: LearningWidgetProps) => {
       searchQuery: (params.get("q") || "").toLowerCase().trim(),
     };
   }, [location.search]);
+
+  const topic = tagQuery?.toLowerCase();
+  const previousTopic = useRef(topic);
+
+  useLayoutEffect(() => {
+    const previous = previousTopic.current;
+    previousTopic.current = topic;
+
+    // Changing only the tag keeps this results page mounted. Leave Back/Forward
+    // alone so the browser can handle history traversal as before.
+    if (navigationType !== "POP" && previous && topic && previous !== topic) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }, [navigationType, topic]);
 
   const hasMetadataFilter = Boolean(
     tagQuery || categoryQuery || speakerQuery,
