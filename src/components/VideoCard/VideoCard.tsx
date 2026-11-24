@@ -1,5 +1,5 @@
+import ExpandableSpeakerList from "../SpeakerLinks/ExpandableSpeakerList";
 import React from "react";
-import SpeakerLinks from "../SpeakerLinks/SpeakerLinks";
 import { getFallbackThumbnail } from "../../utils/fallbackThumbnail";
 import { useState } from "react";
 
@@ -98,7 +98,15 @@ const VideoCard = ({
           {video.duration}
         </Box>
       </Box>
-      <CardContent sx={{ flexGrow: 1, p: 2 }}>
+      <CardContent
+        sx={{
+          flexGrow: 1,
+          p: 2,
+          "&:last-child": {
+            pb: 1,
+          },
+        }}
+      >
         <Typography
           variant="subtitle1"
           component="div"
@@ -134,22 +142,7 @@ const VideoCard = ({
             >
               Speakers
             </Typography>
-            <Typography
-              component="div"
-              sx={{
-                fontSize: "0.95rem",
-                color: "#ce4a25",
-                fontFamily: "var(--title-font)",
-                display: "-webkit-box",
-                WebkitLineClamp: 2,
-                WebkitBoxOrient: "vertical",
-                overflow: "hidden",
-                lineHeight: 1,
-                height: "calc(1em * 2)",
-              }}
-            >
-              <SpeakerLinks authors={video.authors} />
-            </Typography>
+            <ExpandableSpeakerList authors={video.authors} />
           </>
         )}
       </CardContent>
